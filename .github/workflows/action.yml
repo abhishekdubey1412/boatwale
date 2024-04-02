@@ -1,0 +1,38 @@
+name: Deploy to EC2 and Reload Nginx
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: boatwale
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Install SSH key
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Change the working directory
+        run: cd /home/ubuntu/boatwale
+
+      - name: Checking git status
+        run: sudo git status
+
+      - name: Pull the latest changes
+        run: sudo git pull origin main
+
+      - name: Syncing the repo with destination project directory
+        run: sudo rsync -av /home/ubuntu/boatwale /var/www/html/boatwale
+          
+      - name: Checking the nginx syntax error
+        run: sudo nginx -t
+          
+      - name: Reload nginx
+        run: sudo systemctl reload nginx
+        
