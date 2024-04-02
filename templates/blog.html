@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% load static %}
+{% block cssblock %}
+    <link rel="stylesheet" href="{% static "css/blog.css" %}">
+{% endblock cssblock %}
+
+{% block content %}
+    {% include "hero.html" %}
+    <section class="blog_sec">
+            <div class="blog_ctg">
+                <div class="blog_pt">
+                    <div class="blog">
+                        <img fetchpriority="high" loading="lazy" src="{% static "images/tour-images/bodhgaya-tour.jpeg" %}" alt="">
+                        <h3>Bodhgaya Tour</h3>
+                        <p>Description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <div class="add-to-cart">
+                            <a href="{% url "post" %}" ><button class="addbtn">Raed More</button></a>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img fetchpriority="high" loading="lazy" src="{% static "images/tour-images/bodhgaya-tour.jpeg" %}" alt="">
+                        <h3>Bodhgaya Tour</h3>
+                        <p>Description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <div class="add-to-cart">
+                            <a href="{% url "post" %}" ><button class="addbtn">Raed More</button></a>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img fetchpriority="high" loading="lazy" src="{% static "images/tour-images/bodhgaya-tour.jpeg" %}" alt="">
+                        <h3>Bodhgaya Tour</h3>
+                        <p>Description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <div class="add-to-cart">
+                            <a href="{% url "post" %}" ><button class="addbtn">Raed More</button></a>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img fetchpriority="high" loading="lazy" src="{% static "images/tour-images/bodhgaya-tour.jpeg" %}" alt="">
+                        <h3>Bodhgaya Tour</h3>
+                        <p>Description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <div class="add-to-cart">
+                            <a href="{% url "post" %}" ><button class="addbtn">Raed More</button></a>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img fetchpriority="high" loading="lazy" src="{% static "images/tour-images/bodhgaya-tour.jpeg" %}" alt="">
+                        <h3>Bodhgaya Tour</h3>
+                        <p>Description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <div class="add-to-cart">
+                            <a href="{% url "post" %}" ><button class="addbtn">Raed More</button></a>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img fetchpriority="high" loading="lazy" src="{% static "images/tour-images/bodhgaya-tour.jpeg" %}" alt="">
+                        <h3>Bodhgaya Tour</h3>
+                        <p>Description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <div class="add-to-cart">
+                            <a href="{% url "post" %}" ><button class="addbtn">Raed More</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="prev">&laquo; Prev</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#" class="next">Next &raquo;</a>
+            </div>
+    </section>
+{% endblock content %}
+
+{% block jsblock %}
+    <script async src="{% static "js/shop-product.js" %}"></script>
+{% endblock jsblock %}

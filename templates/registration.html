@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+{% block cssblock %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{% static "css/registration.css" %}">
+{% endblock cssblock %}
+
+{% block content %}
+    <section id="registration">
+        <div class="container">
+        <div id="registrationForm">
+            <h3>Register</h3>
+            <form id="registrationForm" action="{% url 'registration' %}" method="POST">
+                {% csrf_token %}
+                <div class="input-container">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="registerUsername" name="registerUsername" placeholder="Username" required>
+                </div>
+                <div class="input-container">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="registerEmail" name="registerEmail" placeholder="Email" required>
+                </div>
+                <div class="input-container">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="registerPassword" name="registerPassword" placeholder="Password" required>
+                </div>
+                <div class="input-container">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter Password" required>
+                </div>
+                <input type="submit" value="Register">
+            </form>
+            <p class="switch-form">Already have an account? <a href="{% url "userlogin" %}">Login</a></p>
+        </div>
+        </div>
+    </section>
+{% endblock content %}

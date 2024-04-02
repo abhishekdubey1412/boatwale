@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block cssblock %}
+  <link rel="stylesheet" href="{% static "css/singal-product.css" %}">
+{% endblock cssblock %}
+
+{% block content %}
+    <div class = "card-wrapper">
+        <div class = "card">
+          <!-- card left -->
+          <div class = "product-imgs">
+            <div class = "img-display">
+              <div class = "img-showcase">
+                {% for product_image in product_images %}
+                  <img fetchpriority="high" src = "/media/{{product_image.image}}" alt = "{{product_image.alt}}">
+                {% endfor %}
+              </div>
+            </div>
+            <div class = "img-select">
+              {% for product_image in product_images %}
+                <div class = "img-item">
+                  <a href = "#" data-id = "{{product_image.id}}">
+                    <img fetchpriority="high" src = "/media/{{product_image.image}}" alt = "{{product_image.alt}}">
+                  </a>
+                </div>
+              {% endfor %}
+              {% comment %} <div class = "img-item">
+                <a href = "#" data-id = "2">
+                  <img fetchpriority="high" loading="lazy" src = "{% static 'images/shoes_images/shoe_2.webp' %}" alt = "shoe image">
+                </a>
+              </div>
+              <div class = "img-item">
+                <a href = "#" data-id = "3">
+                  <img fetchpriority="high" loading="lazy" src = "{% static 'images/shoes_images/shoe_3.webp' %}" alt = "shoe image">
+                </a>
+              </div>
+              <div class = "img-item">
+                <a href = "#" data-id = "4">
+                  <img fetchpriority="high" loading="lazy" src = "{% static 'images/shoes_images/shoe_4.webp' %}" alt = "shoe image">
+                </a>
+              </div> {% endcomment %}
+            </div>
+          </div>
+          <!-- card right -->
+          <div class = "product-content">
+            <h2 class = "product-title">{{boat_product.name}}</h2>
+            <a href = "{% url "boat-packages" boat_product.boat.slug %}" class = "product-link">{{boat_product.boat.name}}</a>
+            <div class = "product-rating">
+              <i class = "fas fa-star"></i>
+              <i class = "fas fa-star"></i>
+              <i class = "fas fa-star"></i>
+              <i class = "fas fa-star"></i>
+              <i class = "fas fa-star-half-alt"></i>
+              <span>4.7(21)</span>
+            </div>
+  
+            <div class = "product-price">
+              <p class = "last-price">Old Price: <span>₹{{boat_product.old_price}}</span></p>
+              <p class = "new-price">New Price: <span>₹{{boat_product.new_price}}</span></p>
+            </div>
+  
+            <div class = "product-detail">
+              <h2>about this item: </h2>
+              <p>{{boat_product.description}}</p>
+              <ul>
+                <li>Ride Duration: <span>{{boat_product.duration}}/hr</span></li>
+                <li>Seat Size: <span>{{boat_product.boat.capacity}} people</span></li>
+                <li>Boat Type: <span>{{boat_product.boat.name}}</span></li>
+                <li>Timeing: <span>6AM to 8AM</span></li>
+                <li>Destination: <span>84 Ghats + Morning Ganga Arti</span></li>
+              </ul>
+            </div>
+  
+            <div class = "purchase-info">
+              <a href="{% url "booking" boat_product.slug %}"><button type = "button" class = "btn"><i class = "fas fa-shopping-cart"></i> Book Now</button></a>
+            </div>
+  
+            <div class = "social-links">
+              <p>Share At: </p>
+              <a href = "#">
+                <i class = "fab fa-facebook-f"></i>
+              </a>
+              <a href = "#">
+                <i class = "fab fa-twitter"></i>
+              </a>
+              <a href = "#">
+                <i class = "fab fa-instagram"></i>
+              </a>
+              <a href = "#">
+                <i class = "fab fa-whatsapp"></i>
+              </a>
+              <a href = "#">
+                <i class = "fab fa-pinterest"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+{% endblock content %}
+
+{% block jsblock %}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristAttraction",
+    "name": "{{boat_product.name}}",
+    "description": "{{boat_product.description}}",
+    "image": [
+      "{{boat_product.image}}"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Varanasi",
+      "addressRegion": "Uttar Pradesh",
+      "addressCountry": "India"
+    },
+    "telephone": "7376096419",
+    "url": "URL_of_the_service_page",
+    "priceRange": "{{boat_product.price}}",
+    "touristType": "religious",
+    "touristTheme": "sunrise cruise",
+    "offers": {
+      "@type": "Offer",
+      "price": "{{boat_product.price}}",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "always",
+      "url": "URL_of_the_service_page"
+    },
+    "performer": {
+      "@type": "Organization",
+      "name": "Boatwale",
+      "description": "Welcome to Boatwale, your trusted platform for discovering unique and memorable boat tours in Varanasi on the sacred Ganges River."
+    },
+    "duration": "PT2H",
+    "provider": {
+      "@type": "Organization",
+      "name": "Boatwale",
+      "telephone": "7376096419",
+      "url": "URL_of_the_service_page"
+    },
+    "isAccessibleForFree": "False",
+    "isFamilyFriendly": "True",
+    "isPartOf": {
+      "@type": "Place",
+      "name": "Ganges River",
+      "alternateName": "River Ganga",
+      "url": "https://en.wikipedia.org/wiki/Ganges"
+    }
+  }
+  </script>
+  <script async src="{% static "js/singal-product.js" %}"></script>
+{% endblock jsblock %}

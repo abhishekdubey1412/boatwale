@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load static %}
+{% block cssblock %}
+    <link rel="stylesheet" href="{% static "css/about.css" %}">
+{% endblock cssblock %}
+
+{% block content %}
+    {% include "hero.html" %}
+    <section class="content-section">
+        <h2 class="section-title">Discover Varanasi with Boatwale</h2>
+        <p>Embark on a memorable journey along the sacred Ganges River in Varanasi with Boatwale. We offer a variety of boat tours tailored to suit your preferences, ensuring an enriching and authentic experience of this ancient city's culture, heritage, and natural beauty.</p>
+    </section>
+
+    <section class="content-section">
+        <h2 class="section-title">Our Boat Tours</h2>
+
+        <article class="tour-article">
+            <h3 class="tour-article-title">Bajra Boat Varanasi</h3>
+            <p><strong>Experience the Charm of Bajra Boat Tours</strong></p>
+            <ul class="tour-list">
+                <li class="tour-item"><strong>Bajra Sunrise Serenity</strong>: Witness the magical sunrise over the Ganges on a peaceful 2-hour journey.</li>
+                <li class="tour-item"><strong>Bajra Heritage Evening</strong>: Explore Varanasi's heritage landmarks during a serene 3-hour evening tour.</li>
+                <li class="tour-item"><strong>Bajra Cultural Discovery</strong>: Immerse yourself in Varanasi's rich culture and traditions on a 4-hour boat tour.</li>
+            </ul>
+        </article>
+
+        <article class="tour-article">
+            <h3 class="tour-article-title">Varanasi Boat Motor</h3>
+            <p><strong>Navigate the Ganges with Varanasi Boat Motor Tours</strong></p>
+            <ul class="tour-list">
+                <li class="tour-item"><strong>Motorized Ganges Exploration</strong>: Enjoy a 2.5-hour motorized boat tour to experience the Ganges' breathtaking beauty.</li>
+                <li class="tour-item"><strong>Motor Sunset Spectacle</strong>: Admire a scenic sunset view during a 2-hour motorized boat journey.</li>
+                <li class="tour-item"><strong>Motorized Heritage Trail</strong>: Discover Varanasi's heritage sites from the river on a 3-hour motor boat tour.</li>
+            </ul>
+        </article>
+
+        <article class="tour-article">
+            <h3 class="tour-article-title">Varanasi Hand Boat</h3>
+            <p><strong>Relish the Tranquility of Hand Boat Tours</strong></p>
+            <ul class="tour-list">
+                <li class="tour-item"><strong>Hand-Rowed Sunrise Delight</strong>: Welcome the day with a peaceful 2-hour hand-rowed boat tour at sunrise.</li>
+                <li class="tour-item"><strong>Hand Boat Cultural Voyage</strong>: Dive into Varanasi's culture during a 3-hour traditional hand-rowed boat tour.</li>
+                <li class="tour-item"><strong>Hand-Rowed Ganges Discovery</strong>: Explore the Ganges' beauty on a 4-hour hand-rowed boat adventure.</li>
+            </ul>
+        </article>
+
+    </section>
+
+    <section class="content-section">
+        <h2 class="section-title">Why Choose Boatwale?</h2>
+        <ul class="tour-list">
+            <li class="tour-item"><strong>Expert Guides</strong>: Our experienced guides will enrich your tour with fascinating insights and stories about Varanasi's history, culture, and traditions.</li>
+            <li class="tour-item"><strong>Comfortable Boats</strong>: We prioritize your comfort and safety, offering well-maintained boats equipped with necessary amenities.</li>
+            <li class="tour-item"><strong>Flexible Booking</strong>: Choose from a variety of tour options and easily book your preferred date and time through our user-friendly platform.</li>
+            <li class="tour-item"><strong>Competitive Pricing</strong>: Enjoy high-quality boat tours at competitive prices, ensuring value for your money.</li>
+        </ul>
+    </section>
+{% endblock content %}
+
+{% block jsblock %}
+    <script src="{% static "js/shop-product.js" %}"></script>
+{% endblock jsblock %}

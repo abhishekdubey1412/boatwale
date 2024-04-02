@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+{% block cssblock %}
+    <link rel="stylesheet" href="{% static "css/single-blog.css" %}" >
+{% endblock cssblock %}
+
+{% block content %}
+    {% include "hero.html" %}
+    <article>
+        <!-- Blog post content goes here -->
+        <h1>Explore Varanasi: A Spiritual Journey</h1>
+        <p>Nestled along the banks of the sacred River Ganges, Varanasi stands as an eternal symbol of spirituality,
+            drawing millions of pilgrims, seekers, and tourists from across the globe. This ancient city, also known as
+            Kashi or Banaras, holds a unique place in the hearts of Indians and remains a beacon of spiritual
+            enlightenment.</p>
+        <img fetchpriority="high" loading="lazy" src="{% static "images/banner/varanasi-background-banner.webp" %}" alt="spiritual buddha statue">
+
+        <h2>Discovering the Spiritual Essence</h2>
+        <p>Varanasi's spiritual significance lies in its ghats, ancient temples, and winding alleys that resonate with
+            chants, prayers, and rituals. The Ghats, particularly Dashashwamedh Ghat and Assi Ghat, offer a profound
+            experience as devotees gather to perform various rituals, including the mesmerizing Ganga Aarti, a daily
+            ritual that invokes the blessings of the river goddess.</p>
+        <img fetchpriority="high" loading="lazy" src="{% static "images/tour-images/bodhgaya-tour.jpeg" %}" alt="spiritual buddha statue">
+        <!-- More content sections -->
+
+        <h2>Conclusion</h2>
+        <p>Varanasi, with its timeless charm and spiritual allure, continues to captivate the hearts and minds of all
+            who tread its hallowed streets. Whether you seek spiritual enlightenment, cultural immersion, or simply a
+            glimpse into India's rich heritage, Varanasi offers an unforgettable journey of discovery. Come, immerse
+            yourself in the spiritual heart of India, and let Varanasi's mystical essence leave an indelible mark on
+            your soul.</p>
+    </article>
+{% endblock content %}
+
+{% comment %} {% block jsblock %}
+    <script src="{% static "js/shop-product.js" %}"></script>
+{% endblock jsblock %} {% endcomment %}

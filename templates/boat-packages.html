@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+{% block cssblock %}
+    <!-- Asynchronously Load the Shop Product CSS -->
+<link rel="preload" href="{% static "css/shop-product.css" %}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{% static "css/shop-product.css" %}"></noscript>
+
+{% endblock cssblock %}
+
+{% block content %}
+    {% include "hero.html" %}
+    <section class="packages">
+        <div class="category">
+            <div class="sec_fit">
+                <div class="search_bx">
+                    <input type="text" placeholder="Search..." id="boat_src">
+                    <button>Search</button>
+                </div>
+                {% comment %} <div class="filter_bx">Filters will go here</div> {% endcomment %}
+            </div>
+            <div class="product">
+                {% for product in boat_packages %}
+                    <div class="card">
+                        <img fetchpriority="high" loading="lazy" src="/media/{{product.image}}" alt="{{product.image_alt}}">
+                        <h2>{{product.name}}</h2>
+                        <p>{{product.description}}</p>
+                        <div class="add-to-cart">
+                            <p class="price">⌛ {{product.duration}}/hr &nbsp; &nbsp; ₹&nbsp;{{product.new_price}}</p>
+                            <button class="addbtn"><a href="{% url "product" product.slug %}">View Product</a></button>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <!-- Pagination -->
+        {% comment %} <div class="pagination">
+            <a href="#" class="prev">&laquo; Prev</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#" class="next">Next &raquo;</a>
+        </div> {% endcomment %}
+    </section>
+{% endblock content %}
+
+{% block jsblock %}
+    <script src="{% static "js/shop-product.js" %}" defer></script>
+{% endblock jsblock %}

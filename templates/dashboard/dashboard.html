@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static "css/dashboard.css" %}">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content={{description}}>
+  <link rel="icon" href="{% static "images/favicon/tripcosmos-logo.ico" %}" type="image/icon" sizes="16x16">
+  <title>{{title}}</title>
+</head>
+
+<div class="dashboard-container">
+  <header>
+    <h1>Welcome to Your Dashboard</h1>
+  </header>
+  <div class="content">
+    <div class="sidebar">
+      <ul>
+        <li><a href="#" id="profile-tab">Profile</a></li>
+        <li><a href="#" id="settings-tab">Settings</a></li>
+        <li><a href="{% url "userlogout" %}" id="logout-tab">Logout</a></li>
+        <li><a href="{% url 'deleteuser' pk=user.pk %}" id="deleteuser-tab">Delete</a></li>
+      </ul>
+    </div>
+    <div class="main-content" id="main-content">
+      <!-- Content will be loaded dynamically here -->
+      <canvas id="myChart1"></canvas>
+      <canvas id="myChart2"></canvas>
+      <canvas id="myChart3"></canvas>
+      <canvas id="myChart4"></canvas>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script>
+  // Send data to dashboard.js
+  const xArray = {{ xArray|safe }};
+  const yArray = {{ yArray|safe }};
+  const barColors = {{ barColors|safe }};
+  
+</script>
+<script src="{% static 'js/dashboard.js' %}"></script>
+</body>
+
+</html>

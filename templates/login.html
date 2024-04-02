@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+{% block cssblock %}
+    <link rel="stylesheet" href="{% static "css/registration.css" %}">
+{% endblock cssblock %}
+
+{% block content %}
+    <section id="login">
+        <div class="container">
+            <h2>Welcome</h2>
+            <div id="loginForm">
+                <h3>Login</h3>
+                <form id="loginForm" action="{% url 'userlogin' %}" method="POST" autocomplete="off">
+                    {% csrf_token %}
+                    <div class="input-container">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="loginUsername" name="loginUsername" placeholder="Username" required>
+                    </div>
+                    <div class="input-container">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="loginPassword" name="loginPassword" placeholder="Password" required>
+                    </div>
+                    <input type="submit" value="Login">
+                </form>
+                <p class="switch-form">Don't have an account? <a href="{% url "registration" %}">Register</a></p>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

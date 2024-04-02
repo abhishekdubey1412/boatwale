@@ -1,0 +1,15 @@
+{% load static %}
+{% block cssblock %}
+    <!-- Preload hero.css stylesheet -->
+    <link rel="preload" href="{% static "css/hero.css" %}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{% static "css/hero.css" %}"></noscript>
+    <link rel="preload" href="{% static 'images/tour-images/varanasi-ghat.webp' %}" as="image">
+{% endblock cssblock %}
+<div class="banner">
+    <h1>{{title}}</h1>
+    <ol>
+        <li>Home <span>/</span></li>
+        <li>Product <span>/</span></li>
+        <li>Shop</li>
+    </ol>
+</div>

@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+{% block cssblock %}
+    <link rel="stylesheet" href="{% static "css/contact.css" %}">
+{% endblock cssblock %}
+
+{% block content %}
+    {% include "hero.html" %}
+    {% if messages %}
+        {% for message in messages %}
+        <div id="message_alert">
+            <i class="fa-solid fa-circle-check fa-lg m-2"></i> 
+            <div class="message">
+                {{ message }}
+            </div>
+        </div>
+        {% endfor %}
+    {% endif %}
+    <section class="contact">
+        <div class="container contact_container">
+            <aside class="contact_aside">
+                <div class="aside_image">
+                    <img fetchpriority="high" loading="lazy" src="{% static "images/icons/contact.svg" %}" alt="">
+                </div>
+                <h2>Contact Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam in eaque, rem facere libero minima repellendus? Fugit nostrum
+                </p>
+                <ul class="contact_details">
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <h5>+91 7376096419</h5>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <h5>support@gmail.com</h5>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h5>Maruti Nagar, Dafi</h5>
+                    </li>
+                </ul>
+                <ul class="contact_socials">
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </aside>
+            <form class="contact_form" action="{% url "contact" %}" method="POST">
+                {% csrf_token %}
+                <div class="form_name">
+                    <input type="text" name="fname" placeholder="First Name" required>
+                    <input type="text" name="lname" placeholder="Last Name" required>
+                </div>
+                <input type="email" name="email" placeholder="Your Email Address" required>
+                <textarea name="message" rows="7" placeholder="Message" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+{% endblock content %}
+
+{% block jsblock %}
+    <script async src="{% static "js/contact.js" %}"></script>
+{% endblock jsblock %}

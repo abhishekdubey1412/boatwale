@@ -1,0 +1,23 @@
+{
+    "name": "Varanasi BoatWale",
+    "short_name": "BoatWale",
+    "description": "Explore the timeless beauty of Varanasi with Varanasi BoatWale. Offering authentic boat rides on the sacred Ganges, our experienced guides ensure an unforgettable journey through the spiritual heart of India. Book your serene and captivating Varanasi boat tour today!",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#122c2d",
+    "icons": [
+      {
+        "src": "images/favicon/icon-144x144.png",
+        "sizes": "144x144",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "images/favicon/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  

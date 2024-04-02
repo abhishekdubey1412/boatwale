@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load static %}
+{% block cssblock %}
+    <link rel="stylesheet" href="{% static "css/home.css" %}">
+{% endblock cssblock %}
+
+{% block content %}
+    {% include "header.html" %}
+    {% comment %} main content {% endcomment %}
+    <div class="offers">
+        <h1>Best tour package offers for you</h1>
+        <p>choose your next destination</p>
+        <div class="cards">
+            {% for product in products %}
+            <div class="card">
+                <h2>{{product.name}}</h2>
+                <div class="img_text">
+                    <img fetchpriority="high" loading="lazy" src="/media/{{product.image}}" alt="{{product.image_alt}}">
+                    <h3>Include: Air ticket, Hotel, Breakfast, Tours, Airport, Transfer</h3>
+                </div>
+                <div class="cont_bx">
+                    <div class="price">
+                        <div class="heart_chat">
+                            <i class="bi bi-heart-fill"><span>68</span></i>
+                            <i class="bi bi-chat-fill"><span>26</span></i>
+                        </div>
+                        <div class="info_price">
+                            <a href="#">More Info</a>
+                            <h4><i class="fa-solid fa-person"></i>&nbsp; {{product.capacity}}</h4>
+                        </div>
+                    </div>
+                    <div class="days"> {{product.days}} days <br>Varanasi</div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="destination">
+        <div class="des_bx">
+            <h4>Our Destination</h4>
+            <p>choose your next Destination</p>
+            <ul>
+                {% for category in categories %}
+                <li>{{category.name}}</li>
+                {% endfor %}
+            </ul>
+            <h5>Included: Air ticket, Hotel, Breakfast, Tours, Airport transfer</h5>
+            <button>MORE INFO</button>
+        </div>
+        <div class="img_bx">
+            <img fetchpriority="high" loading="lazy" src="{% static "images/banner/varanasi-boatwale.webp" %}" alt="varanasi boatwale image">
+            <div class="msg">
+                <img fetchpriority="high" loading="lazy" src="{% static "images/icons/varanasi-icon.webp" %}" alt="">
+                <div class="cont">
+                    <h4>Varanasi</h4>
+                    <div class="icon">
+                        <i class="bi bi-heart-fill"><span>68</span></i>
+                        <i class="bi bi-chat-fill"><span>26</span></i>
+                    </div>
+                </div>
+            </div>
+            <div class="msg">
+                <img fetchpriority="high" loading="lazy" src="{% static "images/icons/vrindavan-icon.webp" %}" alt="">
+                <div class="cont">
+                    <h4>Vrindavan</h4>
+                    <div class="icon">
+                        <i class="bi bi-heart-fill"><span>68</span></i>
+                        <i class="bi bi-chat-fill"><span>26</span></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
