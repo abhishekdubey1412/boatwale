@@ -2,8 +2,12 @@ asgiref==3.7.2
 Django==5.0.3
 django-appconf==1.0.6
 django-compressor==4.4
+gunicorn==21.2.0
+packaging==24.0
 pillow==10.2.0
 rcssmin==1.1.1
 rjsmin==1.2.1
 sqlparse==0.4.4
+typing_extensions==4.10.0
 tzdata==2024.1
+whitenoise==6.6.0
