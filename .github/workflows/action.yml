@@ -17,13 +17,4 @@ jobs:
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_PRIVATE_KEY }}
           port: ${{ secrets.EC2_SSH_PORT }}
-          script: |
-            cd /home/ubuntu/boatwale
-            echo "Checking git changes"
-            sudo git status
-            echo "Pulling latest changes"
-            sudo git pull
-            echo "Checking nginx syntax errors"
-            sudo nginx -t
-            echo "Relaoding nginx"
-            sudo systemctl reload nginx
+          run: cd /home/ubuntu/boatwale && git status && git pull && sudo nginx -t && sudo reload nginx
