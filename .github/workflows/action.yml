@@ -10,29 +10,20 @@ jobs:
     runs-on: boatwale
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      
-      - name: Install SSH key
-        uses: webfactory/ssh-agent@v0.9.0
+      - name: Connect to EC2 via SSH
+        uses: appleboy/ssh-action@master
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-
-      - name: Change the working directory
-        run: cd /home/ubuntu/boatwale
-
-      - name: Checking git status
-        run: sudo git status
-
-      - name: Pull the latest changes
-        run: sudo git pull origin main
-
-      - name: Syncing the repo with destination project directory
-        run: sudo rsync -av /home/ubuntu/boatwale /var/www/html/boatwale
-          
-      - name: Checking the nginx syntax error
-        run: sudo nginx -t
-          
-      - name: Reload nginx
-        run: sudo systemctl reload nginx
-        
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_PRIVATE_KEY }}
+          port: ${{ secrets.EC2_SSH_PORT }}
+          script: |
+            cd /home/ubuntu/boatwale
+            echo "Checking git changes"
+            sudo git status
+            echo "Pulling latest changes"
+            sudo git pull
+            echo "Checking nginx syntax error"
+            sudo nginx -t
+            echo "Relaoding nginx"
+            sudo systemctl reload nginx
