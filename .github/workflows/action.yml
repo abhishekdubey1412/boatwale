@@ -17,7 +17,7 @@ jobs:
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_PRIVATE_KEY }}
           port: ${{ secrets.EC2_SSH_PORT }}
-          script: |
+          run: |
             cd /home/ubuntu/boatwale
             echo "Checking git changes"
             sudo git status
