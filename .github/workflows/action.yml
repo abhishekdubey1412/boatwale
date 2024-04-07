@@ -11,10 +11,18 @@ jobs:
 
     steps:
       - name: Connect to EC2 via SSH
-        uses: appleboy/ssh-action@master
+        uses: webfactory/ssh-agent@v0.5.3
         with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ${{ secrets.EC2_USERNAME }}
-          key: ${{ secrets.EC2_PRIVATE_KEY }}
-          port: ${{ secrets.EC2_SSH_PORT }}
-          run: cd /home/ubuntu/boatwale && git status && git pull && sudo nginx -t && sudo reload nginx
+          ssh-private-key: ${{ secrets.EC2_PRIVATE_KEY }}
+      
+      - name: SSH into EC2 and Run Commands
+        run: |
+          ssh ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} << 'EOF'
+            # Run multiple commands here
+            cd /home/ubuntu/boatwale
+            ls -l
+            git status
+            git pull
+            sudo nginx -t
+            sudo sytemctl reload nginx
+          EOF
