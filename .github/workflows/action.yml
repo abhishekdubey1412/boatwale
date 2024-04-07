@@ -18,17 +18,14 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.EC2_PRIVATE_KEY }}
 
-      - name: Change the working directory
-        run: cd /home/ubuntu/boatwale
-
-      - name: Checking git status
-        run: sudo git status
-
-      - name: Pull the latest changes
-        run: sudo git pull origin main
-
-      - name: Checking the nginx syntax error
-        run: sudo nginx -t
-
-      - name: Reload nginx
-        run: sudo systemctl reload nginx
+      - name: SSH into EC2 and Run Commands
+        run: |
+          ssh ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} << 'EOF'
+            # Run multiple commands here
+            cd /home/ubuntu/boatwale
+            git status
+            git pull
+            sudo nginx -t
+            sudo systemctl reload nginx
+            # Add more commands as needed
+          EOF
