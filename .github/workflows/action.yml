@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: boatwale
+    runs-on: self-hosted
 
     steps:
       - name: Checkout code
