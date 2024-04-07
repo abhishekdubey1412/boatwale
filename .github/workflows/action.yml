@@ -20,12 +20,8 @@ jobs:
 
       - name: SSH into EC2 and Run Commands
         run: |
-          ssh ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} << 'EOF'
-            # Run multiple commands here
-            cd /home/ubuntu/boatwale
-            git status
-            git pull
-            sudo nginx -t
-            sudo systemctl reload nginx
-            # Add more commands as needed
-          EOF
+          cd /home/ubuntu/boatwale
+          git status
+          git pull
+          sudo nginx -t
+          sudo systemctl reload nginx
