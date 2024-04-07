@@ -7,22 +7,28 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: boatwale
 
     steps:
-      - name: Connect to EC2 via SSH
-        uses: webfactory/ssh-agent@v0.5.3
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install SSH key
+        uses: webfactory/ssh-agent@v0.9.0
         with:
           ssh-private-key: ${{ secrets.EC2_PRIVATE_KEY }}
-      
-      - name: SSH into EC2 and Run Commands
-        run: |
-          ssh ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} << 'EOF'
-            # Run multiple commands here
-            cd /home/ubuntu/boatwale
-            ls -l
-            git status
-            git pull
-            sudo nginx -t
-            sudo sytemctl reload nginx
-          EOF
+
+      - name: Change the working directory
+        run: cd /home/ubuntu/boatwale
+
+      - name: Checking git status
+        run: sudo git status
+
+      - name: Pull the latest changes
+        run: sudo git pull origin main
+
+      - name: Checking the nginx syntax error
+        run: sudo nginx -t
+
+      - name: Reload nginx
+        run: sudo systemctl reload nginx
