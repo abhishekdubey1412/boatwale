@@ -38,7 +38,7 @@ nav ul li{
 }
 
 nav ul li:nth-last-child(1){
-    background: darkmagenta;
+    background: #000000;
     border-radius: 20px;
     padding: 5px 20px;
     transition: .3s linear;
@@ -153,7 +153,7 @@ footer .input_bx button{
     outline: none;
     font-size: 12px;
     border-radius: 0px 20px 20px 0px;
-    background: darkmagenta;
+    background: #000000;
     color: #fff;
     cursor: pointer;
     transition: .3s linear;

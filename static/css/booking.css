@@ -35,7 +35,7 @@ section.booking{
     padding: 8px 10px;
     border-radius: 5px;
     outline: none;
-    border: 1px solid darkmagenta;
+    border: 1px solid #000000;
 }
 
 input#person, input#age{
@@ -94,7 +94,7 @@ input#person, input#age{
 .product_info .card .add-to-cart .addbtn {
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: darkmagenta;
+    background-color: #000000;
     color: #fff;
     border: none;
     cursor: pointer;

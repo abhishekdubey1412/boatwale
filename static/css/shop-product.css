@@ -32,7 +32,7 @@ section.packages {
 .category .sec_fit .search_bx button {
     padding: 11px;
     font-size: 1rem;
-    background-color: darkmagenta;
+    background-color: #000000;
     color: #fff;
     border: none;
     border-radius: 0px 25px 25px 0px;
@@ -103,7 +103,7 @@ section.packages {
 .product .card .add-to-cart .addbtn {
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: darkmagenta;
+    background-color: #000000;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -133,7 +133,7 @@ section.packages {
 }
 
 .pagination a.active {
-    background-color: darkmagenta;
+    background-color: #000000;
     color: white;
 }
 

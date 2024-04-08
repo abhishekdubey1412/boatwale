@@ -41,8 +41,8 @@ header .content .cont_bx button{
     margin-top: 20px;
     padding: 10px 20px;
     border-radius: 20px;
-    border: 2px solid darkmagenta;
-    background: darkmagenta;
+    border: 2px solid #000000;
+    background: #000000;
     color: #fff;
     outline: none;
     cursor: pointer;
@@ -108,7 +108,7 @@ header .trip_bx .search_bx .card input{
 }
 
 header .trip_bx .search_bx input[type="button"]{
-    background: darkmagenta;
+    background: #000000;
     color: #fff;
     border: none;
     outline: none;
@@ -192,7 +192,7 @@ header .trip_bx .travel_bx .cards .card .btn_city{
 
 header .trip_bx .travel_bx .cards .card .btn_city a{
     text-decoration: none;
-    background: darkmagenta;
+    background: #000000;
     color: #fff;
     border-radius: 20px;
     padding: 6px 20px;
