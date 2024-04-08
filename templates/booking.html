@@ -7,75 +7,76 @@
 {% block content %}
     {% include "hero.html" %}
     <section class="booking">
-        <div class="boat_booking_info">
-            <div class="customer_info">
-                <h1>Customer Info.</h1>
-                <form action="" method="post" autocomplete="off">
-                    <div class="customer_info_input">
-                        <label for="contact">Contact No.</label>
-                        <input id="contact" type="text" name="number" placeholder="+91 9999999999" required/>
+        <form class="booking_form" action="" method="post" autocomplete="off">
+            {% csrf_token %}
+            <div class="boat_booking_info">
+                <div class="customer_info">
+                    <h1>Customer Info.</h1>
+                    <div class="customer_form">
+                        <div class="customer_info_input">
+                            <label for="name">Name.</label>
+                            <input id="name" type="text" name="name" placeholder="Abhishek Dubey" required/>
+                        </div>
+                        <div class="customer_info_input">
+                            <label for="contact">Contact No.</label>
+                            <input id="contact" type="text" name="number" placeholder="+91 9999999999" required/>
+                        </div>
+                        <div class="customer_info_input">
+                            <label for="mail">Email.</label>
+                            <input id="mail" type="email" name="email" placeholder="admin@gmail.com" autocomplete="off" required/>
+                        </div>
+                        <div class="customer_info_input">
+                            <label for="age">Age.</label>
+                            <input id="age" type="number" name="age" placeholder="23" required/>
+                        </div>
+                        <div class="customer_info_input">
+                            <label for="city">City.</label>
+                            <input id="city" type="text" name="city" placeholder="Allahabad" required/>
+                        </div>
+                        <div class="customer_info_input">
+                            <label for="country">Country.</label>
+                            <input id="country" type="text" name="country" placeholder="India" autocomplete="country-name" required/>
+                        </div>
                     </div>
-                    <div class="customer_info_input">
-                        <label for="mail">Email.</label>
-                        <input id="mail" type="email" name="email" placeholder="admin@gmail.com" autocomplete="off" required/>
+                </div>
+                <div class="booking_info">
+                    <h1>Booking Info.</h1>
+                    <div class="booking_form">
+                        <div class="booking_info_input">
+                            <label for="pickup_time">Time Slot.</label>
+                            <input id="pickup_time" type="time" name="pickup_time" value="07:00" required/>
+                        </div>
+                        <div class="booking_info_input">
+                            <label for="pickup_ghat">Pickup Ghat.</label>
+                            <input id="pickup_ghat" type="text" name="pickup_ghat" placeholder="Assi Ghat" required/>
+                        </div>
+                        <div class="booking_info_input">
+                            <label for="pickup_date">Date.</label>
+                            <input id="pickup_date" type="date" name="pickup_date" required/>
+                        </div>
+                        <div class="booking_info_input">
+                            <label for="route">Route.</label>
+                            <input id="route" type="text" name="route" placeholder="Allahabad" required/>
+                        </div>
+                        <div class="booking_info_input">
+                            <label for="person">Person.</label>
+                            <input id="person" type="number" name="person" placeholder="2" required/>
+                        </div>
                     </div>
-                    <div class="customer_info_input">
-                        <label for="age">Age.</label>
-                        <input id="age" type="number" name="age" placeholder="23" required/>
-                    </div>
-                    <div class="customer_info_input">
-                        <label for="city">City.</label>
-                        <input id="city" type="text" name="city" placeholder="Allahabad" required/>
-                    </div>
-                    <div class="customer_info_input">
-                        <label for="country">Country.</label>
-                        <input id="country" type="text" name="country" placeholder="India" autocomplete="country-name" required/>
-                    </div>
-                </form>
-            </div>
-            <div class="booking_info">
-                <h1>Booking Info.</h1>
-                <form action="" method="post" autocomplete="off">
-                    <!-- <div class="booking_info_input">
-                        <input type="radio" id="html" name="fav_language" value="HTML">
-                        <label for="html">HTML</label><br>
-                        <input type="radio" id="css" name="fav_language" value="CSS">
-                        <label for="css">CSS</label><br>
-                    </div> -->
-                    <div class="booking_info_input">
-                        <label for="pickup_time">Time Slot.</label>
-                        <input id="pickup_time" type="time" name="pickup_time" value="07:00" required/>
-                    </div>
-                    <div class="booking_info_input">
-                        <label for="pickup_ghat">Pickup Ghat.</label>
-                        <input id="pickup_ghat" type="text" name="pickup_ghat" placeholder="Assi Ghat" required/>
-                    </div>
-                    <div class="booking_info_input">
-                        <label for="pickup_date">Date.</label>
-                        <input id="pickup_date" type="date" name="pickup_date" required/>
-                    </div>
-                    <div class="booking_info_input">
-                        <label for="route">Route.</label>
-                        <input id="route" type="text" name="route" placeholder="Allahabad" required/>
-                    </div>
-                    <div class="booking_info_input">
-                        <label for="person">Person.</label>
-                        <input id="person" type="number" name="person" placeholder="2" required/>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="product_info">
-            <h1>Boat Info.</h1>
-            <div class="card">
-                <img fetchpriority="high" loading="lazy" src="/media/{{boat_product.image}}" alt="{{boat_product.image_alt}}">
-                <h2>{{boat_product.name}}</h2>
-                <p>{{boat_product.description}}</p>
-                <div class="add-to-cart">
-                    <p class="price">⌛ {{boat_product.duration}}/hr &nbsp; &nbsp; ₹&nbsp;{{boat_product.new_price}}</p>
-                    <button class="addbtn"><a href='{% url "home" %}'>Book My Boat</a></button>
                 </div>
             </div>
-        </div>
+            <div class="product_info">
+                <h1>Boat Info.</h1>
+                <div class="card">
+                    <img fetchpriority="high" loading="lazy" src="/media/{{boat_product.image}}" alt="{{boat_product.image_alt}}">
+                    <h2>{{boat_product.name}}</h2>
+                    <p>{{boat_product.description}}</p>
+                    <div class="add-to-cart">
+                        <p class="price">⌛ {{boat_product.duration}}/hr &nbsp; &nbsp; ₹&nbsp;{{boat_product.new_price}}</p>
+                        <button class="addbtn" type="submit">Book My Boat</button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </section>
 {% endblock content %}

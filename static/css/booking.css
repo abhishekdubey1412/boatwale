@@ -1,36 +1,41 @@
 section.booking{
-    display: flex;
-    justify-content: center;
     width: 80%;
     margin: auto;
     min-height: 90vh;
+}
+
+.booking_form{
+    display: flex;
+    justify-content: center;
 }
 
 .boat_booking_info{
     width: 80%;
 }
 
-.boat_booking_info .customer_info form,
-.boat_booking_info .booking_info form{
+.boat_booking_info .customer_info .customer_form,
+.boat_booking_info .booking_info .booking_form{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     width: 70%;
+    justify-content: flex-start;
 }
 
-.boat_booking_info .customer_info form .customer_info_input,
-.boat_booking_info .booking_info form .booking_info_input{
+.boat_booking_info .customer_info .customer_form .customer_info_input,
+.boat_booking_info .booking_info .booking_form .booking_info_input{
     display: flex;
     flex-direction: column;
     gap: 5px;
     font-weight: 500;
 }
 
-.boat_booking_info .customer_info form .customer_info_input input,
-.boat_booking_info .booking_info form .booking_info_input input{
+.boat_booking_info .customer_info .customer_form .customer_info_input input,
+.boat_booking_info .booking_info .booking_form .booking_info_input input{
     padding: 8px 10px;
     border-radius: 5px;
     outline: none;
+    border: 1px solid darkmagenta;
 }
 
 input#person, input#age{

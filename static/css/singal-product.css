@@ -169,6 +169,10 @@ img {
 
 .purchase-info .btn:first-of-type {
     background: darkmagenta;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 .purchase-info .btn:hover {

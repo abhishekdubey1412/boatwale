@@ -15,7 +15,7 @@
 .blog_pt {
     border-radius: 5px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 20px;
@@ -65,7 +65,7 @@
 .blog_pt .blog .add-to-cart .addbtn {
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: #ffa600;
+    background-color: #000000;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -74,7 +74,7 @@
 }
 
 .blog_pt .blog .add-to-cart .addbtn:hover {
-    background-color: #ff7c00;
+    background-color: #000000de;
 }
 
 .pagination {

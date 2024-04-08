@@ -100,24 +100,18 @@
     align-items: center;
 }
 
-.offers .cards .card .cont_bx .price .heart_chat i:nth-child(1){
-    color: red;
-    font-size: 13px;
-    margin-right: 10px;
+
+.offers .cards .card .cont_bx .price .heart_chat svg,
+.destination .img_bx .msg .cont svg{
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
-.offers .cards .card .cont_bx .price .heart_chat i span{
-    color: #000;
+.offers .cards .card .cont_bx .price .heart_chat span,
+.destination .img_bx .msg .cont span{
     font-size: 12px;
-    margin-left: 3px;
-    font-style: normal;
 }
 
-.offers .cards .card .cont_bx .price .heart_chat i:nth-child(2){
-    color: #0022ff;
-    font-size: 13px;
-    margin-right: 10px;   
-}
 
 .offers .cards .card .cont_bx .price .info_price{
     display: flex;
@@ -261,23 +255,10 @@
     font-weight: 500;
 }
 
-.destination .img_bx .msg .cont .bi:nth-child(1){
-    color: red;
-    margin-right: 5px;
-    font-size: 13px;
-}
-
-.destination .img_bx .msg .cont .bi span{
-    font-style: normal;
-    margin-left: 3px;
-    font-size: 12px;
-    color: black;
-}
-
-.destination .img_bx .msg .cont .bi:nth-child(2){
-    color: #0022ff;
-    margin-right: 5px;
-    font-size: 13px;
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 1485px) {

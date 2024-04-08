@@ -1,26 +1,23 @@
-{% block cssblock %}
 {% load static %}
-    <link rel="stylesheet" href="{% static "css/header.css" %}">
-{% endblock cssblock %}
-    <header>
+<header>
         <div class="content">
             <div class="cont_bx">
-                <h1>The right desitination for you and your family</h1>
+                <h1>The right desitination for you and your faimly</h1>
                 <p>Creative taglines have the capability of capturing the attention of potential custumer.</p>
                 <button>Start your search</button>
             </div>
             <div class="trip_bx">
                 <div class="search_bx">
                     <div class="card">
-                        <label for="location">Location<i class="bi bi-caret-down-fill"></i></label>
+                        <label for="location">Location<svg class="bi bi-caret-down-fill" xmlns="http://www.w3.org/2000/svg" height="16" width="10.75" viewBox="0 55 367 307"><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></label>
                         <input type="text" id="location" placeholder="Enter your destination">
                     </div>
                     <div class="card">
-                        <label for="date">Date<i class="bi bi-caret-down-fill"></i></label>
+                        <label for="date">Date<svg class="bi bi-caret-down-fill" xmlns="http://www.w3.org/2000/svg" height="16" width="10.75" viewBox="0 55 367 307"><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></label>
                         <input type="date" id="date">
                     </div>
                     <div class="card">
-                        <label for="people">People<i class="bi bi-caret-down-fill"></i></label>
+                        <label for="people">People<svg class="bi bi-caret-down-fill" xmlns="http://www.w3.org/2000/svg" height="16" width="10.75" viewBox="0 55 367 307"><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></label>
                         <input type="number" id="people" placeholder="How many people">
                     </div>
                     <input type="button" value="Explore Now">
@@ -64,7 +61,4 @@
                 </div>
             </div>
         </div>
-    </header>
-{% block jsblock %}
-    <script src="{% static "js/header.js" %}"></script>
-{% endblock jsblock %}
+</header>

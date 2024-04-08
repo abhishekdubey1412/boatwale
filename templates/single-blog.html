@@ -6,8 +6,22 @@
 
 {% block content %}
     {% include "hero.html" %}
-    <article>
-        <!-- Blog post content goes here -->
+    <article class="single-post">
+        {% comment %} <h1>{{ content.title }}</h1> {% endcomment %}
+        <p class="post-date">Published on: <strong>{{ content.published_date }}</strong></p>
+        <img fetchpriority="high" loading="lazy" src="/media/{{content.featured_image}}" alt="{{ content.title }}">
+        {% comment %} <p>{{ content.description }}</p> {% endcomment %}
+        <div class="post-content">
+            {{ content.content|safe }}
+        </div>
+    </article>
+{% endblock content %}
+
+{% comment %} {% block jsblock %}
+    <script src="{% static "js/shop-product.js" %}"></script>
+{% endblock jsblock %} {% endcomment %}
+
+      {% comment %} <!-- Blog post content goes here -->
         <h1>Explore Varanasi: A Spiritual Journey</h1>
         <p>Nestled along the banks of the sacred River Ganges, Varanasi stands as an eternal symbol of spirituality,
             drawing millions of pilgrims, seekers, and tourists from across the globe. This ancient city, also known as
@@ -28,10 +42,4 @@
             who tread its hallowed streets. Whether you seek spiritual enlightenment, cultural immersion, or simply a
             glimpse into India's rich heritage, Varanasi offers an unforgettable journey of discovery. Come, immerse
             yourself in the spiritual heart of India, and let Varanasi's mystical essence leave an indelible mark on
-            your soul.</p>
-    </article>
-{% endblock content %}
-
-{% comment %} {% block jsblock %}
-    <script src="{% static "js/shop-product.js" %}"></script>
-{% endblock jsblock %} {% endcomment %}
+            your soul.</p> {% endcomment %}

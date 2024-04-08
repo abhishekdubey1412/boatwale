@@ -1,5 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from product.models import Tour, TourImage
+import razorpay
+from django.conf import settings
 
 # Create your views here.
 def product(request, slug):
@@ -19,6 +21,44 @@ def product(request, slug):
 def booking(request, slug):
     boat_product = get_object_or_404(Tour, slug=slug)
     product_images = TourImage.objects.filter(tour=boat_product)
+
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        contact_no = request.POST.get('number')
+        email = request.POST.get('email')
+        age = request.POST.get('age')
+        city = request.POST.get('city')
+        country = request.POST.get('country')
+        time_slot = request.POST.get('pickup_time')
+        pickup_ghat = request.POST.get('pickup_ghat')
+        date = request.POST.get('pickup_date')
+        route = request.POST.get('route')
+        person = request.POST.get('person')
+        amount = boat_product.new_price * int(person)
+        
+        client = razorpay.Client(auth=(settings.RAZORPAY_API_KEY, settings.RAZORPAY_API_SECRET))
+        payment_data = {
+            'amount': int(amount * 100),  # Amount in paise
+            'currency': 'INR',
+            'receipt': 'receipt#1',
+            'payment_capture': 1,  # Auto capture
+            'notes': {
+                'name': name,
+                'contact_no': contact_no,
+                'email': email,
+                'age': age,
+                'city': city,
+                'country': country,
+                'time_slot': time_slot,
+                'pickup_ghat': pickup_ghat,
+                'date': date,
+                'route': route,
+                'person': person
+            }
+        }
+        
+        payment = client.order.create(data=payment_data)
+        return render(request, 'checkout.html', {'payment': payment, 'boat_product': boat_product, 'amount': amount})
 
     context = {
         'title': "Booking Cart | Boatwale",
