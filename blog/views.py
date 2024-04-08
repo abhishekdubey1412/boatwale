@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Category, Post
 
 # Create your views here.
@@ -15,10 +15,12 @@ def blog(request):
     return render(request, 'blog.html', context=context)
 
 def post(request, slug):
-    post_content = Post.objects.get(slug=slug)
+    post_content = get_object_or_404(Post, slug=slug)
+        
     context = {
         'title': post_content.title,
         'description': post_content.description,
         'content': post_content
     }
+    
     return render(request, 'single-blog.html', context=context)

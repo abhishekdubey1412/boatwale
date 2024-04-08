@@ -1,0 +1,349 @@
+.offers {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    margin-top: 100px;
+    transition: 0.5s linear;
+}
+
+.offers h1{
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+.offers p{
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+
+.offers .cards{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.offers .cards .card{
+    position: relative;
+    width: 215px;
+    height: 350px;
+    margin: auto;
+}
+
+.offers .cards .card h2{
+    width: 140px;
+    padding: 6px 0;
+    background: rgb(165, 243, 165);
+    border-radius: 20px;
+    font-size: 12px;
+    display: grid;
+    place-items: center;
+    margin: auto;
+}
+
+.offers .cards .card .img_text{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-top: 5px;
+}
+
+.offers .cards .card .img_text img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+.offers .cards .card .img_text h3{
+    position: absolute;
+    font-size: 12px;
+    padding: 10px 15px;
+    bottom: 0;
+    margin: 0;
+    color: #fff;
+    z-index: 2;
+}
+
+.offers .cards .card .img_text h3::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255, .1);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+}
+
+.offers .cards .card .cont_bx{
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(180, 180, 180);
+    padding: 5px 0;
+    border-radius: 0 0 5px 5px;
+}
+
+.offers .cards .card .cont_bx .price, .days{
+    margin: 0 8px;
+}
+
+.offers .cards .card .cont_bx .price .heart_chat{
+    display: flex;
+    align-items: center;
+}
+
+
+.offers .cards .card .cont_bx .price .heart_chat svg,
+.destination .img_bx .msg .cont svg{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.offers .cards .card .cont_bx .price .heart_chat span,
+.destination .img_bx .msg .cont span{
+    font-size: 12px;
+}
+
+
+.offers .cards .card .cont_bx .price .info_price{
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.offers .cards .card .cont_bx .price .info_price a{
+    text-decoration: none;
+    color: #000;
+    font-size: 11px;
+    font-weight: 700;
+    transition: .3s linear;
+    margin-right: 13px;
+}
+
+.offers .cards .card .cont_bx .price .info_price a:hover{
+    color: gray;
+}
+
+.offers .cards .card .cont_bx .price .info_price h4{
+    margin: 0;
+    font-size: 13px;
+}
+
+.offers .cards .card .cont_bx .days{
+    color: #fff;
+    background: darkmagenta;
+    font-size: 8px;
+    border-radius: 50%;
+    padding: 10px 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.offers .cards .card .cont_bx .days:hover{
+    transform: rotate(360deg);
+}
+
+.destination{
+    width: 45%;
+    height: auto;
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.destination .des_bx, .img_bx{
+    position: relative;
+    width: 50%;
+    height: auto;
+}
+
+.destination .des_bx h4{
+    margin: 0;
+    font-size: 20px;
+    color: #000;
+    line-height: 10px;
+    letter-spacing: 1px;
+}
+
+.destination .des_bx p{
+    font-size: 12px;
+}
+
+.destination .des_bx ul{
+    padding: 0;
+}
+
+.destination .des_bx li{
+    list-style-type: none;
+    padding: 0px 0px 8px 0px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.destination .des_bx h5{
+    width: 250px;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 20px 0px;
+}
+
+.destination .des_bx button{
+    font-size: 12px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: darkmagenta;
+    color: #fff;
+    border: 2px solid darkmagenta;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.destination .des_bx button:hover{
+    background: #ffa432;
+    border: 2px solid #ffa432;
+}
+
+.destination .img_bx img{
+    width: 320px;
+    height: 420px;
+    border-radius: 5px;
+}
+
+.destination .img_bx .msg{
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    width: 160px;
+    height: 50px;
+    background: #fff;
+    box-shadow: 0px 5px 20px gray;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+
+.destination .img_bx .msg:nth-child(2){
+    top: 10%;
+    left: 55%; 
+}
+
+.destination .img_bx .msg img{
+    width: 33px;
+    height: 55%;
+    object-fit: cover;
+}
+
+.destination .img_bx .msg .cont{
+    margin-left: 15px;
+}
+
+.destination .img_bx .msg .cont h4{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1485px) {
+    .offers {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 1373px) {
+    .offers {
+        width: 72%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .offers {
+        width: 82%;
+    }
+
+    .destination {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .offers {
+        width: 95%;
+    }
+
+    .destination {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .destination {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 729px){
+    .offers{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .offers{
+        width: 85%;
+    }
+    .destination{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .destination .des_bx, .img_bx{
+        position: relative;
+        width: 55%;
+        height: auto;
+    }
+    .destination .des_bx{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .offers h1{
+        font-size: 22px;
+    }
+
+    .offers p{
+        font-size: 14px;
+    }
+
+    .offers .cards{
+        justify-content: center;
+    }
+
+    .destination .des_bx, .img_bx{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 411px){
+    .destination .img_bx .msg:nth-child(2){
+        left: 50%;
+    }
+}

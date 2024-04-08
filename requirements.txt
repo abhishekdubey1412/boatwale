@@ -10,8 +10,10 @@ django-appconf==1.0.6
 django-ckeditor==6.7.1
 django-compressor==4.4
 django-js-asset==2.2.0
+gunicorn==21.2.0
 idna==3.6
 oauthlib==3.2.2
+packaging==24.0
 pillow==10.2.0
 pycparser==2.22
 PyJWT==2.8.0
@@ -25,3 +27,4 @@ setuptools==69.2.0
 sqlparse==0.4.4
 tzdata==2024.1
 urllib3==2.2.1
+whitenoise==6.6.0

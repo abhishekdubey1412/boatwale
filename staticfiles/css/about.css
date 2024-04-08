@@ -1,0 +1,55 @@
+.content-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    color: #0077cc;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.tour-article {
+    margin-bottom: 20px;
+}
+
+.tour-article-title {
+    color: #555;
+    margin-top: 0;
+}
+
+.tour-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.tour-item {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.tour-item::before {
+    content: "\2022";
+    color: #0077cc;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+}
+
+.link {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

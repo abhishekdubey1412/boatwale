@@ -1,0 +1,43 @@
+.banner {
+    width: 80%;
+    margin: auto;
+    height: 200px;
+    background: linear-gradient(rgba(1, 1, 1, 0.226), rgba(7, 7, 7, 0.221)), url("../images/tour-images/varanasi-ghat.119a7beac5f0.webp") no-repeat center center/cover;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner h1 {
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+}
+
+.banner ol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    color: rgb(255, 166, 0);
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.banner ol li {
+    margin: 0 5px;
+}
+
+.banner ol li span {
+    color: white;
+}
+
+@media screen and (max-width: 1249px) {
+    .banner {
+        width: 94%;
+    }
+}

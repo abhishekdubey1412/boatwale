@@ -1,0 +1,122 @@
+.blog_sec{
+    width: 80%;
+    margin: auto;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.blog_ctg {
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.blog_pt {
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.blog_pt .blog {
+    flex-basis: calc(33.33% - 20px);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 3px 2px 2px rgb(0 0 0 / 35%);
+}
+
+.blog_pt .blog img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog_pt .blog h3 {
+    padding: 10px;
+}
+
+.blog_pt .blog p {
+    padding: 0 10px;
+}
+
+.blog_pt .blog h3,
+.blog_pt .blog p {
+    margin: 0;
+    white-space: pre-line;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.blog_pt .blog .add-to-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+.blog_pt .blog .add-to-cart .addbtn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 25px;
+}
+
+.blog_pt .blog .add-to-cart .addbtn:hover {
+    background-color: #000000de;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    color: #333;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.pagination a.active {
+    background-color: #ffa600;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.pagination a.prev,
+.pagination a.next {
+    background-color: #f4f4f4;
+}
+
+.pagination a.prev:hover,
+.pagination a.next:hover {
+    background-color: #ddd;
+}
+
+
+@media screen and (max-width: 768px) {
+    .blog_pt .blog {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .blog_pt .blog {
+        flex-basis: calc(100% - 20px);
+    }
+}

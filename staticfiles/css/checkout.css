@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+body { padding: 0.5rem !important; }
+
+.center-wrapper {
+    padding: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.center-wrapper .content {
+    margin: 0 auto;
+    max-width: 600px;
+    border: 1px solid lemonchiffon;
+    background: white;
+}
+
+.center-wrapper .bag,
+.center-wrapper .bag-total,
+.center-wrapper .help {
+    padding: 0.5rem 1rem;
+}
+
+.btn-go-checkout {
+    color: white;
+}
+
+.center-wrapper a {
+    text-decoration: none;
+    color: blue;
+}
+
+.center-wrapper .logo {
+    font-family: "Space Mono", sans-serif;;
+}
+
+.center-wrapper .logo,
+button {
+    text-transform: uppercase;
+}
+
+.center-wrapper .fa-search,
+.center-wrapper .fa-arrow-left,
+.center-wrapper .fa-lock {
+    margin-right: 1rem;
+}
+
+.center-wrapper .bag-head::after,
+.center-wrapper .bag-total::before {
+    background: whitesmoke;
+}
+
+.center-wrapper .bag-head::after,
+.center-wrapper .bag-total::before{
+    display: block;
+}
+
+.center-wrapper .bag-head::after,
+.center-wrapper .bag-total::before,
+.center-wrapper .description-text,
+.center-wrapper .promo-checkbox {
+    margin: 0.5rem 0;
+}
+
+.center-wrapper .description-text{
+    margin: 0;
+    white-space: pre-line;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.center-wrapper .bag-head::after,
+.center-wrapper .bag-total::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+}
+
+.center-wrapper .muted {
+    color: grey;
+}
+
+.center-wrapper .change-delivery,
+.center-wrapper ::placeholder,
+.center-wrapper .product-code,
+.center-wrapper .help {
+    font-size: 0.8rem;
+}
+
+.center-wrapper h1 {
+    font-size: 1.6rem;
+}
+
+.center-wrapper h2 {
+    font-size: 1.4rem;
+}
+
+.center-wrapper .image {
+    width: 40%;
+}
+
+img.product-image {
+    max-width: 100%;
+    height: 100%;
+    object-fit: unset;
+    border-radius: 6px;
+}
+
+.center-wrapper .description {
+    padding-right: 1rem;
+    width: 60%;
+}
+
+.center-wrapper select {
+    padding: 0.3rem;
+    width: 60px;
+}
+
+.center-wrapper select,
+.center-wrapper button,
+.center-wrapper input[type="text"] {
+    height: 40px;
+}
+
+.center-wrapper button {
+    cursor: pointer;
+    width: 100px;
+    background: none;
+    border: 2px solid darkmagenta;
+    border-radius: 4px;
+}
+
+.center-wrapper .quantity-wrapper {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: 1rem 0 0.5rem;
+}
+
+.center-wrapper select {
+    width: 50px;
+    margin-right: 1rem;
+}
+
+.center-wrapper .bag-product,
+.center-wrapper .quantity-wrapper,
+.center-wrapper .subtotal,
+.center-wrapper .delivery,
+.center-wrapper .total,
+.center-wrapper .promo-code {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.center-wrapper .subtotal,
+.center-wrapper .delivery,
+.center-wrapper input[type="checkbox"],
+.center-wrapper .help {
+    margin-bottom: 0.5rem;
+}
+
+.center-wrapper .total {
+    margin-bottom: 1rem;
+}
+
+.center-wrapper .bag-product button,
+.center-wrapper .apply,
+.center-wrapper .change-delivery {
+    color: darkmagenta;
+}
+
+.center-wrapper input[type="text"],
+.center-wrapper .btn-go-checkout {
+    font-size: 1rem;
+}
+
+.center-wrapper input[type="text"] {
+    width: calc(100% - 100px - 1rem);
+    padding: 0.5rem;
+}
+
+.center-wrapper .btn-go-checkout {
+    margin-top: 1rem;
+    width: 100%;
+    height: 40px;
+    background: darkmagenta;
+}
+
+.center-wrapper .help {
+    text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+    .center-wrapper .bag-product{
+        flex-direction: column !important;
+    }
+
+    .center-wrapper .image {
+        width: 100%;
+    }
+
+    .center-wrapper .description {
+        padding-right: 1rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .promo-code {
+        flex-direction: column;
+    }
+
+    .center-wrapper input[type="text"] {
+        width: 100%;
+    }
+}

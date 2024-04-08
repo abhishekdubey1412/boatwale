@@ -19,29 +19,4 @@ def dashboard(request):
         'user_pk': user_pk,
     }
 
-    return render(request, 'dashboard/dashboard.html', context=context)
-
-
-def main_dashboard(request):
-    return render(request, 'main-dashboard/pages/dashboard.html')
-
-def main_tables(request):
-    return render(request, 'main-dashboard/pages/tables.html')
-
-def main_billing(request):
-    return render(request, 'main-dashboard/pages/billing.html')
-
-def main_profile(request):
-    return render(request, 'main-dashboard/pages/profile.html')
-
-def main_vr(request):
-    return render(request, 'main-dashboard/pages/virtual-reality.html')
-
-def main_profile(request):
-    return render(request, 'main-dashboard/pages/profile.html')
-
-def main_sing_in(request):
-    return render(request, 'main-dashboard/pages/sign-in.html')
-
-def main_sing_up(request):
-    return render(request, 'main-dashboard/pages/sign-up.html')
+    return render(request, 'dashboard.html', context=context)

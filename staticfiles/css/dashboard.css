@@ -1,0 +1,67 @@
+#myChart1, #myChart2, #myChart3, #myChart4 {
+  max-width: 500px;
+  margin: 20px auto; /* Add some margin to separate the chart from surrounding elements */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .sidebar {
+    background-color: #f4f4f4;
+    width: 200px;
+    padding: 20px;
+    border-right: 1px solid #ccc; /* Add a border to separate sidebar from main content */
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #ddd; /* Change background color on hover */
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }  

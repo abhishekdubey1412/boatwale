@@ -1,0 +1,14 @@
+article {
+    width: 60%;
+    margin: auto;
+    min-height: 500px;
+}
+
+article p {
+    line-height: 1.6;
+}
+
+article img{
+    width: 100%;
+    object-fit: cover;
+}
