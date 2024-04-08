@@ -2,13 +2,11 @@
     width: 80%;
     margin: auto;
     min-height: 100vh;
-    padding: 20px;
 }
 
 .blog_ctg {
     border-radius: 5px;
     margin-top: 20px;
-    padding: 20px;
     background-color: #fff;
 }
 
@@ -35,10 +33,11 @@
     object-fit: cover;
 }
 
-.blog_pt .blog h3 {
-    padding: 10px;
+.blog_pt .blog h3{
+    margin-bottom: 10px !important;
 }
 
+.blog_pt .blog h3, 
 .blog_pt .blog p {
     padding: 0 10px;
 }
@@ -111,12 +110,19 @@
 
 @media screen and (max-width: 768px) {
     .blog_pt .blog {
-        flex-basis: calc(50% - 20px);
+        flex-basis: 48%;
+        margin: auto;
     }
 }
 
 @media screen and (max-width: 576px) {
     .blog_pt .blog {
-        flex-basis: calc(100% - 20px);
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 1249px) {
+    .blog_sec {
+        width: 94%;
     }
 }

@@ -12,3 +12,9 @@ article img{
     width: 100%;
     object-fit: cover;
 }
+
+@media screen and (max-width: 1249px) {
+    article {
+        width: 94%;
+    }
+}
