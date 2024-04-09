@@ -5,13 +5,13 @@
 }
 
 .blog_ctg {
-    border-radius: 5px;
+    border-radius: 6px;
     margin-top: 20px;
     background-color: #fff;
 }
 
 .blog_pt {
-    border-radius: 5px;
+    border-radius: 6px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -21,7 +21,7 @@
 
 .blog_pt .blog {
     flex-basis: calc(33.33% - 20px);
-    border-radius: 5px;
+    border-radius: 6px;
     overflow: hidden;
     background-color: #fff;
     box-shadow: 3px 2px 2px rgb(0 0 0 / 35%);
@@ -69,7 +69,7 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    border-radius: 25px;
+    border-radius: 6px;
 }
 
 .blog_pt .blog .add-to-cart .addbtn:hover {

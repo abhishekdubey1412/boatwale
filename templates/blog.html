@@ -2,6 +2,82 @@
 {% load static %}
 {% block cssblock %}
     <link rel="stylesheet" href="{% static "css/blog.css" %}">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Boatwale - Blog",
+        "url": "https://boatwale.com/blog/"
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Boatwale",
+          "url": "https://boatwale.com",
+          "logo": "../static/images/favicon/boatwale_logo.png",
+          "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+917376096419",
+          "contactType": "customer service"
+          },
+          "sameAs": [
+          "https://facebook.com/boatwale",
+          "https://twitter.com/boatwale",
+          "https://linkedin.com/company/boatwale"
+          ]
+      }
+    </script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@id": "https://boatwale.com",
+                "name": "Home"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@id": "https://boatwale.com/blog/",
+                "name": "Boatwale Category"
+              }
+            }
+          ]
+        }
+        </script>
+
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "ItemList",
+              "name": "Boatwale Categories",
+              "description": "{{ description|safe }}",
+              "itemListElement": [
+                {% for category in categories %}
+                {
+                  "@type": "ListItem",
+                  "position": {{ forloop.counter }},
+                  "item": {
+                    "@type": "Thing",
+                    "name": "{{ category|safe }}"
+                  }
+                }{% if not forloop.last %},{% endif %}
+                {% endfor %}
+              ]
+            }
+        </script>
+
 {% endblock cssblock %}
 
 {% block content %}

@@ -33,7 +33,7 @@ section.booking{
 .boat_booking_info .customer_info .customer_form .customer_info_input input,
 .boat_booking_info .booking_info .booking_form .booking_info_input input{
     padding: 8px 10px;
-    border-radius: 5px;
+    border-radius: 6px;
     outline: none;
     border: 1px solid #000000;
 }
@@ -46,7 +46,7 @@ input#person, input#age{
     width: 300px;
     height: 400px;
     flex-basis: calc(33.33% - 20px);
-    border-radius: 5px;
+    border-radius: 6px;
     overflow: hidden;
     background-color: #fff;
     box-shadow: 3px 2px 2px rgb(0 0 0 / 35%);
@@ -99,7 +99,7 @@ input#person, input#age{
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    border-radius: 25px;
+    border-radius: 6px;
 }
 
 .product_info .card .add-to-cart .addbtn a{

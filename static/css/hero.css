@@ -3,7 +3,7 @@
     margin: auto;
     height: 200px;
     background: linear-gradient(rgba(1, 1, 1, 0.226), rgba(7, 7, 7, 0.221)), url(../images/tour-images/varanasi-ghat.webp) no-repeat center center/cover;
-    border-radius: 5px;
+    border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: center;

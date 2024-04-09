@@ -1,7 +1,62 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block cssblock %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristAttraction",
+      "name": "{{boat_product.name}}",
+      "description": "{{boat_product.description}}",
+      "image": [
+        "{{boat_product.image}}"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Varanasi",
+        "addressRegion": "Uttar Pradesh",
+        "addressCountry": "India"
+      },
+      "telephone": "+917376096419",
+      "url": "https://boatwale.com/{{request.path}}",
+      "priceRange": "{{boat_product.price}}",
+      "touristType": "religious",
+      "offers": {
+        "@type": "Offer",
+        "price": "{{boat_product.price}}",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "always",
+        "url": "https://boatwale.com/{{request.path}}"
+      },
+      "duration": "{{boat_product.duration}}",
+      "provider": {
+        "@type": "Organization",
+        "name": "Boatwale",
+        "telephone": "7376096419",
+        "url": "https://boatwale.com/"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "isAccessibleForFree",
+          "value": "False"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "isFamilyFriendly",
+          "value": "True"
+        }
+      ],
+      "isPartOf": {
+        "@type": "Place",
+        "name": "Ganges River",
+        "alternateName": "River Ganga",
+        "url": "https://en.wikipedia.org/wiki/Ganges"
+      }
+    }
+  </script>
+  
+
   <link rel="stylesheet" href="{% static "css/singal-product.css" %}">
 {% endblock cssblock %}
 
@@ -100,56 +155,6 @@
 {% endblock content %}
 
 {% block jsblock %}
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristAttraction",
-    "name": "{{boat_product.name}}",
-    "description": "{{boat_product.description}}",
-    "image": [
-      "{{boat_product.image}}"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Varanasi",
-      "addressRegion": "Uttar Pradesh",
-      "addressCountry": "India"
-    },
-    "telephone": "7376096419",
-    "url": "URL_of_the_service_page",
-    "priceRange": "{{boat_product.price}}",
-    "touristType": "religious",
-    "touristTheme": "sunrise cruise",
-    "offers": {
-      "@type": "Offer",
-      "price": "{{boat_product.price}}",
-      "priceCurrency": "INR",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "always",
-      "url": "URL_of_the_service_page"
-    },
-    "performer": {
-      "@type": "Organization",
-      "name": "Boatwale",
-      "description": "Welcome to Boatwale, your trusted platform for discovering unique and memorable boat tours in Varanasi on the sacred Ganges River."
-    },
-    "duration": "PT2H",
-    "provider": {
-      "@type": "Organization",
-      "name": "Boatwale",
-      "telephone": "7376096419",
-      "url": "URL_of_the_service_page"
-    },
-    "isAccessibleForFree": "False",
-    "isFamilyFriendly": "True",
-    "isPartOf": {
-      "@type": "Place",
-      "name": "Ganges River",
-      "alternateName": "River Ganga",
-      "url": "https://en.wikipedia.org/wiki/Ganges"
-    }
-  }
-  </script>
   <script async src="{% static "js/singal-product.js" %}"></script>
   <script async src="https://kit.fontawesome.com/5d48644dd5.js" crossorigin="anonymous"></script>
 {% endblock jsblock %}

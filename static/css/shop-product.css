@@ -6,7 +6,7 @@ section.packages {
 }
 
 .category {
-    border-radius: 5px;
+    border-radius: 6px;
     margin-top: 20px;
     padding: 20px;
     background-color: #fff;
@@ -23,7 +23,7 @@ section.packages {
     padding: 10px 10px 10px 15px;
     font-size: 1rem;
     border: 1px solid #ccc;
-    border-radius: 25px 0px 0px 25px;
+    border-radius: 6px 0px 0px 6px;
     flex: 1;
     margin-right: -5px;
     outline: none;
@@ -35,17 +35,17 @@ section.packages {
     background-color: #000000;
     color: #fff;
     border: none;
-    border-radius: 0px 25px 25px 0px;
+    border-radius: 0px 6px 6px 0px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .category .sec_fit .search_bx button:hover {
-    background-color: rgb(210, 0, 210);
+    background-color: #393838;
 }
 
 .product {
-    border-radius: 5px;
+    border-radius: 6px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -55,7 +55,7 @@ section.packages {
 
 .product .card {
     flex-basis: calc(33.33% - 20px);
-    border-radius: 5px;
+    border-radius: 6px;
     overflow: hidden;
     background-color: #fff;
     box-shadow: 3px 2px 2px rgb(0 0 0 / 35%);
@@ -108,7 +108,7 @@ section.packages {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    border-radius: 25px;
+    border-radius: 6px;
 }
 
 .product .card .add-to-cart .addbtn a{
@@ -117,7 +117,7 @@ section.packages {
 }
 
 .product .card .add-to-cart .addbtn:hover {
-    background-color: rgb(236, 0, 236);
+    background-color: #393838;
 }
 
 .pagination {

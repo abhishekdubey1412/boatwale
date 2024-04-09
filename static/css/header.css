@@ -14,8 +14,8 @@ header .content::before{
     position: absolute;
     width: 100%;
     height: 80%;
-    background: url('../images/banner/varanasi-background-banner.webp') no-repeat center center/cover;
-    border-radius: 10px;
+    background: url('../images/banner/background.png') no-repeat center center/cover;
+    border-radius: 6px;
     z-index: -1;
 }
 
@@ -40,7 +40,7 @@ header .content .cont_bx p{
 header .content .cont_bx button{
     margin-top: 20px;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 6px;
     border: 2px solid #000000;
     background: #000000;
     color: #fff;
@@ -50,8 +50,8 @@ header .content .cont_bx button{
 }
 
 header .content .cont_bx button:hover{
-    background: #ffa432;
-    border: 2px solid #ffa432;
+    background: #393838;
+    border: 2px solid #393838;
 }
 
 header .trip_bx{
@@ -71,7 +71,7 @@ header .trip_bx .search_bx{
     align-items: center;
     justify-content: center;
     background: #fff;
-    border-radius: 5px;
+    border-radius: 6px;
     box-shadow: 0px 10px 25px rgb(114, 114, 114);
     z-index: 1;
     padding: 10px 20px;
@@ -113,13 +113,13 @@ header .trip_bx .search_bx input[type="button"]{
     border: none;
     outline: none;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 6px;
     transition: .3s linear;
     cursor: pointer;
 }
 
 header .trip_bx .search_bx input[type="button"]:hover{
-    background: #ffa432;
+    background: #393838;
 }
 
 header .trip_bx .travel_bx{
@@ -128,7 +128,7 @@ header .trip_bx .travel_bx{
     height: auto;
     margin: auto;
     top: 30px;
-    border-radius: 10px;
+    border-radius: 6px;
     padding-bottom: 20px;
     box-shadow: 0px 20px 25px -10px rgb(165, 165, 165);
 }
@@ -138,7 +138,7 @@ header .trip_bx .travel_bx::before{
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 6px;
     background: rgb(241, 241, 241, .7);
     backdrop-filter: blur(5px);
     z-index: -1;
@@ -194,14 +194,14 @@ header .trip_bx .travel_bx .cards .card .btn_city a{
     text-decoration: none;
     background: #000000;
     color: #fff;
-    border-radius: 20px;
+    border-radius: 6px;
     padding: 6px 20px;
     font-size: 11px;
     transition: .3s linear;
 }
 
 header .trip_bx .travel_bx .cards .card .btn_city a:hover{
-    background: #ffa432;
+    background: #393838;
 }
 
 header .trip_bx .travel_bx .cards .card .btn_city h4{
@@ -259,7 +259,7 @@ header .trip_bx .travel_bx .cards .card .btn_city h4 span{
     }
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 684px){
     header .trip_bx .search_bx .card{
         width: 140px;
     }
@@ -288,6 +288,7 @@ header .trip_bx .travel_bx .cards .card .btn_city h4 span{
 
     header .trip_bx .search_bx{
         width: 89%;
+        justify-content: space-between;
     }
 
     header .trip_bx .search_bx .card{

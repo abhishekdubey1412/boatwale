@@ -155,7 +155,7 @@ img {
 
 .purchase-info .btn {
     border: 1.5px solid #ddd;
-    border-radius: 25px;
+    border-radius: 6px;
     text-align: center;
     padding: 0.45rem 0.8rem;
     outline: 0;
@@ -193,7 +193,7 @@ img {
     color: #000;
     border: 1px solid #000;
     margin: 0 0.2rem;
-    border-radius: 50%;
+    border-radius: 6px;
     text-decoration: none;
     font-size: 0.8rem;
     transition: all 0.5s ease;

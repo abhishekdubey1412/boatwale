@@ -3,6 +3,83 @@
 {% block cssblock %}
     <link rel="stylesheet" href="{% static "css/home.css" %}">
     <link rel="stylesheet" href="{% static "css/header.css" %}">
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Boatwale",
+          "url": "https://boatwale.com"
+        }
+    </script>
+        
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Boatwale",
+        "url": "https://boatwale.com",
+        "logo": "../static/images/favicon/boatwale_logo.png",
+        "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+917376096419",
+        "contactType": "customer service"
+        },
+        "sameAs": [
+        "https://facebook.com/boatwale",
+        "https://twitter.com/boatwale",
+        "https://linkedin.com/company/boatwale"
+        ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Boat Services",
+          "description": "{{description}}",
+          "provider": {
+            "@type": "Organization",
+            "name": "Boatwale",
+            "url": "https://boatwale.com"
+          },
+          "areaServed": ["IN"],
+          "offers": {
+            "@type": "Offer",
+            "price": "2000",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock"
+          }
+        }
+    </script>
+        
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+            "@id": "https://boatwale.com",
+            "name": "Home"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+            "@id": "https://boatwale.com/boat-tours/",
+            "name": "Boat Tours"
+            }
+        }
+        ]
+    }
+    </script>
+        
 {% endblock cssblock %}
 
 {% block content %}

@@ -24,11 +24,12 @@
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
+    gap: 6px;
 }
 
 .offers .cards .card{
     position: relative;
-    width: 215px;
+    width: 250px;
     height: 350px;
     margin: auto;
 }
@@ -37,7 +38,7 @@
     width: 140px;
     padding: 6px 0;
     background: rgb(165, 243, 165);
-    border-radius: 20px;
+    border-radius: 6px;
     font-size: 12px;
     display: grid;
     place-items: center;
@@ -55,7 +56,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    border-radius: 10px 10px 0 0;
+    border-radius: 6px 6px 0 0;
     object-fit: cover;
 }
 
@@ -88,7 +89,7 @@
     justify-content: space-between;
     border: 1px solid rgb(180, 180, 180);
     padding: 5px 0;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 6px 6px;
 }
 
 .offers .cards .card .cont_bx .price, .days{
@@ -201,7 +202,7 @@
 .destination .des_bx button{
     font-size: 12px;
     padding: 8px 15px;
-    border-radius: 20px;
+    border-radius: 6px;
     background: #000000;
     color: #fff;
     border: 2px solid #000000;
@@ -210,14 +211,14 @@
 }
 
 .destination .des_bx button:hover{
-    background: #ffa432;
-    border: 2px solid #ffa432;
+    background: #393838;
+    border: 2px solid #393838;
 }
 
 .destination .img_bx img{
     width: 320px;
     height: 420px;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 .destination .img_bx .msg{
@@ -231,7 +232,7 @@
     display: flex;
     align-items: center;
     padding: 0px 10px;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 .destination .img_bx .msg:nth-child(2){

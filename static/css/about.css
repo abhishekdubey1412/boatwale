@@ -1,9 +1,13 @@
 .content-section {
     background-color: #ffffff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
+    margin: 20px auto;
+    border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.about-content{
+    padding: 20px;
 }
 
 .section-title {
@@ -34,17 +38,6 @@
     position: relative;
 }
 
-.tour-item::before {
-    content: "\2022";
-    color: #0077cc;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-    position: absolute;
-    left: 0;
-}
-
 .link {
     color: #0077cc;
     text-decoration: none;
@@ -52,4 +45,10 @@
 
 .link:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1249px) {
+    .content-section {
+        width: 94%;
+    }
 }

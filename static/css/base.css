@@ -14,7 +14,7 @@ nav{
 
 nav a{
     text-decoration: none;
-    color: #121213;
+    color: #000000;
 }
 
 nav h4{
@@ -39,7 +39,7 @@ nav ul li{
 
 nav ul li:nth-last-child(1){
     background: #000000;
-    border-radius: 20px;
+    border-radius: 6px;
     padding: 5px 20px;
     transition: .3s linear;
     cursor: pointer;
@@ -53,33 +53,8 @@ nav ul li:nth-last-child(1) a{
     gap: 7px;
 }
 
-/* nav ul li:nth-last-child(2)::before {
-    content: '1';
-    background: red;
-    padding: 1px 6px;
-    color: #fff;
-    position: relative;
-    top: -11px;
-    right: -18px;
-    font-size: 10px;
-    z-index: -1;
-    border-radius: 25px;
-} */
-
-nav ul li:nth-last-child(2) .card_total{
-    background: #ff5500;
-    padding: 1px 6px;
-    color: #fff;
-    position: relative;
-    top: -11px;
-    right: 49px;
-    font-size: 10px;
-    z-index: -1;
-    border-radius: 25px;
-}
-
 nav ul li:nth-last-child(1):hover{
-    background: rgb(210, 0, 210);
+    background: #393838;
 }
 
 nav ul li:nth-last-child(1) a{
@@ -136,7 +111,7 @@ footer .ff_p{
 
 footer .input_bx{
     box-shadow: 0px 3px 20px -1px gray;
-    border-radius: 20px;
+    border-radius: 6px;
 }
 
 footer .input_bx input{
@@ -144,7 +119,7 @@ footer .input_bx input{
     border: none;
     outline: none;
     font-size: 12px;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 6px 0px 0px 6px;
 }
 
 footer .input_bx button{
@@ -152,7 +127,7 @@ footer .input_bx button{
     border: none;
     outline: none;
     font-size: 12px;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0px 6px 6px 0px;
     background: #000000;
     color: #fff;
     cursor: pointer;
@@ -160,7 +135,7 @@ footer .input_bx button{
 }
 
 footer .input_bx button:hover{
-    background: rgb(210, 0, 210);
+    background: #393838;
 }
 
 footer ul{
@@ -224,7 +199,7 @@ footer ul li .fs_p{
         height: auto;
         flex-direction: column;
         background: #fff;
-        border-radius: 5px;
+        border-radius: 6px;
         box-shadow: 0px 0px 10px gray;
         justify-content: center;
         top: -100%;
