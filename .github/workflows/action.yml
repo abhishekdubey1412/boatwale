@@ -17,6 +17,7 @@ jobs:
         uses: webfactory/ssh-agent@v0.9.0
         with:
           ssh-private-key: ${{ secrets.EC2_PRIVATE_KEY }}
+          ssh-strict-host-key-checking: false
 
       - name: SSH into EC2 and Run Commands
         run: |
