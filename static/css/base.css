@@ -93,6 +93,7 @@ footer{
     justify-content: center;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
+    gap: 10px;
 }
 
 footer h2{
@@ -158,6 +159,33 @@ footer ul li .fs_p{
     line-height: 18px;
     border-top: 1px solid black;
     padding-top: 3px;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    margin-top: 21px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #000;
+    border: 1px solid #000;
+    margin: 0 0.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover {
+    background: #000000;
+    border-color: transparent;
+    color: #fff;
 }
 
 @media screen and (max-width: 580px){
