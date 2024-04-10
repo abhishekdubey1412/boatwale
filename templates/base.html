@@ -12,9 +12,10 @@
     <meta property="og:title" content="{{title}}">
     <meta property="og:description" content="{{description}}">
     <meta property="og:image" content="{{thumnail}}">
-    <meta property="og:url" content="https://boatwale.com{{request.path}}">
     <meta property="og:type" content="website, article, services">
     <meta property="og:url" content="{{ request.build_absolute_uri }}">
+    
+    <link rel="canonical" href="{{ request.build_absolute_uri }}" />
 
     <!-- Favicon -->
     <link rel="icon" href="{% static "images/favicon/icon.ico" %}" type="image/png" sizes="16x16">
