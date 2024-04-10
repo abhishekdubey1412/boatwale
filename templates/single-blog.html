@@ -9,7 +9,7 @@
     <article class="single-post">
         {% comment %} <h1>{{ content.title }}</h1> {% endcomment %}
         <p class="post-date">Published on: <strong>{{ content.published_date }}</strong></p>
-        <img fetchpriority="high" loading="lazy" src="/media/{{content.featured_image}}" alt="{{ content.title }}">
+        <img fetchpriority="high" loading="lazy" src="/media/{{content.featured_image}}" alt="{{ content.featured_alt }}">
         {% comment %} <p>{{ content.description }}</p> {% endcomment %}
         <div class="post-content">
             {{ content.content|safe }}
