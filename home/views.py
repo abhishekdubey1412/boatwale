@@ -14,6 +14,7 @@ def home(request):
         'title': "Boatwale - Explore Varanasi Boat Tours on the Ganges River",
         'description': 'Welcome to Boatwale, your trusted platform for discovering unique and memorable boat tours in Varanasi on the sacred Ganges River.',
         'keywords': "Varanasi boat tours, Ganges River experiences, Boatwale, boat rides, boat cruises, Varanasi travel, Ganges River tours",
+        'thumbnail': "../static/images/background.png/",
         'categories': boat,
         'products': products   
     }
