@@ -21,6 +21,7 @@ class Post(models.Model):
     description = models.CharField(max_length=170, null=True, blank=True)
     slug = models.SlugField(unique=True, null=False)
     featured_image = models.ImageField(upload_to='Post Featured Image/', null=True, blank=True)
+    featured_alt = models.CharField(max_length=100, null=True, blank=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, null=True, default=None)
     content = RichTextField(null=True, blank=True)
     published_date = models.DateTimeField(auto_now_add=True)

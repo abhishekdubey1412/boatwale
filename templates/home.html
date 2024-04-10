@@ -122,7 +122,7 @@
                 <div class="blog_pt">
                     {% for recent_post in recent_posts %}
                         <div class="blog">
-                            <img fetchpriority="high" loading="lazy" src="/media/{{recent_post.featured_image}}" alt="">
+                            <img fetchpriority="high" loading="lazy" src="/media/{{recent_post.featured_image}}" alt="{{recent_post.featured_alt}}">
                             <h3>{{recent_post.title}}</h3>
                             <p>{{recent_post.description}}</p>
                             <div class="add-to-cart">
