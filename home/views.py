@@ -1,22 +1,28 @@
 from .models import UserProfile
 from django.contrib.auth.models import User
 from product.models import Boat, Tour
+from blog.models import Post
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
+from django.utils import timezone
+from datetime import timedelta
 
 # Create your views here.
 
 def home(request):
     boat = Tour.objects.all()
     products = Boat.objects.all()
+    seven_days_ago = timezone.now() - timedelta(days=7)
+    recent_posts = Post.objects.filter(published_date__gte=seven_days_ago)
     context = {
         'title': "Boatwale - Explore Varanasi Boat Tours on the Ganges River",
         'description': 'Welcome to Boatwale, your trusted platform for discovering unique and memorable boat tours in Varanasi on the sacred Ganges River.',
         'keywords': "Varanasi boat tours, Ganges River experiences, Boatwale, boat rides, boat cruises, Varanasi travel, Ganges River tours",
         'thumbnail': "../static/images/background.png/",
         'categories': boat,
-        'products': products   
+        'products': products,
+        'recent_posts': recent_posts 
     }
     return render(request, 'home.html', context=context)
 
