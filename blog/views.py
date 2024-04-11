@@ -21,7 +21,7 @@ def post(request, slug):
         'title': post_content.title,
         'description': post_content.description,
         'content': post_content,
-        'thumnail': post_content.featured_image.url
+        'thumnail': post_content.featured_image
     }
     
     return render(request, 'single-blog.html', context=context)
