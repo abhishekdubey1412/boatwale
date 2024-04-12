@@ -27,10 +27,10 @@
                     <div class="cards">
                         {% for category in categories %}
                             <div class="card">
-                                <h3>Varanasi<img fetchpriority="high" loading="lazy" src="{% static "images/icons/varanasi-icon.webp" %}" alt="varanasi icon"></h3>
-                                <img fetchpriority="high" loading="lazy" src="{% static "images/tour-images/varanasi-tour.webp" %}" alt="varanasi tour">
+                                <h3>{{category.name}}</h3>
+                                <img fetchpriority="high" loading="lazy" src="{{image.url}}" alt="varanasi tour">
                                 <div class="btn_city">
-                                    <a href="">Read Now</a>
+                                    <a href="">Book Now</a>
                                     <h4>Varanasi Tour <br> <span>₹ 12,000</span></h4>
                                 </div>
                             </div>
