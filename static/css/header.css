@@ -165,13 +165,13 @@ header .trip_bx .travel_bx .cards .card{
     height: 180px;
 }
 
-header .trip_bx .travel_bx .cards .card h3{
+header .trip_bx .travel_bx .cards .card p{
     margin: 0px 0px 10px 0px;
     display: flex;
     align-items: center;
     font-size: 16px;
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: capitalize;
     overflow: hidden;
     width: -webkit-fill-available;
     text-overflow: ellipsis;
