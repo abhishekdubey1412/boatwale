@@ -168,6 +168,9 @@ footer ul li .fs_p{
     display: flex;
     align-items: center;
     margin-top: 21px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .social-links a {
