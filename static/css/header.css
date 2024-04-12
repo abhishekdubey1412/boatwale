@@ -156,6 +156,8 @@ header .trip_bx .travel_bx .cards{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: auto;
+    gap: 10px;
 }
 
 header .trip_bx .travel_bx .cards .card{
@@ -236,13 +238,8 @@ header .trip_bx .travel_bx .cards .card .btn_city h4 span{
         width: 70%;
     }
 
-    header .trip_bx .travel_bx .cards {
-        overflow: auto;
-    }
-
     header .trip_bx .travel_bx .cards .card {
         min-width: 220px;
-        margin-right: 10px;
     }
 }
 
