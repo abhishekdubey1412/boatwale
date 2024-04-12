@@ -25,6 +25,8 @@
     overflow: hidden;
     background-color: #fff;
     box-shadow: 3px 2px 2px rgb(0 0 0 / 35%);
+    text-decoration: none;
+    color: #000000;
 }
 
 .blog_pt .blog img {
