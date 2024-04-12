@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Category, Post
+from .models import Category, Post, Tag
+from django.views.generic import ListView
 
 # Create your views here.
 def blog(request):
@@ -25,3 +26,31 @@ def post(request, slug):
     }
     
     return render(request, 'single-blog.html', context=context)
+
+class CategoryDetailView(ListView):
+    model = Post
+    template_name = 'category_detail.html'  # Replace with your template name
+    context_object_name = 'posts'
+
+    def get_queryset(self):
+        self.category = get_object_or_404(Category, slug=self.kwargs['slug'])
+        return Post.objects.filter(category=self.category)
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['category'] = self.category
+        return context
+    
+class TagDetailView(ListView):
+    model = Post
+    template_name = 'tag_detail.html'  # Replace with your template name
+    context_object_name = 'posts'
+
+    def get_queryset(self):
+        self.tag = get_object_or_404(Tag, slug=self.kwargs['slug'])
+        return Post.objects.filter(tags=self.tag)
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['tag'] = self.tag
+        return context

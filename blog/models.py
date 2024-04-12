@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from ckeditor.fields import RichTextField
+from django.urls import reverse
 
 class Category(models.Model):
     name = models.CharField(max_length=100)
@@ -8,6 +9,9 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def get_absolute_url(self):
+        return reverse('category_detail', kwargs={'slug': self.slug})
 
 class Tag(models.Model):
     name = models.CharField(max_length=100)
@@ -15,6 +19,9 @@ class Tag(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def get_absolute_url(self):
+        return reverse('tag_detail', kwargs={'slug': self.slug})
 
 class Post(models.Model):
     title = models.CharField(max_length=70)
@@ -31,6 +38,9 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    
+    def get_absolute_url(self):
+        return reverse('post', kwargs={'slug': self.slug})
     
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE, null=True, default=None)

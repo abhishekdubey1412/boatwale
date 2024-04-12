@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from PIL import Image
+from django.urls import reverse
 import os
 
 class Boat(models.Model):
@@ -15,6 +16,9 @@ class Boat(models.Model):
     def __str__(self):
         return self.name
     
+    def get_absolute_url(self):
+        return reverse('boat-tours')
+    
 class Tour(models.Model):
     image = models.ImageField(upload_to='tours/', null=True, blank=True)
     name = models.CharField(max_length=200)
@@ -27,9 +31,14 @@ class Tour(models.Model):
     available_seats = models.IntegerField()
     start_date = models.DateField()
     end_date = models.DateField()
+    created_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+    update_at = models.DateTimeField(auto_now=True, null=True, blank=True)
 
     def __str__(self):
         return self.name
+    
+    def get_absolute_url(self):
+        return reverse('boat-packages', kwargs={'slug': self.slug})
 
 class TourImage(models.Model):
     image = models.ImageField(upload_to='tours-packages/', null=True, blank=True)
