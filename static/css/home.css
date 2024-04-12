@@ -205,6 +205,11 @@
     font-weight: 500;
 }
 
+.destination .des_bx li a{
+    color: #393838;
+    text-decoration: none;
+}
+
 .destination .des_bx h5{
     width: 250px;
     font-size: 12px;
