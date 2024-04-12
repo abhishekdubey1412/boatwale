@@ -170,6 +170,10 @@ header .trip_bx .travel_bx .cards .card h3{
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
+    overflow: hidden;
+    width: -webkit-fill-available;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 header .trip_bx .travel_bx .cards .card h3 img{
