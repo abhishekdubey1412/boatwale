@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /admin/
 Disallow: /dashboard/
 Disallow: /booking?sort=asc
-Sitemap: https://www.yourwebsite.com/sitemap.xml
+Sitemap: https://www.boatwale.com/sitemap.xml
