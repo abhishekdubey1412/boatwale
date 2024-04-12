@@ -121,15 +121,15 @@
             <div class="blog_ctg">
                 <div class="blog_pt">
                     {% for recent_post in recent_posts %}
-                    <a href="{% url 'post' slug=recent_post.slug %}" >
-                        <div class="blog">
+                    <a class="blog" href="{% url 'post' slug=recent_post.slug %}" >
+                        {% comment %} <div > {% endcomment %}
                             <img fetchpriority="high" loading="lazy" src="/media/{{recent_post.featured_image}}" alt="{{recent_post.featured_alt}}">
                             <h3>{{recent_post.title}}</h3>
                             <p>{{recent_post.description}}</p>
                             <div class="add-to-cart">
                                 <button class="addbtn">click here</button>
                             </div>
-                        </div>
+                        {% comment %} </div> {% endcomment %}
                     </a>
                     {% endfor %}
                 </div>
