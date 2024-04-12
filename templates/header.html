@@ -25,15 +25,17 @@
                 <div class="travel_bx">
                     <h2>States to travel</h2>
                     <div class="cards">
-                        <div class="card">
-                            <h3>Varanasi<img fetchpriority="high" loading="lazy" src="{% static "images/icons/varanasi-icon.webp" %}" alt="varanasi icon"></h3>
-                            <img fetchpriority="high" loading="lazy" src="{% static "images/tour-images/varanasi-tour.webp" %}" alt="varanasi tour">
-                            <div class="btn_city">
-                                <a href="">Read Now</a>
-                                <h4>Varanasi Tour <br> <span>₹ 12,000</span></h4>
+                        {% for category in categories %}
+                            <div class="card">
+                                <h3>Varanasi<img fetchpriority="high" loading="lazy" src="{% static "images/icons/varanasi-icon.webp" %}" alt="varanasi icon"></h3>
+                                <img fetchpriority="high" loading="lazy" src="{% static "images/tour-images/varanasi-tour.webp" %}" alt="varanasi tour">
+                                <div class="btn_city">
+                                    <a href="">Read Now</a>
+                                    <h4>Varanasi Tour <br> <span>₹ 12,000</span></h4>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card">
+                        {% endfor %}
+                        {% comment %} <div class="card">
                             <h3>Vrindavan<img fetchpriority="high" loading="lazy" src="{% static "images/icons/vrindavan-icon.webp" %}" alt="vrindavan icon"></h3>
                             <img fetchpriority="high" loading="lazy" src="{% static "images/tour-images/vrindavan-tour.webp" %}" alt="vrindavan tour">
                             <div class="btn_city">
@@ -56,7 +58,7 @@
                                 <a href="">Read Now</a>
                                 <h4>Bodhgaya Tour <br> <span>₹ 5,000</span></h4>
                             </div>
-                        </div>
+                        </div> {% endcomment %}
                     </div>
                 </div>
             </div>
