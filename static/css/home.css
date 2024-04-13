@@ -267,10 +267,6 @@
     .offers {
         width: 65%;
     }
-
-    .destination .img_bx .msg:nth-child(2){
-        left: 43%;
-    }
 }
 
 @media screen and (max-width: 1373px) {
