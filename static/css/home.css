@@ -171,6 +171,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 
 .destination .des_bx, .img_bx{
@@ -268,7 +269,7 @@
     align-items: center;
 }
 
-/* @media screen and (max-width: 1485px) {
+@media screen and (max-width: 1485px) {
     .offers {
         width: 65%;
     }
@@ -288,15 +289,15 @@
     .destination {
         width: 55%;
     }
-} */
+}
 
 @media screen and (max-width: 1100px) {
     .offers {
-        width: 84%;
+        width: 90%;
     }
 
     .destination {
-        width: 60%;
+        width: 84%;
     }
 }
 
