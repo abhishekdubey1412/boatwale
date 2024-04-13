@@ -305,7 +305,11 @@
     .destination{
         flex-direction: column-reverse;
     }
-
+    
+    .destination .des_bx{
+        width: 94%;
+    }
+    
     .destination .img_bx img{
         width: -webkit-fill-available;
         height: auto;
