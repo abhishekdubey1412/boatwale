@@ -110,7 +110,7 @@ footer h2{
 footer .ff_p{
     text-align: center;
     width: 400px;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 footer .input_bx{
@@ -130,7 +130,6 @@ footer .input_bx button{
     padding: 10px 20px;
     border: none;
     outline: none;
-    font-size: 12px;
     border-radius: 0px 6px 6px 0px;
     background: #000000;
     color: #fff;
@@ -155,7 +154,7 @@ footer ul li{
 }
 
 footer ul li .fs_p{
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 600;
     max-width: 120px;
     margin: 0;

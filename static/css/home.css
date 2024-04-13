@@ -73,7 +73,7 @@
 
 .offers .cards .card .img_text h3{
     position: absolute;
-    font-size: 12px;
+    font-size: 14px;
     padding: 10px 15px;
     bottom: 0;
     margin: 0;
@@ -133,7 +133,7 @@
 .offers .cards .card .cont_bx .price .info_price a{
     text-decoration: none;
     color: #000;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 700;
     transition: .3s linear;
     margin-right: 13px;
@@ -181,14 +181,10 @@
 
 .destination .des_bx h4{
     margin: 0;
-    font-size: 20px;
+    font-size: 24px;
     color: #000;
     line-height: 10px;
     letter-spacing: 1px;
-}
-
-.destination .des_bx p{
-    font-size: 12px;
 }
 
 .destination .des_bx ul{
@@ -200,7 +196,7 @@
 .destination .des_bx li{
     list-style-type: none;
     padding: 0px 0px 8px 0px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -211,13 +207,12 @@
 
 .destination .des_bx h5{
     width: 250px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     margin: 20px 0px;
 }
 
 .destination .des_bx button{
-    font-size: 12px;
     padding: 8px 15px;
     border-radius: 6px;
     background: #000000;
