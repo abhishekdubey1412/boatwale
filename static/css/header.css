@@ -106,7 +106,7 @@ header .trip_bx .search_bx .card select{
     border: 1px solid #ddd;
     outline: none;
     font-size: 13px;
-    width: 50%;
+    width: 64%;
 }
 
 header .trip_bx .search_bx input[type="button"]{
