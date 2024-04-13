@@ -257,13 +257,3 @@ footer ul li .fs_p{
         margin-right: 20px;
     }
 }
-
-@media screen and (max-width: 380px){
-    .destination .img_bx img {
-        height: 360px;
-    }
-
-    .destination .img_bx .msg:nth-child(2) {
-        left: 40%;
-    }
-}
