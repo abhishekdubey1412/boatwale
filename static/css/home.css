@@ -182,6 +182,7 @@
 
 .destination .des_bx h4{
     font-size: 25px;
+    line-height: 0;
 }
 
 .destination .des_bx li{
