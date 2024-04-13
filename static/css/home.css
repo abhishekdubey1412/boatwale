@@ -286,9 +286,9 @@
         width: 82%;
     }
 
-    .destination {
+    /* .destination {
         width: 55%;
-    }
+    } */
 }
 
 @media screen and (max-width: 1100px) {
@@ -296,15 +296,15 @@
         width: 90%;
     }
 
-    .destination {
+    /* .destination {
         width: 84%;
-    }
+    } */
 }
 
 @media screen and (max-width: 950px) {
-    .destination {
+    /* .destination {
         width: 75%;
-    }
+    } */
 }
 
 @media screen and (max-width: 729px){
