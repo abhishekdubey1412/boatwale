@@ -304,7 +304,7 @@ header .trip_bx .travel_bx .cards .card .btn_city h4 span{
 
 @media screen and (max-width: 411px){
     header .content::before{
-        height: 95%;
+        height: 90%;
     }
 
     .cont_bx p,
