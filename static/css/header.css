@@ -307,8 +307,8 @@ header .trip_bx .travel_bx .cards .card .btn_city h4 span{
         height: 90%;
     }
 
-    .cont_bx p,
-    .cont_bx h1 {
+    .header .content .cont_bx p,
+    .header .content .cont_bx h1 {
         width: -webkit-fill-available;
     }
 
