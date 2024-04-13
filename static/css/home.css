@@ -196,6 +196,8 @@
 
 .destination .des_bx ul{
     padding: 0;
+    flex-direction: column;
+    gap: 2px;
 }
 
 .destination .des_bx li{
