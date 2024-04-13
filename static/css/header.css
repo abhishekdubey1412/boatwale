@@ -324,7 +324,7 @@ header .trip_bx .travel_bx .cards .card .btn_city h4 span{
         width: 88%;
         flex-direction: column;
         height: auto;
-        gap: 10px;
+        gap: 15px;
         align-items: flex-start;
     }
 
