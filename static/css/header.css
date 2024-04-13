@@ -99,12 +99,14 @@ header .trip_bx .search_bx .card label .bi{
     transition: .3s linear;
 }
 
-header .trip_bx .search_bx .card input{
+header .trip_bx .search_bx .card input,
+header .trip_bx .search_bx .card select{
     margin-top: 3px;
-    padding: 5px 0px;
-    border: none;
+    padding: 5px 5px;
+    border: 1px solid #ddd;
     outline: none;
     font-size: 13px;
+    width: 50%;
 }
 
 header .trip_bx .search_bx input[type="button"]{
