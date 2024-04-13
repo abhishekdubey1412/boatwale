@@ -302,9 +302,9 @@
 }
 
 @media screen and (max-width: 950px) {
-    /* .destination {
-        width: 75%;
-    } */
+    .destination {
+        width: 94%;
+    }
 }
 
 @media screen and (max-width: 729px){
