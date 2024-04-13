@@ -305,6 +305,11 @@
     .destination{
         flex-direction: column-reverse;
     }
+
+    .destination .img_bx img{
+        width: -webkit-fill-available;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 729px){
@@ -318,16 +323,7 @@
     .offers{
         width: 85%;
     }
-    .destination{
-        width: 100%;
-        flex-direction: column-reverse;
-    }
 
-    .destination .des_bx, .img_bx{
-        position: relative;
-        width: 55%;
-        height: auto;
-    }
     .destination .des_bx{
         margin-top: 30px;
     }
