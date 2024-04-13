@@ -184,15 +184,8 @@
     font-size: 25px;
 }
 
-.destination .des_bx ul{
-    padding: 0;
-    flex-direction: column;
-    gap: 2px;
-}
-
 .destination .des_bx li{
-    list-style-type: none;
-    padding: 0px 0px 8px 0px;
+    padding: 0px 0px 5px 0px;
     font-size: 14px;
     font-weight: 500;
 }
