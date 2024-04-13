@@ -259,8 +259,8 @@
 }
 
 .destination .img_bx .msg img{
-    width: 33px;
-    height: 55%;
+    width: 33px !important;
+    height: 55% !important;
     object-fit: cover;
 }
 
