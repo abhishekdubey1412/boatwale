@@ -150,15 +150,15 @@
     </div>
     <div class="destination">
         <div class="des_bx">
-            <h4>Our Destination</h4>
-            <p>choose your next Destination</p>
+            <h4>Book Your Boat Tour Today!</h4>
+            <p>Choose your next boat ride with Boatwale.</p>
             <ul>
                 {% for category in categories %}
                 <li><a href="{% url "product" category.slug %}" title="Learn more {{category.name}}">{{category.name}}</a></li>
                 {% endfor %}
             </ul>
-            <h5>Included: Air ticket, Hotel, Breakfast, Tours, Airport transfer</h5>
-            <a href="{% url "about" %}"><button>MORE INFO</button></a>
+            <h5>Ready to explore Varanasi's Ganges River with Boatwale? Browse our selection of boat tours, choose your preferred itinerary, and book your unforgettable boating adventure online today!</h5>
+            <a href="{% url "boat-tours" %}"><button>Explore Boat Tours</button></a>
         </div>
         <div class="img_bx">
             <img fetchpriority="high" loading="lazy" src="{% static "images/banner/varanasi-boatwale.webp" %}" alt="varanasi boatwale image">
