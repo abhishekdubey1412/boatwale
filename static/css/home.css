@@ -309,7 +309,7 @@
     .destination .des_bx{
         width: 94%;
     }
-    
+
     .destination .img_bx img{
         width: -webkit-fill-available;
         height: auto;
@@ -351,7 +351,7 @@
     } */
 
     .destination .des_bx h4{
-        line-height: 0;
+        line-height: normal;
     }
 }
 
