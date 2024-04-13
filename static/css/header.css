@@ -321,7 +321,7 @@ header .trip_bx .travel_bx .cards .card .btn_city h4 span{
     }
 
     header .trip_bx .search_bx {
-        width: 75%;
+        width: 88%;
         flex-direction: column;
         height: auto;
         gap: 10px;
