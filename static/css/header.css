@@ -300,3 +300,31 @@ header .trip_bx .travel_bx .cards .card .btn_city h4 span{
         width: 100%;
     }
 }
+
+
+@media screen and (max-width: 411px){
+    header .content::before{
+        height: 95%;
+    }
+
+    .cont_bx p,
+    .cont_bx h1 {
+        width: -webkit-fill-available;
+    }
+
+    .cont_bx a {
+        display: none;
+    }
+
+    header .trip_bx .travel_bx{
+        visibility: hidden;
+    }
+
+    header .trip_bx .search_bx {
+        width: 75%;
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}
