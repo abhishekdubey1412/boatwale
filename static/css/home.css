@@ -366,7 +366,7 @@
     }
 
     .offers .cards .card{
-        width: auto;
+        width: -webkit-fill-available;
     }
 
     .offers h2, .blog_section h2 {
