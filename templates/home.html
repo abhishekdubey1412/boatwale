@@ -150,7 +150,7 @@
             <p>choose your next Destination</p>
             <ul>
                 {% for category in categories %}
-                <li><a href="{% url "product" category.slug %}">{{category.name}}</a></li>
+                <li><a href="{% url "product" category.slug %}" title="Learn more {{category.name}}" style="min-width: 150px; padding: 10px;">{{category.name}}</a></li>
                 {% endfor %}
             </ul>
             <h5>Included: Air ticket, Hotel, Breakfast, Tours, Airport transfer</h5>
