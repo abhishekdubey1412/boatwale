@@ -362,6 +362,39 @@
 }
 
 @media screen and (max-width: 411px){
+    header .content::before{
+        height: 95%;
+    }
+
+    .cont_bx p,
+    .cont_bx h1 {
+        width: -webkit-fill-available;
+    }
+    
+    .cont_bx a {
+        display: none;
+    }
+
+    header .trip_bx .travel_bx{
+        visibility: hidden;
+    }
+
+    header .trip_bx .search_bx {
+        width: 75%;
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .offers{
+        margin-top: 0;
+    }
+
+    .offers h2, .blog_section h2 {
+        font-size: 1.7rem;
+    }
+
     .destination .img_bx .msg:nth-child(2){
         left: 50%;
     }
