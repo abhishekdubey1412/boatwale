@@ -48,10 +48,10 @@
 }
 
 .offers .cards .card h2{
-    width: 140px;
     padding: 6px 0;
-    background: rgb(165, 243, 165);
-    border-radius: 6px;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 6px 6px 0 0;
     font-size: 12px;
     display: grid;
     place-items: center;
@@ -62,14 +62,12 @@
     position: relative;
     width: 100%;
     height: 250px;
-    margin-top: 5px;
 }
 
 .offers .cards .card .img_text img{
     position: relative;
     width: 100%;
     height: 100%;
-    border-radius: 6px 6px 0 0;
     object-fit: cover;
 }
 
@@ -96,7 +94,6 @@
 }
 
 .offers .cards .card .cont_bx{
-    width: 99%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -366,6 +363,10 @@
 @media screen and (max-width: 412px){
     .offers{
         margin-top: 0;
+    }
+
+    .offers .cards .card{
+        width: auto;
     }
 
     .offers h2, .blog_section h2 {
