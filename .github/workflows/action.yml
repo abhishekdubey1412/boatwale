@@ -23,5 +23,6 @@ jobs:
           cd /home/ubuntu/boatwale
           git status
           git pull
+          sudo systemctl restart gunicorn.socket
           sudo nginx -t
           sudo systemctl reload nginx
