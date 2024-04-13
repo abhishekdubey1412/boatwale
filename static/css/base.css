@@ -249,8 +249,9 @@ footer ul li .fs_p{
 
 @media screen and (max-width: 411px){
     footer .ff_p{
-        width: 330px;
-        font-size: 12px;
+        width: -webkit-fill-available;
+        box-sizing: border-box;
+        padding: 0 11px;
     }
     footer ul li{
         margin-right: 20px;
