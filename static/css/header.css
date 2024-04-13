@@ -32,6 +32,7 @@ header .content .cont_bx h1{
 }
 
 header .content .cont_bx p{
+    font-size: 14px;
     font-weight: 400;
     color: rgb(241, 241, 241);
 }
