@@ -342,9 +342,9 @@
         justify-content: center;
     }
 
-    .destination .des_bx, .img_bx{
+    /* .destination .des_bx, .img_bx{
         width: 80%;
-    }
+    } */
 }
 
 @media screen and (max-width: 412px){
