@@ -290,6 +290,10 @@
         width: 90%;
     }
 
+    .destination .img_bx .msg:nth-child(2){
+        left: 43%;
+    }
+
     /* .destination {
         width: 84%;
     } */
@@ -298,10 +302,6 @@
 @media screen and (max-width: 965px) {
     .destination {
         width: 94%;
-    }
-
-    .destination .img_bx .msg:nth-child(2){
-        left: 43%;
     }
 }
 
