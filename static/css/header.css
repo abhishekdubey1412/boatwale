@@ -304,7 +304,10 @@ header .trip_bx .travel_bx .cards .card .btn_city h4 span{
 }
 
 
-@media screen and (max-width: 412px){
+@media screen and (max-width: 580px){
+    header .trip_bx .search_bx .card input, header .trip_bx .search_bx .card select{
+        width: -webkit-fill-available;
+    }
     header .content::before{
         height: 90%;
     }
