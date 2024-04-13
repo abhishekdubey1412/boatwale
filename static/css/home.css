@@ -370,6 +370,7 @@
 @media screen and (max-width: 380px){
     .destination .img_bx img {
         height: 360px !important;
+        width: -webkit-fill-available;
     }
 
     .destination .img_bx .msg:nth-child(2) {
