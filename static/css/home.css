@@ -301,9 +301,15 @@
     } */
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 965px) {
     .destination {
         width: 94%;
+    }
+}
+
+@media screen and (max-width: 866px){
+    .destination{
+        flex-direction: column-reverse;
     }
 }
 
@@ -312,6 +318,7 @@
         width: 75%;
     }
 }
+
 
 @media screen and (max-width: 650px){
     .offers{
