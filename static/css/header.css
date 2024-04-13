@@ -171,7 +171,7 @@ header .trip_bx .travel_bx .cards .card p{
     align-items: center;
     font-size: 16px;
     font-weight: 600;
-    text-transform: capitalize;
+    text-transform: lowercase;
     overflow: hidden;
     width: -webkit-fill-available;
     text-overflow: ellipsis;
