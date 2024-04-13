@@ -24,8 +24,8 @@ urlpatterns = [
     path('', include('blog.urls')),
     path('', include('about.urls')),
     path('', include('dashboard.urls')),
-    path('robots.txt/', TemplateView.as_view(template_name="robots.txt", content_type='text/plain')),
-    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
+    # path('robots.txt/', TemplateView.as_view(template_name="robots.txt", content_type='text/plain')),
+    # path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
 ] 
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
