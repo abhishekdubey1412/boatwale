@@ -345,6 +345,10 @@
     /* .destination .des_bx, .img_bx{
         width: 80%;
     } */
+
+    .destination .des_bx h4{
+        line-height: 0;
+    }
 }
 
 @media screen and (max-width: 412px){
