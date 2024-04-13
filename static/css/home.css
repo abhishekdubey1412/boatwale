@@ -379,6 +379,10 @@
     .destination .des_bx{
         width: 94%;
     }
+
+    .destination .des_bx h5{
+        width: -webkit-fill-available;
+    }
 }
 
 @media screen and (max-width: 380px){
