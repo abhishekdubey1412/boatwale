@@ -306,6 +306,10 @@
     .destination {
         width: 94%;
     }
+
+    .destination .img_bx{
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 866px){
@@ -315,10 +319,6 @@
     
     .destination .des_bx{
         width: 94%;
-    }
-
-    .destination .img_bx{
-        width: 70%;
     }
 
     .destination .img_bx img{
