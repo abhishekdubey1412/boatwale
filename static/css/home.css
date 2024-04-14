@@ -17,6 +17,10 @@
     margin-top: 20px;
 }
 
+.review_section{
+    width: 84%;
+}
+
 .blog_sec{
     min-height: auto !important;
 }
