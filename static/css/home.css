@@ -354,6 +354,17 @@
     } */
 }
 
+@media (max-width: 991px) {
+    .owl-carousel{
+        width: 100%;
+    }
+
+    .owl-carousel .item .content{
+        width: auto;
+        padding: 30px 5px;
+    }
+}
+
 @media screen and (max-width: 965px) {
     .destination {
         width: 94%;
