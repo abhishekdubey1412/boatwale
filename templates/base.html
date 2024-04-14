@@ -57,6 +57,9 @@
   
   <!-- Web App Manifest -->
   <link rel="manifest" href="{% static 'manifest.json' %}">
+
+  <link rel="preload" href="{% static 'js/main.js' %}" as="script">
+  <link rel="preload" href="https://kit.fontawesome.com/5d48644dd5.js" as="script">
   
   {% block cssblock %}{% endblock cssblock %}
   
@@ -118,7 +121,7 @@
 
     <!-- JavaScript -->
     {% block jsblock %}{% endblock jsblock %}
-    <script src="{% static 'js/main.js' %}"></script>
-    <script async src="https://kit.fontawesome.com/5d48644dd5.js" crossorigin="anonymous"></script>
+    {% comment %} <script src="{% static 'js/main.js' %}"></script> {% endcomment %}
+    {% comment %} <script async src="https://kit.fontawesome.com/5d48644dd5.js" crossorigin="anonymous"></script> {% endcomment %}
 </body>
 </html>
