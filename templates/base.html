@@ -120,29 +120,5 @@
     {% block jsblock %}{% endblock jsblock %}
     <script src="{% static 'js/main.js' %}"></script>
     <script async src="https://kit.fontawesome.com/5d48644dd5.js" crossorigin="anonymous"></script>
-    <script>
-      const images = document.querySelectorAll('img');
-    
-      const options = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-      };
-    
-      const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const img = entry.target;
-            const src = img.getAttribute('data-src');
-            img.setAttribute('src', src);
-            observer.unobserve(img);
-          }
-        });
-      }, options);
-    
-      images.forEach(img => {
-        observer.observe(img);
-      });
-    </script>    
 </body>
 </html>
