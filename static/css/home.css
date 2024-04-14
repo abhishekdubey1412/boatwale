@@ -6,14 +6,14 @@
     transition: 0.5s linear;
 }
 
-.offers h2, .blog_section h2{
+.offers h2, .blog_section h2, .review_section h2{
     font-weight: 600;
     text-align: center;
     margin: 0;
     font-size: 2rem;
 }
 
-.blog_section{
+.blog_section, .review_section{
     margin-top: 20px;
 }
 
@@ -21,7 +21,7 @@
     min-height: auto !important;
 }
 
-.offers p, .blog_section p{
+.offers p, .blog_section p, .review_section p{
     font-weight: 500;
     text-align: center;
     margin: 0;
@@ -364,7 +364,7 @@
         width: -webkit-fill-available;
     }
 
-    .offers h2, .blog_section h2 {
+    .offers h2, .blog_section h2, .review_section h2 {
         font-size: 1.7rem;
     }
 
