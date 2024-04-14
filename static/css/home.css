@@ -1,35 +1,32 @@
+/* General styles */
 .offers, .destination {
-    width: 60%;
-    height: auto;
+    width: 84%;
     margin: auto;
-    transition: 0.5s linear;
 }
 
 .offers {
+    height: auto;
     margin-top: 100px;
 }
 
-.offers h2, .blog_section h2, .review_section h2 {
+.destination {
+    margin-top: 70px;
+}
+
+/* Headings */
+.offers h2,
+.blog_section h2,
+.review_section h2 {
     font-weight: 600;
     text-align: center;
     margin: 0;
     font-size: 2rem;
 }
 
-.blog_section, .review_section {
-    margin-top: 20px !important;
-}
-
-.review_section {
-    width: 84%;
-    margin: auto;
-}
-
-.blog_sec {
-    min-height: auto !important;
-}
-
-.offers p, .blog_section p, .review_section p {
+/* Paragraphs */
+.offers p,
+.blog_section p,
+.review_section p {
     font-weight: 500;
     text-align: center;
     margin: 0;
@@ -39,6 +36,23 @@
     text-align: start;
 }
 
+/* Blog and Review sections */
+.blog_section,
+.review_section {
+    margin-top: 20px !important;
+}
+
+.review_section {
+    width: 84%;
+    margin: auto;
+}
+
+/* Blog section specific */
+.blog_sec {
+    min-height: auto !important;
+}
+
+/* Offers cards */
 .offers .cards {
     margin-top: 20px;
     display: flex;
@@ -66,6 +80,7 @@
     margin: auto;
 }
 
+/* Offers cards image and text */
 .offers .cards .card .img_text {
     position: relative;
     width: 100%;
@@ -101,6 +116,7 @@
     bottom: 0;
 }
 
+/* Offers cards content box */
 .offers .cards .card .cont_bx {
     display: flex;
     align-items: center;
@@ -110,16 +126,13 @@
     border-radius: 0 0 6px 6px;
 }
 
-.offers .cards .card .cont_bx .price, .days {
+.offers .cards .card .cont_bx .price,
+.offers .cards .card .cont_bx .days {
     margin: 0 8px;
 }
 
-.offers .cards .card .cont_bx .price .heart_chat {
-    display: flex;
-    align-items: center;
-}
-
-.offers .cards .card .cont_bx .price .heart_chat svg,
+/* Price and heart/chat icon */
+.offers .cards .card .cont_bx .price .heart_chat,
 .destination .img_bx .msg .cont svg {
     margin-right: 5px;
     margin-left: 5px;
@@ -130,8 +143,8 @@
     font-size: 12px;
 }
 
-.offers .cards .card .cont_bx .price .info_price,
-.destination .des_bx button {
+/* Price info and link */
+.offers .cards .card .cont_bx .price .info_price {
     display: flex;
     align-items: center;
     margin-top: 3px;
@@ -155,6 +168,7 @@
     font-size: 13px;
 }
 
+/* Days box */
 .offers .cards .card .cont_bx .days {
     color: #fff;
     background: #000000;
@@ -170,6 +184,7 @@
     transform: rotate(360deg);
 }
 
+/* Owl Carousel */
 .owl-carousel {
     width: 1170px;
     margin: auto;
@@ -186,6 +201,7 @@
     box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 10%);
 }
 
+/* Carousel image area */
 .owl-carousel .item .content .image-area {
     position: relative;
     overflow: hidden;
@@ -202,6 +218,7 @@
     width: 100%;
 }
 
+/* Carousel text content */
 .owl-carousel .item .content .text-content p {
     line-height: 1.8;
 }
@@ -211,6 +228,7 @@
     font-weight: 300;
 }
 
+/* Carousel controls and dots */
 .owl-theme .owl-controls {
     margin-top: 150px;
     margin-left: 30px;
@@ -235,22 +253,22 @@ button.owl-dot.active {
     background-color: slategray !important;
 }
 
+/* Destination section */
 .destination {
-    margin-top: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    width: 84%;
-    height: auto;
 }
 
-.destination .des_bx, .img_bx {
+.destination .des_bx,
+.img_bx {
     position: relative;
     width: 50%;
     height: auto;
 }
 
+/* Destination box */
 .destination .des_bx h4 {
     font-size: 25px;
     line-height: 0;
@@ -287,12 +305,14 @@ button.owl-dot.active {
     border: 2px solid #393838;
 }
 
+/* Destination images */
 .destination .img_bx img {
     width: 320px;
     height: 420px;
     border-radius: 6px;
 }
 
+/* Message box on images */
 .destination .img_bx .msg {
     position: absolute;
     width: 160px;
@@ -307,7 +327,7 @@ button.owl-dot.active {
 
 .destination .img_bx .msg:nth-child(2) {
     top: 10%;
-    left: 55%; 
+    left: 55%;
 }
 
 .destination .img_bx .msg img {
@@ -326,12 +346,14 @@ button.owl-dot.active {
     font-weight: 500;
 }
 
+/* Icon styles */
 .icon {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Media queries */
 @media screen and (max-width: 1485px) {
     .offers, .destination {
         width: 65%;
@@ -405,11 +427,15 @@ button.owl-dot.active {
 }
 
 @media screen and (max-width: 580px) {
-    .offers h1 {
+    .offers h2,
+    .blog_section h2,
+    .review_section h2 {
         font-size: 22px;
     }
 
-    .offers p {
+    .offers p,
+    .blog_section p,
+    .review_section p {
         font-size: 14px;
     }
 
@@ -417,7 +443,8 @@ button.owl-dot.active {
         justify-content: center;
     }
 
-    .destination .des_bx, .img_bx {
+    .destination .des_bx,
+    .img_bx {
         width: 80%;
     }
 
@@ -435,7 +462,9 @@ button.owl-dot.active {
         width: -webkit-fill-available;
     }
 
-    .offers h2, .blog_section h2, .review_section h2 {
+    .offers h2,
+    .blog_section h2,
+    .review_section h2 {
         font-size: 1.7rem;
     }
 
