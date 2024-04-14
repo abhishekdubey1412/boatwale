@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 {% block cssblock %}
-    <link rel="stylesheet" href="{% static "css/home.css" %}">
-    <link rel="stylesheet" href="{% static "css/header.css" %}">
-    <link rel="stylesheet" href="{% static "css/blog.css" %}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" defer>
+    <link rel="stylesheet" href="{% static 'css/header.css' %}" defer>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}" defer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" defer>
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -259,7 +259,7 @@
             loop:true,
             margin:10,
             nav: false,
-            dots: false,
+            dots,
             autoplay:true,
             responsive:{
                 0:{
