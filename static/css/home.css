@@ -248,7 +248,6 @@ button.owl-dot.active{
 
 .destination .des_bx, .img_bx{
     position: relative;
-    width: 50%;
     height: auto;
 }
 
@@ -270,7 +269,7 @@ button.owl-dot.active{
 
 .destination .des_bx h5{
     box-sizing: border-box;
-    width: 84%;
+    width: 53%;
 }
 
 .destination .des_bx button{
