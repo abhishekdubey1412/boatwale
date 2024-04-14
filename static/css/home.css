@@ -176,8 +176,15 @@
 
 .destination .des_bx, .img_bx{
     position: relative;
-    width: 50%;
     height: auto;
+}
+
+.destination .des_bx{
+    width: 50%;
+}
+
+.destination .img_bx{
+    width: 30%;
 }
 
 .destination .des_bx h4{
@@ -308,6 +315,10 @@
     
     .destination .des_bx{
         width: 94%;
+    }
+
+    .destination .img_bx{
+        width: 50%;
     }
 
     .destination .img_bx img{
