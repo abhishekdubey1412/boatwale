@@ -163,6 +163,65 @@
     transform: rotate(360deg);
 }
 
+.owl-carousel{
+    width: 1170px;
+    margin: auto;
+    padding: 12% 0;
+}
+
+.owl-carousel .item .content{
+    background: white;
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.owl-carousel .item .content .image-area{
+    position: relative;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    border: 5px solid white;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1),
+                inset 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.owl-carousel .item .content .image-area img{
+    width: 100%;
+}
+
+.owl-carousel .item .content .text-content p{
+    line-height: 1.8;
+}
+
+.owl-carousel .item .content .text-content h2{
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.owl-theme .owl-controls{
+    margin-top: 150px;
+    margin-left: 30px;
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.owl-dot{
+    display: inline-block;
+    width: 20px !important;
+    height: 20px !important;
+    background-color: white !important;
+    opacity: 0.8;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
 .destination{
     width: 84%;
     height: auto;
