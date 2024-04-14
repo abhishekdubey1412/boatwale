@@ -344,6 +344,10 @@ button.owl-dot.active{
     .offers {
         width: 72%;
     }
+
+    .destination .des_bx h5{
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 1250px) {
@@ -434,6 +438,10 @@ button.owl-dot.active{
 
     .destination .des_bx h4{
         line-height: normal;
+    }
+
+    .destination .des_bx h5{
+        width: 100%;
     }
 }
 
