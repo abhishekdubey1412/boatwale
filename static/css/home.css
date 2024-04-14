@@ -202,6 +202,12 @@
 
 .owl-carousel .item .content .text-content p{
     line-height: 1.8;
+    white-space: pre-line;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
 }
 
 .owl-carousel .item .content .text-content h2{
