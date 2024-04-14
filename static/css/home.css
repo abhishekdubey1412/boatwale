@@ -1,37 +1,35 @@
-.offers, 
-.blog_section, 
-.review_section {
-    margin-top: 100px;
+.offers, .destination {
+    width: 60%;
+    height: auto;
+    margin: auto;
     transition: 0.5s linear;
 }
 
 .offers {
-    width: 60%;
-    height: auto;
-    margin: auto;
+    margin-top: 100px;
 }
 
-.blog_section, 
-.review_section {
-    margin-top: 20px !important;
-}
-
-.review_section {
-    width: 84%;
-}
-
-.offers h2, 
-.blog_section h2, 
-.review_section h2 {
+.offers h2, .blog_section h2, .review_section h2 {
     font-weight: 600;
     text-align: center;
     margin: 0;
     font-size: 2rem;
 }
 
-.offers p, 
-.blog_section p, 
-.review_section p {
+.blog_section, .review_section {
+    margin-top: 20px !important;
+}
+
+.review_section {
+    width: 84%;
+    margin: auto;
+}
+
+.blog_sec {
+    min-height: auto !important;
+}
+
+.offers p, .blog_section p, .review_section p {
     font-weight: 500;
     text-align: center;
     margin: 0;
@@ -54,6 +52,17 @@
     position: relative;
     width: 250px;
     height: 350px;
+    margin: auto;
+}
+
+.offers .cards .card h2 {
+    padding: 6px 0;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 6px 6px 0 0;
+    font-size: 12px;
+    display: grid;
+    place-items: center;
     margin: auto;
 }
 
@@ -85,7 +94,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, .1);
+    background: rgb(255, 255, 255, .1);
     backdrop-filter: blur(5px);
     z-index: -1;
     left: 0;
@@ -101,12 +110,16 @@
     border-radius: 0 0 6px 6px;
 }
 
-.offers .cards .card .cont_bx .price, 
-.offers .cards .card .cont_bx .days {
+.offers .cards .card .cont_bx .price, .days {
     margin: 0 8px;
 }
 
-.offers .cards .card .cont_bx .price .heart_chat,
+.offers .cards .card .cont_bx .price .heart_chat {
+    display: flex;
+    align-items: center;
+}
+
+.offers .cards .card .cont_bx .price .heart_chat svg,
 .destination .img_bx .msg .cont svg {
     margin-right: 5px;
     margin-left: 5px;
@@ -117,7 +130,8 @@
     font-size: 12px;
 }
 
-.offers .cards .card .cont_bx .price .info_price {
+.offers .cards .card .cont_bx .price .info_price,
+.destination .des_bx button {
     display: flex;
     align-items: center;
     margin-top: 3px;
@@ -143,7 +157,7 @@
 
 .offers .cards .card .cont_bx .days {
     color: #fff;
-    background: #000;
+    background: #000000;
     font-size: 8px;
     border-radius: 50%;
     padding: 10px 5px;
@@ -169,7 +183,7 @@
     padding: 30px;
     text-align: center;
     border-radius: 30px;
-    box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 10%);
 }
 
 .owl-carousel .item .content .image-area {
@@ -222,18 +236,16 @@ button.owl-dot.active {
 }
 
 .destination {
-    width: 84%;
-    height: auto;
-    margin: auto;
     margin-top: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    width: 84%;
+    height: auto;
 }
 
-.destination .des_bx, 
-.img_bx {
+.destination .des_bx, .img_bx {
     position: relative;
     width: 50%;
     height: auto;
@@ -283,8 +295,6 @@ button.owl-dot.active {
 
 .destination .img_bx .msg {
     position: absolute;
-    top: 50%;
-    left: -10%;
     width: 160px;
     height: 50px;
     background: #fff;
@@ -297,7 +307,7 @@ button.owl-dot.active {
 
 .destination .img_bx .msg:nth-child(2) {
     top: 10%;
-    left: 55%;
+    left: 55%; 
 }
 
 .destination .img_bx .msg img {
@@ -323,13 +333,13 @@ button.owl-dot.active {
 }
 
 @media screen and (max-width: 1485px) {
-    .offers {
+    .offers, .destination {
         width: 65%;
     }
 }
 
 @media screen and (max-width: 1373px) {
-    .offers {
+    .offers, .destination {
         width: 72%;
     }
 }
@@ -407,8 +417,7 @@ button.owl-dot.active {
         justify-content: center;
     }
 
-    .destination .des_bx, 
-    .img_bx {
+    .destination .des_bx, .img_bx {
         width: 80%;
     }
 
@@ -426,9 +435,7 @@ button.owl-dot.active {
         width: -webkit-fill-available;
     }
 
-    .offers h2, 
-    .blog_section h2, 
-    .review_section h2 {
+    .offers h2, .blog_section h2, .review_section h2 {
         font-size: 1.7rem;
     }
 
