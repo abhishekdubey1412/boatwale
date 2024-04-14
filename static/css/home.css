@@ -13,13 +13,13 @@
     font-size: 2rem;
 }
 
-.blog_section, .review_section{
+.blog_section{
     margin-top: 20px !important;
 }
 
 .review_section{
     width: 84%;
-    margin: auto;
+    margin: 30px auto;
 }
 
 .blog_sec{
