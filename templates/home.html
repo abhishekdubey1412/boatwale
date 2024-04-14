@@ -88,7 +88,7 @@
             <div class="card">
                 <h2>{{product.name}}</h2>
                 <div class="img_text">
-                    <img fetchpriority="high" loading="lazy" src="/media/{{product.image}}" alt="{{product.image_alt}}" title="boatwale post" decoding="async" ismap>
+                    <img fetchpriority="high" loading="lazy" src="/media/{{product.image}}" alt="{{product.image_alt}}" title="boatwale post" decoding="async" crossorigin="anonymous">
                     <h3>{{product.description}}</h3>
                 </div>
                 <div class="cont_bx">
@@ -117,7 +117,7 @@
                     {% for recent_post in recent_posts %}
                     <a class="blog" href="{% url 'post' slug=recent_post.slug %}" >
                         {% comment %} <div > {% endcomment %}
-                            <img fetchpriority="high" loading="lazy" src="/media/{{recent_post.featured_image}}" alt="{{recent_post.featured_alt}}" decoding="async" ismap>
+                            <img fetchpriority="high" loading="lazy" src="/media/{{recent_post.featured_image}}" alt="{{recent_post.featured_alt}}" decoding="async" crossorigin="anonymous">
                             <h3>{{recent_post.title}}</h3>
                             <p>{{recent_post.description}}</p>
                             <div class="add-to-cart">
@@ -145,7 +145,7 @@
             <div class="item">
                 <div class="content">
                     <div class="image-area">
-                        <img src="../static/images/favicon/boatwale_logo.png" alt="" decoding="async" ismap>
+                        <img src="../static/images/favicon/boatwale_logo.png" alt="" decoding="async" crossorigin="anonymous">
                     </div>
                     <div class="text-content">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni amet placeat porro perspiciatis est.</p>
@@ -156,7 +156,7 @@
             <div class="item">
                 <div class="content">
                     <div class="image-area">
-                        <img src="../static/images/favicon/boatwale_logo.png" alt="" decoding="async" ismap>
+                        <img src="../static/images/favicon/boatwale_logo.png" alt="" decoding="async" crossorigin="anonymous">
                     </div>
                     <div class="text-content">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni amet placeat porro perspiciatis est.</p>
@@ -167,7 +167,7 @@
             <div class="item">
                 <div class="content">
                     <div class="image-area">
-                        <img src="../static/images/favicon/boatwale_logo.png" alt="" decoding="async" ismap>
+                        <img src="../static/images/favicon/boatwale_logo.png" alt="" decoding="async" crossorigin="anonymous">
                     </div>
                     <div class="text-content">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni amet placeat porro perspiciatis est.</p>
@@ -178,7 +178,7 @@
             <div class="item">
                 <div class="content">
                     <div class="image-area">
-                        <img src="../static/images/favicon/boatwale_logo.png" alt="" decoding="async" ismap>
+                        <img src="../static/images/favicon/boatwale_logo.png" alt="" decoding="async" crossorigin="anonymous">
                     </div>
                     <div class="text-content">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni amet placeat porro perspiciatis est.</p>
@@ -189,7 +189,7 @@
             <div class="item">
                 <div class="content">
                     <div class="image-area">
-                        <img src="../static/images/favicon/boatwale_logo.png" alt="" decoding="async" ismap>
+                        <img src="../static/images/favicon/boatwale_logo.png" alt="" decoding="async" crossorigin="anonymous">
                     </div>
                     <div class="text-content">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni amet placeat porro perspiciatis est.</p>
@@ -200,7 +200,7 @@
             <div class="item">
                 <div class="content">
                     <div class="image-area">
-                        <img src="../static/images/favicon/boatwale_logo.png" alt="" decoding="async" ismap>
+                        <img src="../static/images/favicon/boatwale_logo.png" alt="" decoding="async" crossorigin="anonymous">
                     </div>
                     <div class="text-content">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni amet placeat porro perspiciatis est.</p>
@@ -223,9 +223,9 @@
             <a href="{% url "boat-tours" %}"><button>Explore Boat Tours</button></a>
         </div>
         <div class="img_bx">
-            <img fetchpriority="high" loading="lazy" src="{% static "images/banner/varanasi-boatwale.webp" %}" alt="varanasi boatwale image" decoding="async" ismap>
+            <img fetchpriority="high" loading="lazy" src="{% static "images/banner/varanasi-boatwale.webp" %}" alt="varanasi boatwale image" decoding="async" crossorigin="anonymous">
             <div class="msg">
-                <img fetchpriority="high" loading="lazy" src="{% static "images/icons/varanasi-icon.webp" %}" alt="varanasi icon" decoding="async" ismap>
+                <img fetchpriority="high" loading="lazy" src="{% static "images/icons/varanasi-icon.webp" %}" alt="varanasi icon" decoding="async" crossorigin="anonymous">
                 <div class="cont">
                     <h4>Varanasi</h4>
                     <div class="icon">
@@ -235,7 +235,7 @@
                 </div>
             </div>
             <div class="msg">
-                <img fetchpriority="high" loading="lazy" src="{% static "images/icons/vrindavan-icon.webp" %}" alt="vrindavan icon" decoding="async" ismap>
+                <img fetchpriority="high" loading="lazy" src="{% static "images/icons/vrindavan-icon.webp" %}" alt="vrindavan icon" decoding="async" crossorigin="anonymous">
                 <div class="cont">
                     <h4>Vrindavan</h4>
                     <div class="icon">
