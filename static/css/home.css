@@ -267,29 +267,17 @@
     .offers {
         width: 65%;
     }
-
-    .destination .img_bx{
-        width: 30%;
-    }
 }
 
 @media screen and (max-width: 1373px) {
     .offers {
         width: 72%;
     }
-
-    .destination .img_bx{
-        width: 30%;
-    }
 }
 
 @media screen and (max-width: 1250px) {
     .offers {
         width: 82%;
-    }
-
-    .destination .img_bx{
-        width: 30%;
     }
 
     /* .destination {
@@ -300,10 +288,6 @@
 @media screen and (max-width: 1100px) {
     .offers {
         width: 90%;
-    }
-
-    .destination .img_bx{
-        width: 30%;
     }
 
     /* .destination {
