@@ -106,7 +106,9 @@ header .trip_bx .search_bx .card select{
     border: 1px solid #ddd;
     outline: none;
     font-size: 13px;
-    width: 64%;
+    width: 85%;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1),
+                inset 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 header .trip_bx .search_bx input[type="button"]{
@@ -296,10 +298,6 @@ header .trip_bx .travel_bx .cards .card .btn_city h4 span{
 
     header .trip_bx .search_bx .card{
         width: 110px;
-    }
-
-    header .trip_bx .search_bx .card input{
-        width: 100%;
     }
 }
 
