@@ -23,16 +23,16 @@ nav a{
     color: #000000;
 }
 
-nav h4{
+/* nav h4{
     display: flex;
     align-items: center;
-}
+} */
 
-nav h4 img{
+/* nav h4 img{
     width: 25px;
     height: 25px;
     margin-left: 3px;
-}
+} */
 
 nav ul{
     list-style: none;
