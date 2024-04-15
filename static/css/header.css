@@ -238,9 +238,9 @@ header .trip_bx .travel_bx .cards .card .btn_city h4 span{
         width: 70%;
     }
 
-    header .trip_bx .travel_bx .cards .card {
+    /* header .trip_bx .travel_bx .cards .card {
         min-width: 220px;
-    }
+    } */
 }
 
 @media screen and (max-width: 950px) {
@@ -261,9 +261,9 @@ header .trip_bx .travel_bx .cards .card .btn_city h4 span{
 }
 
 @media screen and (max-width: 684px){
-    header .trip_bx .search_bx .card{
+    /* header .trip_bx .search_bx .card{
         width: 140px;
-    }
+    } */
 
     header .trip_bx .search_bx input[type="button"]{
         position: absolute;
@@ -292,16 +292,16 @@ header .trip_bx .travel_bx .cards .card .btn_city h4 span{
         justify-content: space-between;
     }
 
-    header .trip_bx .search_bx .card{
+    /* header .trip_bx .search_bx .card{
         width: 110px;
-    }
+    } */
 }
 
 
 @media screen and (max-width: 412px){
-    header .trip_bx .search_bx .card input, header .trip_bx .search_bx .card select{
+    /* header .trip_bx .search_bx .card input, header .trip_bx .search_bx .card select{
         width: -webkit-fill-available;
-    }
+    } */
     header .content::before{
         height: 95%;
     }
@@ -322,7 +322,7 @@ header .trip_bx .travel_bx .cards .card .btn_city h4 span{
         align-items: flex-start;
     }
 
-    header .trip_bx .search_bx .card input{
+    /* header .trip_bx .search_bx .card input{
         width: auto;
-    }
+    } */
 }
