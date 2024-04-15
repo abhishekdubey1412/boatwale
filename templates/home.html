@@ -282,4 +282,67 @@
             });
         });
     </script>
+    <script>
+        $(document).ready(function() {
+            $('#location').focus(function() {
+                fetchAllData();
+            });
+
+            $('#location').keyup(function() {
+                var query = $(this).val();
+                fetchAutocompleteData(query);
+            });
+
+            $(document).on('click', '.dropdown-item', function() {
+                var selectedItem = $(this).text();
+                $('#location').val(selectedItem);
+                $('#search-dropdown').hide();
+            });
+
+            $(document).click(function(event) {
+                if (!$(event.target).closest('#location').length && !$(event.target).closest('#search-dropdown').length) {
+                    $('#search-dropdown').hide();
+                }
+            });
+        });
+
+        function fetchAllData() {
+            $.ajax({
+                url: '/autocomplete/',
+                data: {
+                    'term': ''
+                },
+                success: function(data) {
+                    populateDropdown(data);
+                }
+            });
+        }
+
+        function fetchAutocompleteData(query) {
+            $.ajax({
+                url: '/autocomplete/',
+                data: {
+                    'term': query
+                },
+                success: function(data) {
+                    populateDropdown(data);
+                }
+            });
+        }
+
+        function populateDropdown(data) {
+            var dropdown = $('#search-dropdown');
+            dropdown.empty();
+
+            $.each(data, function(index, item) {
+                dropdown.append('<div class="dropdown-item" style="cursor: pointer">' + item + '</div>');
+            });
+
+            if (data.length > 0) {
+                dropdown.show();
+            } else {
+                dropdown.hide();
+            }
+        }
+    </script>
 {% endblock jsblock %}

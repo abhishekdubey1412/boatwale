@@ -7,8 +7,16 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.utils import timezone
 from datetime import timedelta
+from django.http import JsonResponse
+from django.views import View
 
 # Create your views here.
+class ProductAutocompleteView(View):
+    def get(self, request, *args, **kwargs):
+        query = request.GET.get('term', '')
+        products = Tour.objects.filter(name__icontains=query)[:10]
+        results = [product.name for product in products]
+        return JsonResponse(results, safe=False)
 
 def home(request):
     boat = Tour.objects.all()
