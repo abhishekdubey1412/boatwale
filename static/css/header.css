@@ -210,7 +210,7 @@ header .trip_bx .travel_bx .cards .card .btn_city a:hover{
     background: #393838;
 }
 
-header .trip_bx .travel_bx .cards .card .btn_city h4{
+header .trip_bx .travel_bx .cards .card .btn_city h3{
     font-size: 11px;
     font-weight: 500;
     margin: 0;
@@ -218,7 +218,7 @@ header .trip_bx .travel_bx .cards .card .btn_city h4{
     line-height: 15px;
 }
 
-header .trip_bx .travel_bx .cards .card .btn_city h4 span{
+header .trip_bx .travel_bx .cards .card .btn_city h3 span{
     font-size: 13px;
     font-weight: 700;
 }
