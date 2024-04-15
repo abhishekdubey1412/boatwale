@@ -216,7 +216,7 @@
             <p>Choose your next boat ride with Boatwale.</p>
             <ul>
                 {% for category in categories %}
-                <li><a href="{% url "product" category.slug %}" title="Learn more {{category.name}}">{{category.name}}</a></li>
+                <li>{{category.name}}</li>
                 {% endfor %}
             </ul>
             <h5>Ready to explore Varanasi's Ganges River with Boatwale? Browse our selection of boat tours, choose your preferred itinerary, and book your unforgettable boating adventure online today!</h5>
