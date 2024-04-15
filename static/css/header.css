@@ -99,6 +99,10 @@ header .trip_bx .search_bx .card label .bi{
     transition: .3s linear;
 }
 
+header .trip_bx .search_bx .card input{
+    width: 85%;
+}
+
 header .trip_bx .search_bx .card input,
 header .trip_bx .search_bx .card select{
     margin-top: 3px;
@@ -106,7 +110,6 @@ header .trip_bx .search_bx .card select{
     border: 1px solid #ddd;
     outline: none;
     font-size: 13px;
-    width: 85%;
     box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1),
                 inset 0 3px 6px rgba(0, 0, 0, 0.1);
 }
