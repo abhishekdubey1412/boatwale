@@ -1,6 +1,6 @@
 from .models import UserProfile
 from django.contrib.auth.models import User
-from product.models import Boat, Tour
+from product.models import Boat, Tour, Route, City
 from blog.models import Post
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
@@ -14,13 +14,14 @@ from django.views import View
 class ProductAutocompleteView(View):
     def get(self, request, *args, **kwargs):
         query = request.GET.get('term', '')
-        products = Tour.objects.filter(name__icontains=query)[:10]
-        results = [product.name for product in products]
+        Cities = City.objects.filter(city_name__icontains=query)[:10]
+        results = [city.city_name for city in Cities]
         return JsonResponse(results, safe=False)
 
 def home(request):
     boat = Tour.objects.all()
     products = Boat.objects.all()
+    routes = Route.objects.all()
     seven_days_ago = timezone.now() - timedelta(days=7)
     recent_posts = Post.objects.filter(published_date__gte=seven_days_ago)
     context = {
@@ -30,7 +31,8 @@ def home(request):
         'thumbnail': "../static/images/background.png/",
         'categories': boat,
         'products': products,
-        'recent_posts': recent_posts 
+        'recent_posts': recent_posts,
+        'routes': routes
     }
     return render(request, 'home.html', context=context)
 

@@ -4,6 +4,18 @@ from PIL import Image
 from django.urls import reverse
 import os
 
+class City(models.Model):
+    city_name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.city_name
+
+class Route(models.Model):
+    route_path = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.route_path
+    
 class Boat(models.Model):
     name = models.CharField(max_length=200)
     type = models.CharField(max_length=100)
@@ -33,6 +45,8 @@ class Tour(models.Model):
     end_date = models.DateField()
     created_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     update_at = models.DateTimeField(auto_now=True, null=True, blank=True)
+    city = models.ForeignKey(City, on_delete=models.CASCADE, null=True, blank=True)
+    route = models.ForeignKey(Route, on_delete=models.CASCADE, null=True, blank=True)
 
     def __str__(self):
         return self.name
@@ -47,7 +61,7 @@ class TourImage(models.Model):
 
     def __str__(self):
         return str(self.image)
-
+    
 class Booking(models.Model):
     tour = models.ForeignKey(Tour, on_delete=models.CASCADE)
     booking_date = models.DateTimeField(auto_now_add=True)
@@ -67,3 +81,4 @@ class Booking(models.Model):
 
     def __str__(self):
         return f"{self.user.username} - {self.tour.name}"
+    
