@@ -201,8 +201,8 @@ footer ul li .fs_p{
     height: 50px;
     width: 50px;
     position: fixed;
-    bottom: 14px;
-    right: 90px;
+    bottom: 6%;
+    right: 18px;
     border-radius: 50%;
     background-color: #25D366; /* WhatsApp green color */
     display: flex;
@@ -286,6 +286,7 @@ footer ul li .fs_p{
     footer ul li .fs_p{
         font-size: 8px;
     }
+
 }
 
 @media screen and (max-width: 411px){
