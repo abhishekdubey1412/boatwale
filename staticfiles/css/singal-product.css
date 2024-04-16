@@ -78,7 +78,7 @@ img {
     font-size: 0.9rem;
     display: inline-block;
     margin-bottom: 0.5rem;
-    background: darkmagenta;
+    background: #000000;
     color: #fff;
     padding: 0 0.3rem;
     transition: all 0.5s ease;
@@ -109,7 +109,7 @@ img {
 }
 
 .last-price span {
-    color: darkmagenta;
+    color: #000000;
     text-decoration: line-through;
 }
 
@@ -155,7 +155,7 @@ img {
 
 .purchase-info .btn {
     border: 1.5px solid #ddd;
-    border-radius: 25px;
+    border-radius: 6px;
     text-align: center;
     padding: 0.45rem 0.8rem;
     outline: 0;
@@ -168,7 +168,7 @@ img {
 }
 
 .purchase-info .btn:first-of-type {
-    background: darkmagenta;
+    background: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,32 +177,6 @@ img {
 
 .purchase-info .btn:hover {
     opacity: 0.9;
-}
-
-.social-links {
-    display: flex;
-    align-items: center;
-}
-
-.social-links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    color: #000;
-    border: 1px solid #000;
-    margin: 0 0.2rem;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 0.8rem;
-    transition: all 0.5s ease;
-}
-
-.social-links a:hover {
-    background: darkmagenta;
-    border-color: transparent;
-    color: #fff;
 }
 
 @media screen and (min-width: 992px) {
