@@ -44,12 +44,12 @@
   <link rel="icon" href="{% static 'images/favicon/boatwale.ico' %}" type="image/icon" sizes="32x32" style="filter: invert(100%);">
   
   <!-- Preconnect for Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  {% comment %} <link rel="preconnect" href="https://fonts.googleapis.com"> {% endcomment %}
+  {% comment %} <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> {% endcomment %}
   
   <!-- Asynchronously Load Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"></noscript>
+  {% comment %} <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"> {% endcomment %}
+  {% comment %} <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"></noscript> {% endcomment %}
   
   <!-- Preload and Asynchronously Load Main CSS File -->
   <link rel="preload" href="{% static 'css/base.css' %}" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -61,6 +61,19 @@
   {% block cssblock %}{% endblock cssblock %}
   
   <title>{{ title }}</title>
+  <style>
+    @font-face {
+        font-family: 'Poppins';
+        src: url('../static/fonts/Poppins-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: optional;
+    }
+
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
 </head>
     <!-- Navbar Section -->
     <nav>
