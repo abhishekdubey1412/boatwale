@@ -16,51 +16,105 @@
         </div>
         {% endfor %}
     {% endif %}
-    <section class="contact">
-        <div class="container contact_container">
-            <aside class="contact_aside">
-                <div class="aside_image">
-                    <img fetchpriority="high" loading="lazy" src="{% static "images/icons/contact.svg" %}" alt="">
-                </div>
-                <h2>Contact Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aperiam in eaque, rem facere libero minima repellendus? Fugit nostrum
-                </p>
-                <ul class="contact_details">
-                    <li>
-                        <i class="fa-solid fa-phone"></i>
-                        <h5>+91 7376096419</h5>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-envelope"></i>
-                        <h5>support@gmail.com</h5>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        <h5>Maruti Nagar, Dafi</h5>
-                    </li>
-                </ul>
-                <ul class="contact_socials">
-                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
-                </ul>
-            </aside>
-            <form class="contact_form" action="{% url "contact" %}" method="POST">
-                {% csrf_token %}
-                <div class="form_name">
-                    <input type="text" name="fname" placeholder="First Name" required>
-                    <input type="text" name="lname" placeholder="Last Name" required>
-                </div>
-                <input type="email" name="email" placeholder="Your Email Address" required>
-                <textarea name="message" rows="7" placeholder="Message" required></textarea>
-                <button type="submit" class="btn btn-primary">Send Message</button>
+    <div class="container">
+        <span class="big-circle"></span>
+        <img src="img/shape.png" class="square" alt="" />
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title">Let's get in touch</h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              dolorum adipisci recusandae praesentium dicta!
+            </p>
+  
+            <div class="info">
+              <div class="information">
+                <i class="fas fa-map-marker-alt"></i> &nbsp &nbsp
+  
+                <p>92 Cherry Drive Uniondale, NY 11553</p>
+              </div>
+              <div class="information">
+                <i class="fas fa-envelope"></i> &nbsp &nbsp
+                <p>lorem@ipsum.com</p>
+              </div>
+              <div class="information">
+                <i class="fas fa-phone"></i>&nbsp&nbsp
+                <p>123-456-789</p>
+              </div>
+            </div>
+  
+            <div class="social-media">
+              <p>Connect with us :</p>
+              <div class="social-icons">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+  
+            <form action="index.html" autocomplete="off">
+              <h3 class="title">Contact us</h3>
+              <div class="input-container">
+                <input type="text" name="name" class="input" />
+                <label for="">Username</label>
+                <span>Username</span>
+              </div>
+              <div class="input-container">
+                <input type="email" name="email" class="input" />
+                <label for="">Email</label>
+                <span>Email</span>
+              </div>
+              <div class="input-container">
+                <input type="tel" name="phone" class="input" />
+                <label for="">Phone</label>
+                <span>Phone</span>
+              </div>
+              <div class="input-container textarea">
+                <textarea name="message" class="input"></textarea>
+                <label for="">Message</label>
+                <span>Message</span>
+              </div>
+              <input type="submit" value="Send" class="btn" />
             </form>
+          </div>
         </div>
-    </section>
+      </div>
 {% endblock content %}
 
 {% block jsblock %}
     <script async src="{% static "js/contact.js" %}"></script>
+    <script>
+        const inputs = document.querySelectorAll(".input");
+        
+        function focusFunc() {
+        let parent = this.parentNode;
+        parent.classList.add("focus");
+        }
+
+        function blurFunc() {
+        let parent = this.parentNode;
+        if (this.value == "") {
+            parent.classList.remove("focus");
+        }
+        }
+
+        inputs.forEach((input) => {
+        input.addEventListener("focus", focusFunc);
+        input.addEventListener("blur", blurFunc);
+        });
+    </script>
 {% endblock jsblock %}
