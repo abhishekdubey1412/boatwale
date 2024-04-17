@@ -5,7 +5,7 @@
 {% endblock cssblock %}
 
 {% block content %}
-    {% include "hero.html" %}
+    {% comment %} {% include "hero.html" %} {% endcomment %}
     {% if messages %}
         {% for message in messages %}
         <div id="message_alert">
@@ -99,7 +99,7 @@
     <script async src="{% static "js/contact.js" %}"></script>
     <script>
         const inputs = document.querySelectorAll(".input");
-        
+
         function focusFunc() {
         let parent = this.parentNode;
         parent.classList.add("focus");
