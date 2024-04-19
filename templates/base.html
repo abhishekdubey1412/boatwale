@@ -145,13 +145,12 @@
     <script>
       let menu_btn = document.getElementsByClassName('bi-three-dots')[0];
       let menu_bx = document.getElementById('menu_bx');
+      let popup = document.getElementById('popup');
 
       menu_btn.addEventListener('click', ()=>{
           menu_bx.classList.toggle('ul_active');
       });
-    </script>
-    <script>
-      let popup = document.getElementById('popup');
+      
       function openPopup(){
           popup.classList.add("open-popup");
       }
@@ -159,6 +158,6 @@
       function closePopup(){
           popup.classList.remove("open-popup");
       }
-  </script>
-</body>
+    </script>
+  </body>
 </html>
