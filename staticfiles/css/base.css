@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6{
 
 nav{
     width: 75%;
-    height: 7%;
+    height: 70px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -217,6 +217,59 @@ footer ul li .fs_p{
     transform: scale(1.1); /* Zoom effect on hover */
 }
 
+.popup{
+    width: 280px;
+    background: #000;
+    border-radius: 6px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 10;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 30%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2, .popup P{
+    color: white !important;
+}
+
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button{
+    width: 100% !important;
+    margin-top: 20px !important;
+    padding: 10px 0 !important;
+    background: #6fd649 !important;
+    color: #fff !important;
+    border: 0 !important;
+    outline: none !important;
+    font-size: 18px !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2) !important;
+}
+
 /* Animation for vibration effect */
 @keyframes vibrate {
     0% { transform: translate(0); }
@@ -242,11 +295,11 @@ footer ul li .fs_p{
     }
 }
 
-@media screen and (max-width: 950px) {
+/* @media screen and (max-width: 950px) {
     nav {
         width: 88%;
     }
-}
+} */
 
 @media screen and (max-width: 729px){
     nav{
