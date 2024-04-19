@@ -32,7 +32,9 @@ def home(request):
         'categories': boat,
         'products': products,
         'recent_posts': recent_posts,
-        'routes': routes
+        'routes': routes,
+        'thumbnail': '../static/images/banner/boatwale_thumnail.png/',
+        'type': 'website'
     }
     return render(request, 'home.html', context=context)
 
