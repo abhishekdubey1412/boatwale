@@ -144,14 +144,6 @@
     {% comment %} <script src="{% static 'js/main.js' %}"></script> {% endcomment %}
     <script async src="https://kit.fontawesome.com/5d48644dd5.js" crossorigin="anonymous"></script>
     <script>
-      let menu_btn = document.getElementsByClassName('bi-three-dots')[0];
-      let menu_bx = document.getElementById('menu_bx');
-      let popup = document.getElementById('popup');
-
-      menu_btn.addEventListener('click', ()=>{
-          menu_bx.classList.toggle('ul_active');
-      });
-      
       let popup = document.getElementById('popup');
 
       function openPopup(event) {
@@ -174,6 +166,14 @@
       function closePopup() {
           popup.classList.remove("open-popup");
       }
+    </script>
+    <script>
+      let menu_btn = document.getElementsByClassName('bi-three-dots')[0];
+      let menu_bx = document.getElementById('menu_bx');
+
+      menu_btn.addEventListener('click', ()=>{
+          menu_bx.classList.toggle('ul_active');
+      });
     </script>
   </body>
 </html>
