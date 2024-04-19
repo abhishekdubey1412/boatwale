@@ -295,11 +295,11 @@ footer ul li .fs_p{
     }
 }
 
-@media screen and (max-width: 950px) {
+/* @media screen and (max-width: 950px) {
     nav {
         width: 88%;
     }
-}
+} */
 
 @media screen and (max-width: 729px){
     nav{
