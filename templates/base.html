@@ -146,23 +146,6 @@
     <script>
       let popup = document.getElementById('popup');
 
-      function openPopup(event) {
-          // Prevent the default form submission
-          event.preventDefault();
-
-          // Get the input element
-          let emailInput = document.getElementById('Subscribe_input');
-
-          // Check if the input field is empty
-          if (emailInput.value === '') {
-              alert('Please enter your email address.');
-              return; // Exit the function if the input is empty
-          }
-
-          // If the input is not empty, show the popup
-          popup.classList.add("open-popup");
-      }
-
       function closePopup() {
           popup.classList.remove("open-popup");
       }
