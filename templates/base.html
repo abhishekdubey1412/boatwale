@@ -7,61 +7,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% comment %} <meta name="ahrefs-site-verification" content="2262bac2bc5f46afb403d4a5365ef64b2cd81d14a9d2427b3bc2328099e1a1fa"> {% endcomment %}
     
-  <meta name="robots" content="noindex, follow">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="{{ description }}">
-  <meta name="theme-color" content="#000000">
-  <meta name="keywords" content="{{ keywords }}">
-  
-  <!-- Open Graph meta tags -->
-  <meta property="og:title" content="{{ title }}">
-  <meta property="og:description" content="{{ description }}">
-  <meta property="og:image" content="/media/{{ thumnail }}">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:type" content="website, article, services">
-  <meta property="og:url" content="{{ request.build_absolute_uri }}">
-  
-  <!-- Twitter Card tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{title}}">
-  <meta name="twitter:description" content="{{description}}">
-  <meta name="twitter:image" content="/media/{{ thumnail }}">
-  <meta name="twitter:creator" content="@abhishek_dubey">
-  <meta name="twitter:site" content="@boatwale">
-  <meta name="twitter:data1" content="{{user}}">
-  <meta name="twitter:data2" content="Less than a minute">
-
-
-
-  <!-- image_src tag for Facebook thumbnail -->
-  <link rel="image_src" href="/media/{{ thumnail }}">
+    <meta name="robots" content="noindex, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{{ description }}">
+    <meta name="theme-color" content="#000000">
+    <meta name="keywords" content="{{ keywords }}">
     
-  <!-- Canonical link -->
-  <link rel="canonical" href="{{ request.build_absolute_uri }}">
-  
-  <!-- Favicon -->
-  <link rel="icon" href="{% static 'images/favicon/boatwale.ico' %}" type="image/icon" sizes="32x32" style="filter: invert(100%);">
-  
-  <!-- Preconnect for Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-  <!-- Asynchronously Load Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"></noscript>
-  
-  <!-- Preload and Asynchronously Load Main CSS File -->
-  <link rel="preload" href="{% static 'css/base.css' %}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="{% static 'css/base.css' %}"></noscript>
-  
-  <!-- Web App Manifest -->
-  <link rel="manifest" href="{% static 'manifest.json' %}" defer>
-  
-  {% block cssblock %}{% endblock cssblock %}
-  
-  <title>{{ title }}</title>
-</head>
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:image" content="/media/{{ thumnail }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website, article, services">
+    <meta property="og:url" content="{{ request.build_absolute_uri }}">
+    
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{title}}">
+    <meta name="twitter:description" content="{{description}}">
+    <meta name="twitter:image" content="/media/{{ thumnail }}">
+    <meta name="twitter:creator" content="@abhishek_dubey">
+    <meta name="twitter:site" content="@boatwale">
+    <meta name="twitter:data1" content="{{user}}">
+    <meta name="twitter:data2" content="Less than a minute">
+
+
+
+    <!-- image_src tag for Facebook thumbnail -->
+    <link rel="image_src" href="/media/{{ thumnail }}">
+      
+    <!-- Canonical link -->
+    <link rel="canonical" href="{{ request.build_absolute_uri }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'images/favicon/boatwale.ico' %}" type="image/icon" sizes="32x32" style="filter: invert(100%);">
+    
+    <!-- Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Asynchronously Load Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"></noscript>
+    
+    <!-- Preload and Asynchronously Load Main CSS File -->
+    <link rel="preload" href="{% static 'css/base.css' %}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{% static 'css/base.css' %}"></noscript>
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="{% static 'manifest.json' %}" defer>
+    
+    {% block cssblock %}{% endblock cssblock %}
+    
+    <title>{{ title }}</title>
+  </head>
+  <body>
     <!-- Navbar Section -->
     <nav>
         <a href="{% url "home" %}"><img fetchpriority="high" title="header logo of boatwale" loading="lazy" src="{% static "images/favicon/Boatwale.png" %}" alt="boatwale logo" decoding="async" crossorigin="anonymous" style="width: 150px; height: 30px;"></a>
