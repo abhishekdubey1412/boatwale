@@ -33,8 +33,9 @@ def home(request):
         'products': products,
         'recent_posts': recent_posts,
         'routes': routes,
-        'thumbnail': '../static/images/banner/boatwale_thumnail.png/',
-        'type': 'website'
+        'thumbnail': '../static/images/banner/boatwale_thumnail.webp/',
+        'type': 'website',
+        'index_type': 'index'
     }
     return render(request, 'home.html', context=context)
 
