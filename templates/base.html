@@ -16,7 +16,7 @@
     <!-- Open Graph meta tags -->
     <meta property="og:title" content="{{ title }}">
     <meta property="og:description" content="{{ description }}">
-    <meta property="og:image" content="/media/{{ thumnail }}">
+    <meta property="og:image" content="{{ thumnail }}">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:type" content="website, article, services">
@@ -26,7 +26,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{title}}">
     <meta name="twitter:description" content="{{description}}">
-    <meta name="twitter:image" content="/media/{{ thumnail }}">
+    <meta name="twitter:image" content="{{ thumnail }}">
     <meta name="twitter:creator" content="@abhishek_dubey">
     <meta name="twitter:site" content="@boatwale">
     <meta name="twitter:data1" content="{{user}}">
@@ -35,7 +35,7 @@
 
 
     <!-- image_src tag for Facebook thumbnail -->
-    <link rel="image_src" href="/media/{{ thumnail }}">
+    <link rel="image_src" href="{{ thumnail }}">
       
     <!-- Canonical link -->
     <link rel="canonical" href="{{ request.build_absolute_uri }}">
