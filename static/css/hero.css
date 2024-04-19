@@ -1,9 +1,7 @@
 .banner {
-    width: 80%;
     margin: auto;
-    height: 200px;
-    background: linear-gradient(rgba(1, 1, 1, 0.226), rgba(7, 7, 7, 0.221)), url(../images/tour-images/varanasi-ghat.webp) no-repeat center center/cover;
-    border-radius: 6px;
+    height: 450px;
+    background: linear-gradient(0deg, #000000a8, transparent), url(../images/tour-images/varanasi-ghat.webp) no-repeat center center / cover;
     display: flex;
     align-items: center;
     justify-content: center;
