@@ -25,7 +25,7 @@ class Tag(models.Model):
 
 class Post(models.Model):
     title = models.CharField(max_length=70)
-    description = models.CharField(max_length=170, null=True, blank=True)
+    description = models.CharField(max_length=220, null=True, blank=True)
     slug = models.SlugField(unique=True, null=False)
     featured_image = models.ImageField(upload_to='Post Featured Image/', null=True, blank=True)
     featured_alt = models.CharField(max_length=100, null=True, blank=True)
