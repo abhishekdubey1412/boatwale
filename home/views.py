@@ -32,7 +32,7 @@ def home(request):
         'products': products,
         'recent_posts': recent_posts,
         'routes': routes,
-        'thumbnail': 'https://boatwale.com/static/images/banner/boatwale_thumnail.png',
+        'thumbnail': '../static/images/banner/boatwale_thumnail.png/',
         'type': 'website',
         'index_type': 'index'
     }
