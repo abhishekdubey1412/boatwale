@@ -162,14 +162,13 @@ input#person, input#age{
 
 @media screen and (max-width: 401px) {
     .customer_form {
-        width: 70%;
-        flex-direction: column;
+        width: 70% !important;
+        flex-direction: column !important;
     }
 }
 
 @media screen and (max-width: 365px) {
     .customer_form {
-        width: 100%;
-        flex-direction: column;
+        width: 100% !important;
     }
 }
