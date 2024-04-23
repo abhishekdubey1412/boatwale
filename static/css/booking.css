@@ -160,7 +160,7 @@ input#person, input#age{
     }
 }
 
-@media screen and (max-width: 401px) {
+@media screen and (max-width: 402px) {
     .customer_form {
         width: 70% !important;
         flex-direction: column !important;
