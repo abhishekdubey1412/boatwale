@@ -179,6 +179,14 @@ img {
     opacity: 0.9;
 }
 
+.product-content .social-links{
+    justify-content: start !important;
+}
+
+.product-content .social-links a{
+    width: 32px !important;
+} 
+
 @media screen and (min-width: 992px) {
     .card {
         display: grid;
