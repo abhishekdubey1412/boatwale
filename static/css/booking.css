@@ -159,3 +159,17 @@ input#person, input#age{
         width: 100%;
     }
 }
+
+@media screen and (max-width: 401px) {
+    .customer_form {
+        width: 70%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .customer_form {
+        width: 100%;
+        flex-direction: column;
+    }
+}
