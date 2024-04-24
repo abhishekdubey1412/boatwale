@@ -222,7 +222,7 @@ nav .bi-three-dots{
 }
 .footer-col h4{
 	font-size: 18px;
-	color: #ffffff;
+	color: #000;
 	text-transform: capitalize;
 	margin-bottom: 35px;
 	font-weight: 500;
@@ -252,7 +252,7 @@ nav .bi-three-dots{
     transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-	color: #ffffff;
+	color: #303030;
 	padding-left: 8px;
 }
 
