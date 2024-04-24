@@ -85,7 +85,7 @@
     {% block content %}{% endblock content %}
 
     <!-- Footer Section -->
-    <footer>
+    <div class="before_footer">
         <h2>Subscribe & <br> get special discount </h2>
         <p class="ff_p">Subscribe to our newsletter to receive exclusive offers, travel tips, and updates directly to your inbox.</p>
         <form class="input_bx" action="{% url "home" %}" method="POST">
@@ -151,7 +151,7 @@
             </ul>
           </li>
         </ul>
-    </footer>
+      </div>
 
     {% comment %} Fixed whatsapp button {% endcomment %}
     <div class="whatsapp_btn">

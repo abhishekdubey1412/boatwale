@@ -88,8 +88,8 @@ nav .bi-three-dots{
 }
 
 
-/* Footer Section */
-footer{
+/* before_footer Section */
+.before_footer{
     width: 100%;
     height: auto;
     background: rgb(241, 241, 241);
@@ -102,7 +102,7 @@ footer{
     gap: 10px;
 }
 
-footer h2{
+.before_footer h2{
     text-align: center;
     margin: 0;
     margin-top: 25px;
@@ -110,18 +110,18 @@ footer h2{
     font-weight: 600;
 }
 
-footer .ff_p{
+.before_footer .ff_p{
     text-align: center;
     width: 400px;
     font-size: 14px;
 }
 
-footer .input_bx{
+.before_footer .input_bx{
     box-shadow: 0px 3px 20px -1px gray;
     border-radius: 6px;
 }
 
-footer .input_bx input{
+.before_footer .input_bx input{
     padding: 10px 20px;
     border: none;
     outline: none;
@@ -129,7 +129,7 @@ footer .input_bx input{
     border-radius: 6px 0px 0px 6px;
 }
 
-footer .input_bx button{
+.before_footer .input_bx button{
     padding: 10px 20px;
     border: none;
     outline: none;
@@ -140,23 +140,23 @@ footer .input_bx button{
     transition: .3s linear;
 }
 
-footer .input_bx button:hover{
+.before_footer .input_bx button:hover{
     background: #393838;
 }
 
-footer ul{
+.before_footer ul{
     list-style: none;
     display: flex;
     margin-top: 30px;
 }
 
-footer ul li{
+.before_footer ul li{
     text-align: center;
     margin-right: 30px;
     font-weight: bold;
 }
 
-footer ul li .fs_p{
+.before_footer ul li .fs_p{
     font-size: 13px;
     font-weight: 600;
     max-width: 120px;
@@ -337,19 +337,19 @@ footer ul li .fs_p{
 }
 
 @media screen and (max-width: 580px){
-    footer ul li .fs_p{
+    .before_footer ul li .fs_p{
         font-size: 8px;
     }
 
 }
 
 @media screen and (max-width: 411px){
-    footer .ff_p{
+    .before_footer .ff_p{
         width: -webkit-fill-available;
         box-sizing: border-box;
         padding: 0 11px;
     }
-    footer ul li{
+    .before_footer ul li{
         margin-right: 20px;
     }
 }
