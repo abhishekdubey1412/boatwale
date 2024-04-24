@@ -212,12 +212,13 @@ nav .bi-three-dots{
     padding: unset;
 }
 .footer{
-	background-color: #24262b;
-    padding: 70px 0;
+	background-color: rgb(241, 241, 241);
+    padding-top: 20px;
 }
 .footer-col{
    /* width: 25%; */
-   padding: 0 15px;
+   /* padding: 0 15px; */
+   flex-basis: calc(20% - 20px);
 }
 .footer-col h4{
 	font-size: 18px;
@@ -241,18 +242,26 @@ nav .bi-three-dots{
 	margin-bottom: 10px;
 }
 .footer-col ul li a{
-	font-size: 16px;
-	text-transform: capitalize;
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	color: #bbbbbb;
-	display: block;
-	transition: all 0.3s ease;
+	/* font-size: 16px; */
+    text-transform: capitalize;
+    /* color: #ffffff; */
+    text-decoration: none;
+    /* font-weight: 300; */
+    color: #000000;
+    display: block;
+    transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
 	color: #ffffff;
 	padding-left: 8px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
 }
 
 /* .footer-col .social-links a{
