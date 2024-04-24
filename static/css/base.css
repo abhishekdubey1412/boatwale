@@ -433,14 +433,14 @@ nav .bi-three-dots{
     }
 }
 
-/* @media screen and (max-width: 580px){
+@media screen and (max-width: 580px){
     .before_footer ul li .fs_p{
         font-size: 8px;
     }
 
-} */
+}
 
-/* @media screen and (max-width: 411px){
+@media screen and (max-width: 411px){
     .before_footer .ff_p{
         width: -webkit-fill-available;
         box-sizing: border-box;
@@ -449,4 +449,4 @@ nav .bi-three-dots{
     .before_footer ul li{
         margin-right: 20px;
     }
-} */
+}
