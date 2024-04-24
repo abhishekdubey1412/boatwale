@@ -99,6 +99,7 @@ nav .bi-three-dots{
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
     gap: 10px;
+    padding: 20px 0;
 }
 
 .before_footer h2{
@@ -143,7 +144,7 @@ nav .bi-three-dots{
     background: #393838;
 }
 
-.before_footer ul{
+/* .before_footer ul{
     list-style: none;
     display: flex;
     margin-top: 30px;
@@ -153,9 +154,9 @@ nav .bi-three-dots{
     text-align: center;
     margin-right: 30px;
     font-weight: bold;
-}
+} */
 
-.before_footer ul li .fs_p{
+/* .before_footer ul li .fs_p{
     font-size: 13px;
     font-weight: 600;
     max-width: 120px;
@@ -163,7 +164,7 @@ nav .bi-three-dots{
     line-height: 18px;
     border-top: 1px solid black;
     padding-top: 3px;
-}
+} */
 
 .social-links {
     display: flex;
@@ -197,22 +198,25 @@ nav .bi-three-dots{
 }
 
 .footer .container{
-	max-width: 1170px;
+	max-width: 84%;
 	margin:auto;
 }
 .footer .row{
 	display: flex;
 	flex-wrap: wrap;
+    justify-content: space-between;
 }
+
 .footer ul{
 	list-style: none;
+    padding: unset;
 }
 .footer{
 	background-color: #24262b;
     padding: 70px 0;
 }
 .footer-col{
-   width: 25%;
+   /* width: 25%; */
    padding: 0 15px;
 }
 .footer-col h4{
@@ -250,7 +254,8 @@ nav .bi-three-dots{
 	color: #ffffff;
 	padding-left: 8px;
 }
-.footer-col .social-links a{
+
+/* .footer-col .social-links a{
 	display: inline-block;
 	height: 40px;
 	width: 40px;
@@ -265,7 +270,7 @@ nav .bi-three-dots{
 .footer-col .social-links a:hover{
 	color: #24262b;
 	background-color: #ffffff;
-}
+} */
 
 /*responsive*/
 @media(max-width: 767px){
@@ -419,14 +424,14 @@ nav .bi-three-dots{
     }
 }
 
-@media screen and (max-width: 580px){
+/* @media screen and (max-width: 580px){
     .before_footer ul li .fs_p{
         font-size: 8px;
     }
 
-}
+} */
 
-@media screen and (max-width: 411px){
+/* @media screen and (max-width: 411px){
     .before_footer .ff_p{
         width: -webkit-fill-available;
         box-sizing: border-box;
@@ -435,4 +440,4 @@ nav .bi-three-dots{
     .before_footer ul li{
         margin-right: 20px;
     }
-}
+} */
