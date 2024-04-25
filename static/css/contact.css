@@ -127,14 +127,24 @@ textarea{
 }
 
 #message_alert{
-    width: 91%;
-    margin: auto;
-    text-align: center;
-    padding: 18px;
-    display: flex;
-    background: #00e256;
-    align-items: center;
-    gap: 6px;
+  width: 220px;
+  text-align: center;
+  display: flex !important;
+  background: #00e256;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 38px;
+  padding: 0 14px 25px;
+  box-sizing: border-box;
+  margin: auto;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  left: 50%;
+  z-index: 10000;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px 2px #3030306b;
 }
 
 @media screen and (max-width: 1024px){
