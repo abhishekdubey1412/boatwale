@@ -22,7 +22,7 @@
 }
 
 .contact_container{
-    background: #ff8d00;
+    background: #8d8d8d;
     padding: 4rem;
     display: grid;
     grid-template-columns: 40% 60%;
@@ -37,7 +37,7 @@
     border-radius: 1rem;
     position: relative;
     bottom: 9rem;
-    box-shadow: 4px 4px 4px 0px #0f0f0f30;
+    box-shadow: 0px 1px 10px 2px #0f0f0f30;
 }
 
 .aside_image{
@@ -76,17 +76,19 @@
 }
 
 .contact_socials a{
-    background: #fc9a21;
-    padding: 0.5rem 0.7rem;
-    border-radius: 50%;
-    font-size: 0.9rem;
-    transition: var(--transition);
-    color: #000;
+  border: 1px solid black;
+  padding: 0.5rem 0.7rem;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  transition: var(--transition);
+  color: #000;
+  transition: 0.3s linear;
 }
 
 .contact_socials a:hover{
-    border: 2px solid #fc9a21;
-    background: transparent;
+  border: 1px solid #000000;
+  background: black;
+  color: white;
 }
 
 .contact_form{
