@@ -96,7 +96,7 @@
 {% endblock content %}  {% endcomment %}
 
 {% block content %}
-    {% include "hero.html" %}
+    {% comment %} {% include "hero.html" %} {% endcomment %}
     {% if messages %}
         {% for message in messages %}
         <div id="message_alert">
