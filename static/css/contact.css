@@ -1,4 +1,4 @@
-/* :root{
+:root{
     --color-primary: #4b00b5;
     --color-success: #00bf8e;
     --color-warning: #f7c94b;
@@ -212,9 +212,9 @@ textarea{
     .contact_form{
         margin: 0 1.5rem 3rem;
     }
-} */
+}
 
-input,
+/* input,
 textarea {
   font-family: "Poppins", sans-serif;
 }
@@ -593,4 +593,4 @@ textarea.input {
   .btn {
     padding: 0.45rem 1.2rem;
   }
-}
+} */
