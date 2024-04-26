@@ -130,3 +130,11 @@
         width: auto;
     }
 }
+
+@media screen and (max-width: 895px) {
+    .boatride-content a img{
+        width: 325px;
+        height: auto;
+        object-fit: cover;
+    }
+}
