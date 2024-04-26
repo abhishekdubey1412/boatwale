@@ -125,4 +125,8 @@
     .about-section {
         width: 99%;
     }
+
+    .about-content{
+        width: auto;
+    }
 }
