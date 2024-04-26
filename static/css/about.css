@@ -81,6 +81,7 @@
     width: 410px;
     height: 457px;
     object-fit: cover;
+    border-radius: 6px;
 }
 
 .boatride-content{
