@@ -5,10 +5,24 @@
     <noscript><link rel="stylesheet" href="{% static "css/hero.css" %}"></noscript>
     {% comment %} <link rel="preload" href="{% static 'images/tour-images/varanasi-ghat.webp' %}" as="image"> {% endcomment %}
 {% endblock cssblock %}
-<div class="banner" style="background: linear-gradient(0deg, #000000a8, transparent), url('/media/{{ thumnail }}') no-repeat center center / cover;">    <h1>{{title}}</h1>
+<div class="banner" onload="autoResizeBackground()" style="background: linear-gradient(0deg, #000000a8, transparent), url('/media/{{ thumnail }}') no-repeat center center / cover;">    <h1>{{title}}</h1>
     <ol>
         <li>Home <span>/</span></li>
         <li>Product <span>/</span></li>
         <li>Shop</li>
     </ol>
 </div>
+
+<script>
+    function autoResizeBackground() {
+        var banner = document.querySelector(".banner"); // Get the banner element
+        var containerWidth = banner.offsetWidth; // Get the container width
+        banner.style.backgroundImage = "url('/media/{{ thumbnail }}')"; // Set the background image dynamically
+        banner.style.backgroundSize = "cover"; // Set the background size to cover
+        banner.style.backgroundPosition = "center"; // Set the background position to center
+        banner.style.height = "200px"; // Optional: Set a fixed height for the banner, adjust as needed
+    }
+
+    window.addEventListener("resize", autoResizeBackground); // Call autoResizeBackground() when the window is resized
+    window.addEventListener("load", autoResizeBackground); // Call autoResizeBackground() when the page loads
+</script>
