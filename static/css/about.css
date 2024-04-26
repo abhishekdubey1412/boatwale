@@ -88,6 +88,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 
 .boatride-content a{
@@ -112,3 +113,10 @@
     background: black;
     color: white;
 }
+
+@media screen and (max-width: 1249px) {
+    .about-section {
+        width: 94%;
+    }
+}
+
