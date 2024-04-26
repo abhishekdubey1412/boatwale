@@ -87,9 +87,8 @@ nav .bi-three-dots{
     display: none;
 }
 
-
-/* Footer Section */
-footer{
+/* Before Footer Section */
+.before_footer{
     width: 100%;
     height: auto;
     background: rgb(241, 241, 241);
@@ -100,9 +99,10 @@ footer{
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
     gap: 10px;
+    padding: 20px 0;
 }
 
-footer h2{
+.before_footer h2{
     text-align: center;
     margin: 0;
     margin-top: 25px;
@@ -110,18 +110,18 @@ footer h2{
     font-weight: 600;
 }
 
-footer .ff_p{
+.before_footer .ff_p{
     text-align: center;
     width: 400px;
     font-size: 14px;
 }
 
-footer .input_bx{
+.before_footer .input_bx{
     box-shadow: 0px 3px 20px -1px gray;
     border-radius: 6px;
 }
 
-footer .input_bx input{
+.before_footer .input_bx input{
     padding: 10px 20px;
     border: none;
     outline: none;
@@ -129,7 +129,7 @@ footer .input_bx input{
     border-radius: 6px 0px 0px 6px;
 }
 
-footer .input_bx button{
+.before_footer .input_bx button{
     padding: 10px 20px;
     border: none;
     outline: none;
@@ -140,23 +140,23 @@ footer .input_bx button{
     transition: .3s linear;
 }
 
-footer .input_bx button:hover{
+.before_footer .input_bx button:hover{
     background: #393838;
 }
 
-footer ul{
+/* .before_footer ul{
     list-style: none;
     display: flex;
     margin-top: 30px;
 }
 
-footer ul li{
+.before_footer ul li{
     text-align: center;
     margin-right: 30px;
     font-weight: bold;
-}
+} */
 
-footer ul li .fs_p{
+/* .before_footer ul li .fs_p{
     font-size: 13px;
     font-weight: 600;
     max-width: 120px;
@@ -164,7 +164,7 @@ footer ul li .fs_p{
     line-height: 18px;
     border-top: 1px solid black;
     padding-top: 3px;
-}
+} */
 
 .social-links {
     display: flex;
@@ -195,6 +195,104 @@ footer ul li .fs_p{
     background: #000000;
     border-color: transparent;
     color: #fff;
+}
+
+.footer .container{
+	max-width: 84%;
+	margin:auto;
+}
+.footer .row{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.footer ul{
+	list-style: none;
+    padding: unset;
+}
+.footer{
+	background-color: rgb(241, 241, 241);
+    padding-top: 20px;
+}
+.footer-col{
+   width: max-content;
+   /* padding: 0 15px; */
+   /* flex-basis: calc(20% - 20px); */
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #000;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	/* font-size: 16px; */
+    text-transform: capitalize;
+    /* color: #ffffff; */
+    text-decoration: none;
+    /* font-weight: 300; */
+    color: #000000;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #303030;
+	padding-left: 8px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
+}
+
+/* .footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+} */
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
 }
 
 .whatsapp_btn {
@@ -337,19 +435,19 @@ footer ul li .fs_p{
 }
 
 @media screen and (max-width: 580px){
-    footer ul li .fs_p{
+    .before_footer ul li .fs_p{
         font-size: 8px;
     }
 
 }
 
 @media screen and (max-width: 411px){
-    footer .ff_p{
+    .before_footer .ff_p{
         width: -webkit-fill-available;
         box-sizing: border-box;
         padding: 0 11px;
     }
-    footer ul li{
+    .before_footer ul li{
         margin-right: 20px;
     }
 }

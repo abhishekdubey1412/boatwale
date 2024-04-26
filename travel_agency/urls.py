@@ -17,12 +17,10 @@ sitemaps = {
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('home.urls')),
-    path('', include('contact.urls')),
     path('', include('card.urls')),
     path('', include('product.urls')),
     path('', include('blog.urls')),
-    path('', include('about.urls')),
+    path('', include('core.urls')),
     path('', include('dashboard.urls')),
     # path('robots.txt/', TemplateView.as_view(template_name="robots.txt", content_type='text/plain')),
     # path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),

@@ -1,4 +1,4 @@
-.content-section {
+/* .content-section {
     background-color: #ffffff;
     margin: 20px auto;
     border-radius: 6px;
@@ -51,4 +51,63 @@
     .content-section {
         width: 94%;
     }
+} */
+
+
+.about-section{
+    width: 75%;
+    margin: auto;
+}
+
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-content{
+    width: 432px;
+}
+
+.about-content h1, 
+.our-boat-ride h1, 
+.why-choose-us h1,
+.testimonials h1{
+    font-size: 33.5px;
+}
+
+.about-image img{
+    width: 410px;
+    height: 457px;
+    object-fit: cover;
+}
+
+.boatride-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boatride-content a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.boatride-content a img{
+    width: 283px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.boatride-content a button{
+    padding: 8px 16px;
+    width: fit-content;
+    border-radius: 6px;
+    cursor: pointer;
+    background: black;
+    color: white;
 }

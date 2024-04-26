@@ -44,7 +44,7 @@ input#person, input#age{
 
 .product_info .card {
     width: 300px;
-    height: 400px;
+    height: 430px;
     flex-basis: calc(33.33% - 20px);
     border-radius: 6px;
     overflow: hidden;
@@ -117,6 +117,32 @@ input#person, input#age{
     }
 }
 
+@media screen and (max-width: 945px) {
+    .booking_form{
+        gap: 10px;
+    }
+
+    .boat_booking_info,
+    .boat_booking_info .customer_info .customer_form, 
+    .boat_booking_info .booking_info .booking_form{
+        width: -webkit-fill-available;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    .booking_form{
+        flex-direction: column-reverse;
+    }
+
+    .product_info .card{
+        width: -webkit-fill-available;
+    }
+
+    .boat_booking_info .customer_info .customer_form, .boat_booking_info .booking_info .booking_form{
+        flex-direction: row;
+    }
+}
+
 @media screen and (max-width: 778px) {
     section.booking {
         justify-content: flex-start;
@@ -131,5 +157,18 @@ input#person, input#age{
 @media screen and (max-width: 438px) {
     .customer_info form .customer_info_input{
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 402px) {
+    .customer_form {
+        width: 70% !important;
+        flex-direction: column !important;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .customer_form {
+        width: 100% !important;
     }
 }

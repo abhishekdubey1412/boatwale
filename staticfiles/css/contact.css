@@ -1,4 +1,4 @@
-/* :root{
+:root{
     --color-primary: #4b00b5;
     --color-success: #00bf8e;
     --color-warning: #f7c94b;
@@ -22,7 +22,7 @@
 }
 
 .contact_container{
-    background: #ff8d00;
+    background: #8d8d8d;
     padding: 4rem;
     display: grid;
     grid-template-columns: 40% 60%;
@@ -37,7 +37,7 @@
     border-radius: 1rem;
     position: relative;
     bottom: 9rem;
-    box-shadow: 4px 4px 4px 0px #0f0f0f30;
+    box-shadow: 0px 1px 10px 2px #0f0f0f30;
 }
 
 .aside_image{
@@ -76,17 +76,19 @@
 }
 
 .contact_socials a{
-    background: #fc9a21;
-    padding: 0.5rem 0.7rem;
-    border-radius: 50%;
-    font-size: 0.9rem;
-    transition: var(--transition);
-    color: #000;
+  border: 1px solid black;
+  padding: 0.5rem 0.7rem;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  transition: var(--transition);
+  color: #000;
+  transition: 0.3s linear;
 }
 
 .contact_socials a:hover{
-    border: 2px solid #fc9a21;
-    background: transparent;
+  border: 1px solid #000000;
+  background: black;
+  color: white;
 }
 
 .contact_form{
@@ -125,26 +127,35 @@ textarea{
 }
 
 #message_alert{
-    width: 91%;
-    margin: auto;
+    width: 220px;
     text-align: center;
-    padding: 18px;
     display: flex;
     background: #00e256;
     align-items: center;
-    gap: 6px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 38px;
+    padding: 0 14px 25px;
+    box-sizing: border-box;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    left: 50%;
+    z-index: 10000;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px 2px #3030306b;
 }
 
 @media screen and (max-width: 1024px){
     .contact{
         padding-bottom: 0;
-        width: 85%;
+        width: 94%;
+        margin: auto;
     }
 
     .contact_container{
         gap: 1.5rem;
-        margin-top: 2rem;
-        margin-bottom: 4rem;
         height: auto;
         padding: 1.5rem;
     }
@@ -212,9 +223,9 @@ textarea{
     .contact_form{
         margin: 0 1.5rem 3rem;
     }
-} */
+}
 
-input,
+/* input,
 textarea {
   font-family: "Poppins", sans-serif;
 }
@@ -593,4 +604,4 @@ textarea.input {
   .btn {
     padding: 0.45rem 1.2rem;
   }
-}
+} */

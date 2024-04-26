@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="{% static "css/about.css" %}">
 {% endblock cssblock %}
 
-{% block content %}
+{% comment %} {% block content %}
     {% include "hero.html" %}
     <section class="content-section">
         <div class="about-content">
@@ -58,6 +58,43 @@
                 <li class="tour-item"><strong>Flexible Booking</strong>: Choose from a variety of tour options and easily book your preferred date and time through our user-friendly platform.</li>
                 <li class="tour-item"><strong>Competitive Pricing</strong>: Enjoy high-quality boat tours at competitive prices, ensuring value for your money.</li>
             </ul>
+        </div>
+    </section>
+{% endblock content %} {% endcomment %}
+
+{% block content %}
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <h1>About Us</h1>
+                <p>Embark on a memorable journey along the sacred Ganges River in Varanasi with Boatwale. We offer a variety of boat tours tailored to suit your preferences, ensuring an enriching and authentic experience of this ancient city's culture, heritage, and natural beauty.</p>
+            </div>
+            <div class="about-image">
+                <img src='{% static "images/banner/about-imgae-of-boatwale.webp" %}' alt="An image of boat">
+            </div>
+        </div>
+        <div class="our-boat-ride">
+            <h1>Our Boat Ride</h1>
+            <div class="boatride-content">
+                <a href="">
+                    <img src="{% static "images/banner/White Blue Simple Minimalist Promo Travel Agency Flyer.webp" %}" alt="">
+                    <button>Book Now</button>
+                </a>
+                <a href="">
+                    <img src="{% static "images/banner/Blue White Simple Minimalist Travel Agency Flyer.webp" %}" alt="">
+                    <button>Book Now</button>
+                </a>
+                <a href="">
+                    <img src="{% static "images/banner/Blue and White Nature Travel Agent Flyer.webp" %}" alt="">
+                    <button>Book Now</button>
+                </a>
+            </div>
+        </div>
+        <div class="why-choose-us">
+            <h1>Why Choose Boatwale?</h1>
+        </div>
+        <div class="testimonials">
+            <h1>Our Happy Customers</h1>
         </div>
     </section>
 {% endblock content %}

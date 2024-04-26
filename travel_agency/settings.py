@@ -28,12 +28,10 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
-    'home',
-    'contact',
+    'core',
     'card',
     'product',
     'blog',
-    'about',
     'dashboard',
     'ckeditor'
 ]
