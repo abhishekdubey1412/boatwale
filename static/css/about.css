@@ -89,6 +89,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .boatride-content a{
@@ -120,3 +121,8 @@
     }
 }
 
+@media screen and (max-width: 941px) {
+    .about-section {
+        width: 99%;
+    }
+}
