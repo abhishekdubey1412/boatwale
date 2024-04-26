@@ -5,10 +5,31 @@
     <noscript><link rel="stylesheet" href="{% static "css/hero.css" %}"></noscript>
     {% comment %} <link rel="preload" href="{% static 'images/tour-images/varanasi-ghat.webp' %}" as="image"> {% endcomment %}
 {% endblock cssblock %}
-<div class="banner" style="background: linear-gradient(0deg, #000000a8, transparent), url('/media/{{ thumnail }}') no-repeat center center / cover;">    <h1>{{title}}</h1>
+<div class="banner" id="banner" style="background: linear-gradient(0deg, #000000a8, transparent), url('/media/{{ thumnail }}') no-repeat center center / cover;">    <h1>{{title}}</h1>
     <ol>
         <li>Home <span>/</span></li>
         <li>Product <span>/</span></li>
         <li>Shop</li>
     </ol>
 </div>
+
+<script>
+    // Function to resize the background image based on the device screen
+    function resizeBackgroundImage() {
+        // Get the banner element
+        var banner = document.getElementById('banner');
+
+        // Get the dimensions of the device screen
+        var screenWidth = window.innerWidth;
+        var screenHeight = window.innerHeight;
+
+        // Update the background image size
+        banner.style.backgroundSize = screenWidth + 'px ' + screenHeight + 'px';
+    }
+
+    // Call the resizeBackgroundImage function when the window is resized
+    window.addEventListener('resize', resizeBackgroundImage);
+
+    // Call the resizeBackgroundImage function initially to set the background image size
+    resizeBackgroundImage();
+</script>
