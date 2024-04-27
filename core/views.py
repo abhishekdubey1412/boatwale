@@ -161,3 +161,13 @@ def profile(request):
     }
 
     return render(request, 'profile.html', context=context)
+
+def policy(request):
+    context = {
+        'title': 'Privacy Policy',
+        'description': 'Learn about how Boatwale collects, uses, and protects your personal information in our Privacy Policy. We are committed to safeguarding your privacy and ensuring the security of your data.',
+        'keywords': 'Privacy policy, data protection, personal information, privacy rights, user data, online privacy, data security.',
+        'thumnail': '../static/images/banner/varanasi-portrait_tania-chatterjee.webp',
+    }
+
+    return render(request, 'privacy-policy.html', context=context)

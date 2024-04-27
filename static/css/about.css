@@ -1,59 +1,3 @@
-/* .content-section {
-    background-color: #ffffff;
-    margin: 20px auto;
-    border-radius: 6px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
-}
-
-.about-content{
-    padding: 20px;
-}
-
-.section-title {
-    color: #0077cc;
-    border-bottom: 2px solid #0077cc;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-.tour-article {
-    margin-bottom: 20px;
-}
-
-.tour-article-title {
-    color: #555;
-    margin-top: 0;
-}
-
-.tour-list {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
-}
-
-.tour-item {
-    margin-bottom: 8px;
-    padding-left: 20px;
-    position: relative;
-}
-
-.link {
-    color: #0077cc;
-    text-decoration: none;
-}
-
-.link:hover {
-    text-decoration: underline;
-}
-
-@media screen and (max-width: 1249px) {
-    .content-section {
-        width: 94%;
-    }
-} */
-
-
 .about-section{
     width: 75%;
     margin: auto;
@@ -113,6 +57,35 @@
     cursor: pointer;
     background: black;
     color: white;
+    border: none;
+}
+
+.wcu-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 430px;
+}
+
+.wcu-section .wcu-left,
+.wcu-section .wcu-image,
+.wcu-section .wcu-right{
+    flex-basis: calc(33%);
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    flex-direction: column;
+}
+
+.wcu-section h3{
+    line-height: 0;
+}
+
+.wcu-image img{
+    width: 319px;
+    height: 319px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 1249px) {
