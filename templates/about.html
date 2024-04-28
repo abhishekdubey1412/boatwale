@@ -2,65 +2,87 @@
 {% load static %}
 {% block cssblock %}
     <link rel="stylesheet" href="{% static "css/about.css" %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <style>
+        .owl-carousel{
+            width: 1170px;
+            margin: auto;
+            padding: 4% 0;
+        }
+
+        .owl-carousel .item .content{
+            background: white;
+            width: 300px;
+            padding: 30px;
+            text-align: center;
+            border-radius: 30px;
+            border: 5px solid green;
+        }
+
+        .owl-carousel .item .content .image-area{
+            position: relative;
+            overflow: hidden;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: auto;
+            border: 5px solid white;
+            box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1),
+                        inset 0 3px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .owl-carousel .item .content .image-area img{
+            width: 100%;
+        }
+
+        .owl-carousel .item .content .text-content p{
+            line-height: 1.8;
+        }
+
+        .owl-carousel .item .content .text-content h2{
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+
+        .owl-theme .owl-controls{
+            margin-top: 150px;
+            margin-left: 30px;
+        }
+
+        .owl-dots{
+            text-align: center;
+            margin-top: 3%;
+        }
+
+        .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+            background: black;
+        }
+
+        .owl-dot.active{
+            background: grey !important;
+        }
+
+        .owl-dot{
+            display: inline-block;
+            width: 20px !important;
+            height: 20px !important;
+            opacity: 0.8;
+            border-radius: 50%;
+            margin: 0 5px;
+        }
+
+        @media (max-width: 991px) {
+            .owl-carousel{
+                width: 100%;
+            }
+
+            .owl-carousel .item .content{
+                width: auto;
+                padding: 30px 5px;
+            }
+        }
+    </style>
 {% endblock cssblock %}
-
-{% comment %} {% block content %}
-    {% include "hero.html" %}
-    <section class="content-section">
-        <div class="about-content">
-            <h2 class="section-title">Discover Varanasi with Boatwale</h2>
-            <p>Embark on a memorable journey along the sacred Ganges River in Varanasi with Boatwale. We offer a variety of boat tours tailored to suit your preferences, ensuring an enriching and authentic experience of this ancient city's culture, heritage, and natural beauty.</p>
-        </div>
-    </section>
-
-    <section class="content-section">
-        <div class="about-content">
-            <h2 class="section-title">Our Boat Tours</h2>
-
-            <article class="tour-article">
-                <h3 class="tour-article-title">Bajra Boat Varanasi</h3>
-                <p><strong>Experience the Charm of Bajra Boat Tours</strong></p>
-                <ul class="tour-list">
-                    <li class="tour-item"><strong>Bajra Sunrise Serenity</strong>: Witness the magical sunrise over the Ganges on a peaceful 2-hour journey.</li>
-                    <li class="tour-item"><strong>Bajra Heritage Evening</strong>: Explore Varanasi's heritage landmarks during a serene 3-hour evening tour.</li>
-                    <li class="tour-item"><strong>Bajra Cultural Discovery</strong>: Immerse yourself in Varanasi's rich culture and traditions on a 4-hour boat tour.</li>
-                </ul>
-            </article>
-
-            <article class="tour-article">
-                <h3 class="tour-article-title">Varanasi Boat Motor</h3>
-                <p><strong>Navigate the Ganges with Varanasi Boat Motor Tours</strong></p>
-                <ul class="tour-list">
-                    <li class="tour-item"><strong>Motorized Ganges Exploration</strong>: Enjoy a 2.5-hour motorized boat tour to experience the Ganges' breathtaking beauty.</li>
-                    <li class="tour-item"><strong>Motor Sunset Spectacle</strong>: Admire a scenic sunset view during a 2-hour motorized boat journey.</li>
-                    <li class="tour-item"><strong>Motorized Heritage Trail</strong>: Discover Varanasi's heritage sites from the river on a 3-hour motor boat tour.</li>
-                </ul>
-            </article>
-
-            <article class="tour-article">
-                <h3 class="tour-article-title">Varanasi Hand Boat</h3>
-                <p><strong>Relish the Tranquility of Hand Boat Tours</strong></p>
-                <ul class="tour-list">
-                    <li class="tour-item"><strong>Hand-Rowed Sunrise Delight</strong>: Welcome the day with a peaceful 2-hour hand-rowed boat tour at sunrise.</li>
-                    <li class="tour-item"><strong>Hand Boat Cultural Voyage</strong>: Dive into Varanasi's culture during a 3-hour traditional hand-rowed boat tour.</li>
-                    <li class="tour-item"><strong>Hand-Rowed Ganges Discovery</strong>: Explore the Ganges' beauty on a 4-hour hand-rowed boat adventure.</li>
-                </ul>
-            </article>
-        </div>    
-    </section>
-
-    <section class="content-section">
-        <div class="about-content">
-            <h2 class="section-title">Why Choose Boatwale?</h2>
-            <ul class="tour-list">
-                <li class="tour-item"><strong>Expert Guides</strong>: Our experienced guides will enrich your tour with fascinating insights and stories about Varanasi's history, culture, and traditions.</li>
-                <li class="tour-item"><strong>Comfortable Boats</strong>: We prioritize your comfort and safety, offering well-maintained boats equipped with necessary amenities.</li>
-                <li class="tour-item"><strong>Flexible Booking</strong>: Choose from a variety of tour options and easily book your preferred date and time through our user-friendly platform.</li>
-                <li class="tour-item"><strong>Competitive Pricing</strong>: Enjoy high-quality boat tours at competitive prices, ensuring value for your money.</li>
-            </ul>
-        </div>
-    </section>
-{% endblock content %} {% endcomment %}
 
 {% block content %}
     <section class="about-section">
@@ -99,43 +121,119 @@
                             <h3>Expert Guides</h3>
                             <p>Our experienced guides will enrich your tour with fascinating insights and stories about Varanasi's history, culture, and traditions.</p>
                         </div>
-                        <div class="wcu-icon"></div>
+                        <div class="wcu-icon">
+                            <img src="{% static "images/icons/direction-icon.png" %}" alt="direction icon">
+                        </div>
                     </div>
                     <div class="wcu-left-second">
                         <div class="wcu-content">
                             <h3>Flexible Booking</h3>
                             <p> Choose from a variety of tour options and easily book your preferred date and time through our userfriendly platform. </p>
                         </div>
-                        <div class="wcu-icon"></div>
+                        <div class="wcu-icon">
+                            <img src="{% static "images/icons/booking-icon.png" %}" alt="booking icon">
+                        </div>
                     </div>
                 </div>
                 <div class="wcu-image">
-                    <img src="{% static "images/banner/boat-in-river.webp" %}" alt="">
+                    <img src="{% static "images/banner/boat-in-river.webp" %}" alt="boat in river">
                 </div>
                 <div class="wcu-right">
                     <div class="wcu-right-first">
+                        <div class="wcu-icon">
+                            <img src="{% static "images/icons/seat-icon.png" %}" alt="seat icon">
+                        </div>
                         <div class="wcu-content">
                             <h3>Comfortable Boats</h3>
                             <p>We prioritize your comfort and safety, offering wellmaintained boats equipped with necessary amenities.</p>
                         </div>
-                        <div class="wcu-icon"></div>
                     </div>
                     <div class="wcu-right-second">
+                        <div class="wcu-icon">
+                            <img src="{% static "images/icons/best-price-icon.png" %}" alt="best price icon">
+                        </div>
                         <div class="wcu-content">
                             <h3>Competitive Pricing</h3>
                             <p>Enjoy high-quality boat tours at competitive prices, ensuring value for your money.</p>
                         </div>
-                        <div class="wcu-icon"></div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="testimonials">
             <h1>Our Happy Customers</h1>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="content">
+                        <div class="image-area">
+                            <img src="../static/images/favicon/boatwale_logo.webp" alt="">
+                        </div>
+                        <div class="text-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni amet placeat porro perspiciatis est.</p>
+                            <h2>- Abhishek Dubey</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="image-area">
+                            <img src="../static/images/favicon/boatwale_logo.webp" alt="">
+                        </div>
+                        <div class="text-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni amet placeat porro perspiciatis est.</p>
+                            <h2>- Abhishek Dubey</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="image-area">
+                            <img src="../static/images/favicon/boatwale_logo.webp" alt="">
+                        </div>
+                        <div class="text-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni amet placeat porro perspiciatis est.</p>
+                            <h2>- Abhishek Dubey</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="image-area">
+                            <img src="../static/images/favicon/boatwale_logo.webp" alt="">
+                        </div>
+                        <div class="text-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni amet placeat porro perspiciatis est.</p>
+                            <h2>- Abhishek Dubey</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 {% endblock content %}
 
 {% block jsblock %}
     <script src="{% static "js/shop-product.js" %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav: false,
+            dots:true,
+            autoplay:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                }
+            }
+        })
+    </script>
 {% endblock jsblock %}

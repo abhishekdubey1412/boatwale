@@ -64,7 +64,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 430px;
+    min-height: 500px;
 }
 
 .wcu-section .wcu-left,
@@ -73,7 +73,7 @@
     flex-basis: calc(33%);
     display: flex;
     justify-content: space-between;
-    align-items: self-start;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -87,6 +87,29 @@
     border-radius: 50%;
     object-fit: cover;
 }
+
+.wcu-left-first, .wcu-left-second,
+.wcu-right-first, .wcu-right-second{
+    display: flex;
+    gap: 20px;
+}
+
+.wcu-right, .wcu-left {
+ height: 375px;
+
+}
+
+.wcu-left-first,
+.wcu-right-first{
+    align-items: start;
+}
+
+.wcu-left-second,
+.wcu-right-second{
+    align-items: end;
+}
+
+
 
 @media screen and (max-width: 1249px) {
     .about-section {
