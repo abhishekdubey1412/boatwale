@@ -94,7 +94,7 @@ DATABASES = {
         'NAME': 'boatwale',
         'USER': 'boatwale',
         'PASSWORD': 'Boatwale@5100',
-        'HOST': '43.205.100.220',
+        'HOST': '93.127.198.110',
         'PORT': '3306',
     }
 }

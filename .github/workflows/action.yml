@@ -20,7 +20,7 @@ jobs:
 
       - name: SSH into EC2 and Run Commands
         run: |
-          cd /home/ubuntu/boatwale
+          cd /home/boatwale/boatwale
           git status
           git pull
           sudo systemctl restart gunicorn.socket
