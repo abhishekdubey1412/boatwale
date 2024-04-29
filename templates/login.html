@@ -22,8 +22,11 @@
                     </div>
                     <input type="submit" value="Login">
                 </form>
+                <button type="button" class="login-with-google-btn" >
+                    Sign in with Google
+                </button>
                 <p class="switch-form">Don't have an account? <a href="{% url "registration" %}">Register</a></p>
-                <p class="switch-form"><a href="{% url "registration" %}">Forgot Password?</a></p>
+                <p class="switch-form"><a href="{% url "reset_password" %}">Forgot Password?</a></p>
             </div>
         </div>
     </section>

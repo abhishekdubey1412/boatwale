@@ -147,10 +147,19 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
 MEDIA_ROOT = BASE_DIR / "media"
 MEDIA_URL = "/media/"
 
+# SMPT Configuration
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'boatwale21@gmail.com'
+EMAIL_HOST_PASSWORD = 'qbit qshf gpkw dshz'
+DEFAULT_FROM_EMAIL = 'boatwale21@gmail.com'
+
+# RAZORPAY
 RAZORPAY_API_KEY = "rzp_live_OMNbrzD4b0jQ8s"
 RAZORPAY_API_SECRET = "utfmwAOPPlBomV3ucVkLUt1B"
 
