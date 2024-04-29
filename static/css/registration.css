@@ -1,5 +1,5 @@
 #registration,
-#login{
+#login {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,17 +23,20 @@
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 .container h2 {
     margin-bottom: 20px;
     color: #333;
     text-transform: uppercase;
     width: 100%;
 }
+
 .input-container {
     position: relative;
     margin-bottom: 15px;
     display: flex;
 }
+
 .input-container input {
     width: calc(100% - 40px);
     padding: 12px 40px 12px 50px;
@@ -46,6 +49,7 @@
     transition: border-bottom-color 0.3s;
     box-sizing: border-box;
 }
+
 .input-container i {
     position: absolute;
     top: 50%;
@@ -53,29 +57,34 @@
     left: 15px;
     color: #888;
 }
+
 input[type="submit"] {
     background-color: #000000;
     color: #fff;
     padding: 12px 20px;
     border: none;
-    border-radius: 25px;
+    border-radius: 6px;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
 }
+
 input[type="submit"]:hover {
-    background-color: #8b008b;
+    background-color: #393838;
 }
+
 .switch-form {
     margin-top: 20px;
     font-size: 14px;
     color: #555;
 }
+
 .switch-form a {
     color: #4caf50;
     text-decoration: none;
     transition: color 0.3s;
 }
+
 .switch-form a:hover {
     color: #45a049;
 }
