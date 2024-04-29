@@ -75,7 +75,7 @@
             {% if user.is_authenticated %}
                 <li><a href="{% url "profile" %}"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="12.25" viewBox="0 0 448 512"><path fill="#ffffff" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>Profile</a></li>
             {% else %}
-                <li><a href="{% url "registration" %}"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="12.25" viewBox="0 0 448 512"><path fill="#ffffff" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>Sign Up</a></li>
+                <li><a href="{% url "userlogin" %}"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="12.25" viewBox="0 0 448 512"><path fill="#ffffff" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>Log In</a></li>
             {% endif %}
         </ul>
         <svg class="bi bi-three-dots" xmlns="http://www.w3.org/2000/svg" height="18" width="16.25" viewBox="0 0 448 512"><path d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z"/></svg>
@@ -183,13 +183,13 @@
           <div class="footer-col">
             <h4>Boatwale</h4>
             <ul>
-              <li><a href="#">About Us</a></li>
+              <li><a href="{% url "about-us" %}">About Us</a></li>
               <li><a href="#">Services</a></li>
               <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="{% url "privacy-policy" %}">Privacy Policy</a></li>
               <li><a href="#">Cancellation & Refund</a></li>
               <li><a href="#">Disclaimer</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="{% url "contact-us" %}">Contact Us</a></li>
             </ul>
           </div>
           {% comment %} <div class="footer-col">
