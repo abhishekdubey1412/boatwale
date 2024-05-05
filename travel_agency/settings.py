@@ -33,7 +33,8 @@ INSTALLED_APPS = [
     'product',
     'blog',
     'dashboard',
-    'ckeditor'
+    'ckeditor',
+    'ckeditor_uploader'
 ]
 
 CKEDITOR_CONFIGS = {

@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from ckeditor.fields import RichTextField
+from ckeditor_uploader.fields import RichTextUploadingField
 from django.urls import reverse
 
 class Category(models.Model):
@@ -30,7 +31,7 @@ class Post(models.Model):
     featured_image = models.ImageField(upload_to='Post Featured Image/', null=True, blank=True)
     featured_alt = models.CharField(max_length=100, null=True, blank=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, null=True, default=None)
-    content = RichTextField(null=True, blank=True)
+    content = RichTextUploadingField(null=True, blank=True)
     published_date = models.DateTimeField(auto_now_add=True)
     updated_date = models.DateTimeField(auto_now=True)
     categories = models.ForeignKey(Category, on_delete=models.CASCADE, null=True, default=None)
