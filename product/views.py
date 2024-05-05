@@ -8,7 +8,8 @@ def boat_tours(request):
         'title': "Varanasi Boat Tours by Boatwale - Explore the Ganges River",
         'description': 'Discover our diverse range of boat tours in Varanasi, from sunrise/sunset cruises to special religious ceremonies, and experience the Ganges River like never before with Boatwale.',
         'keywords': "Varanasi boat tours, Ganges River boat rides, sunrise cruises, sunset cruises, religious ceremonies, Boatwale boat tours, boat experiences",
-        'products': boat
+        'products': boat,
+        'thumnail': '../static/images/banner/houseboat-boatwale.webp'
     }
 
     return render(request, 'boat-tour.html', context=context)

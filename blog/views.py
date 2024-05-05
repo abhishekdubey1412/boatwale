@@ -11,7 +11,8 @@ def blog(request):
         'description': 'Stay updated with the latest stories, tips, and insights about boating in Varanasi on the Boatwale blog, curated for both enthusiasts and travelers.',
         'keywords': "Varanasi boating, boatwale blog, Ganges River stories, boating tips, boat tour insights, Varanasi travel guide, boatwale updates",
         'categories': content_category,
-        'posts': content_posts
+        'posts': content_posts,
+        'thumnail': '../static/images/banner/boat-mountain-lake-boat-in-mountain-lake.webp'
     }
     return render(request, 'blog.html', context=context)
 
