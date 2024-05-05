@@ -39,11 +39,20 @@ INSTALLED_APPS = [
 
 CKEDITOR_CONFIGS = {
     'default': {
-        'toolbar': 'full',
+        'toolbar': [
+            ['Format', 'Styles', 'Bold', 'Italic', 'Underline', 'Strike', 'TextColor', 'BGColor'],
+            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'],
+            ['Link', 'Unlink', 'Anchor'],
+            ['Image', 'Table', 'HorizontalRule'],
+            ['Blockquote', 'CodeSnippet'],
+            ['Undo', 'Redo'],
+            ['Source'],
+        ],
         'height': 300,
         'width': 800,
     },
 }
+
 
 CKEDITOR_UPLOAD_PATH = 'post_featured_image/'
 
