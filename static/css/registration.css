@@ -8,7 +8,8 @@
     margin: auto;
 }
 
-.container {
+#registration .container,
+#login .container {
     max-width: 400px;
     background-color: #fff;
     border-radius: 10px;
@@ -19,25 +20,29 @@
     transition: all 0.3s ease;
 }
 
-.container:hover {
+#registration .container:hover,
+#login .container:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.container h2 {
+#registration .container h2,
+#login .container h2 {
     margin-bottom: 20px;
     color: #333;
     text-transform: uppercase;
     width: 100%;
 }
 
-.input-container {
+#registration .input-container,
+#login .input-container {
     position: relative;
     margin-bottom: 15px;
     display: flex;
 }
 
-.input-container input {
+#registration .input-container input,
+#login .input-container input {
     width: calc(100% - 40px);
     padding: 12px 40px 12px 50px;
     margin: 10px 0;
@@ -50,7 +55,8 @@
     box-sizing: border-box;
 }
 
-.input-container i {
+#registration .input-container i,
+#login .input-container i {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -58,7 +64,8 @@
     color: #888;
 }
 
-input[type="submit"] {
+#registration input[type="submit"],
+#login input[type="submit"] {
     background-color: #000000;
     color: #fff;
     padding: 12px 20px;
@@ -69,11 +76,13 @@ input[type="submit"] {
     transition: background-color 0.3s;
 }
 
-input[type="submit"]:hover {
+#registration input[type="submit"]:hover,
+#login input[type="submit"]:hover {
     background-color: #393838;
 }
 
-.login-with-google-btn {
+#registration .login-with-google-btn,
+#login .login-with-google-btn {
     transition: background-color .3s, box-shadow .3s;
       
     padding: 10px 16px 12px 42px;
@@ -109,18 +118,21 @@ input[type="submit"]:hover {
     }
   }
 
-.switch-form {
+#registration .switch-form,
+#login .switch-form {
     margin-top: 20px;
     font-size: 14px;
     color: #555;
 }
 
-.switch-form a {
+#registration .switch-form a,
+#login .switch-form a {
     color: #4caf50;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.switch-form a:hover {
+#registration .switch-form a:hover,
+#login .switch-form a:hover {
     color: #45a049;
 }
