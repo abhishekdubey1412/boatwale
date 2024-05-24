@@ -161,7 +161,7 @@
 
 .offers .cards .card .cont_bx .days{
     color: #fff;
-    background: #000000;
+    background: #FF4D00;
     font-size: 8px;
     border-radius: 50%;
     padding: 10px 5px;
@@ -271,7 +271,7 @@ button.owl-dot.active{
 }
 
 /* .destination .des_bx li a{
-    color: #393838;
+    color: #FF8100;
     text-decoration: none;
 } */
 
@@ -283,16 +283,16 @@ button.owl-dot.active{
 .destination .des_bx button{
     padding: 8px 15px;
     border-radius: 6px;
-    background: #000000;
+    background: #FF4D00;
     color: #fff;
-    border: 2px solid #000000;
+    border: 2px solid #FF4D00;
     cursor: pointer;
     transition: .3s linear;
 }
 
 .destination .des_bx button:hover{
-    background: #393838;
-    border: 2px solid #393838;
+    background: #FF8100;
+    border: 2px solid #FF8100;
 }
 
 .destination .img_bx img{

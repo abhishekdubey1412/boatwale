@@ -42,8 +42,8 @@ header .content .cont_bx button{
     margin-top: 20px;
     padding: 10px 20px;
     border-radius: 6px;
-    border: 2px solid #000000;
-    background: #000000;
+    border: 2px solid #FF4D00;
+    background: #FF4D00;
     color: #fff;
     outline: none;
     cursor: pointer;
@@ -51,8 +51,8 @@ header .content .cont_bx button{
 }
 
 header .content .cont_bx button:hover{
-    background: #393838;
-    border: 2px solid #393838;
+    background: #FF8100;
+    border: 2px solid #FF8100;
 }
 
 header .trip_bx{
@@ -109,7 +109,7 @@ header .trip_bx .search_bx .card select{
 }
 
 header .trip_bx .search_bx input[type="button"]{
-    background: #000000;
+    background: #FF4D00;
     color: #fff;
     border: none;
     outline: none;
@@ -120,7 +120,7 @@ header .trip_bx .search_bx input[type="button"]{
 }
 
 header .trip_bx .search_bx input[type="button"]:hover{
-    background: #393838;
+    background: #FF8100;
 }
 
 header .trip_bx .travel_bx{
@@ -199,7 +199,7 @@ header .trip_bx .travel_bx .cards .card .btn_city{
 
 header .trip_bx .travel_bx .cards .card .btn_city a{
     text-decoration: none;
-    background: #000000;
+    background: #FF4D00;
     color: #fff;
     border-radius: 6px;
     padding: 6px 20px;
@@ -208,7 +208,7 @@ header .trip_bx .travel_bx .cards .card .btn_city a{
 }
 
 header .trip_bx .travel_bx .cards .card .btn_city a:hover{
-    background: #393838;
+    background: #FF8100;
 }
 
 header .trip_bx .travel_bx .cards .card .btn_city h3{

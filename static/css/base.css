@@ -20,7 +20,7 @@ nav{
 
 nav a{
     text-decoration: none;
-    color: #000000;
+    color: #FF4D00;
 }
 
 /* nav h4{
@@ -44,7 +44,7 @@ nav ul li{
 }
 
 nav ul li:nth-last-child(1){
-    background: #000000;
+    background: #FF4D00;
     border-radius: 6px;
     padding: 5px 20px;
     transition: .3s linear;
@@ -60,7 +60,7 @@ nav ul li:nth-last-child(1) a{
 }
 
 nav ul li:nth-last-child(1):hover{
-    background: #393838;
+    background: #FF8100;
 }
 
 nav ul li:nth-last-child(1) a{
@@ -80,7 +80,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: gray;
+    color: #FF8100;
 }
 
 nav .bi-three-dots{
@@ -134,14 +134,14 @@ nav .bi-three-dots{
     border: none;
     outline: none;
     border-radius: 0px 6px 6px 0px;
-    background: #000000;
+    background: #FF4D00;
     color: #fff;
     cursor: pointer;
     transition: .3s linear;
 }
 
 .before_footer .input_bx button:hover{
-    background: #393838;
+    background: #FF8100;
 }
 
 /* .before_footer ul{
@@ -411,7 +411,7 @@ nav .bi-three-dots{
         flex-direction: column;
         background: #fff;
         border-radius: 6px;
-        box-shadow: 0px 0px 10px gray;
+        box-shadow: 0px 0px 10px #FF8100;
         justify-content: center;
         top: -100%;
         right: 30%;

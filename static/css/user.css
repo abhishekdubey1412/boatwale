@@ -68,3 +68,7 @@
 .left-side .side-navbar ul li i{
     margin-right: 10px;
 }
+
+.right-side .user-data strong{
+    margin-right: 16px;
+}

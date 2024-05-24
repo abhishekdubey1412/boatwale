@@ -27,7 +27,22 @@
         </div>
       </div>
       <div class="right-side">
-        
+        <div class="user-data">
+          <div class="user-image">
+            <label for="myfile"><strong>Profile Image:</strong></label>
+            <input type="file" id="myfile" name="myfile">
+          </div>
+          <div class="user-infodata">
+            <p><strong>Name:</strong><span>{{ user }}</span></p>
+            <p><strong>Email:</strong><span>{{ user.email }}</span></p>
+            <p><strong>Phone:</strong><span>{% if user.phone %}{{ user.phone }}{% else %}N/A{% endif %}</span></p>
+          </div>
+          <div class="user-passchange">
+            
+          </div>
+        </div>
+
+        <div class="user-pass"></div>
       </div>
     </section>
 {% endblock content %}
