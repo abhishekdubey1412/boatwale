@@ -279,14 +279,10 @@ header .trip_bx .travel_bx .cards .card .btn_city h3 span{
         width: 85%;
     }
 
-    header .content .cont_bx h1{
+    header .content .cont_bx h1,
+    header .content .cont_bx p{
         width: -webkit-fill-available;
-        font-size: 22px;
     }
-    /* header .content .cont_bx p{
-        width: -webkit-fill-available;
-        font-size: 12px;
-    } */
 
     header .trip_bx .search_bx{
         width: 89%;
