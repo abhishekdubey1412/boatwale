@@ -224,17 +224,7 @@ header .trip_bx .travel_bx .cards .card .btn_city h3 span{
     font-weight: 700;
 }
 
-@media screen and (max-width: 1250px) {
-    header {
-        width: 98%;
-    }
-}
-
 @media screen and (max-width: 1100px) {
-    header {
-        width: 95%;
-    }
-
     header .trip_bx .search_bx {
         width: 70%;
     }
